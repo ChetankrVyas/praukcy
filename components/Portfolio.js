@@ -1,6 +1,4 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
-import Tilt from "react-parallax-tilt";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +9,7 @@ const Portfolio = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -42,17 +40,17 @@ const Portfolio = () => {
   };
   return (
     <div className='portfolio'>
-        <h1>Portfolio</h1>
+        <h1 style={{textAlign:'center'}} >Portfolio</h1>
         <Slider {...settings}>
-          <div className='fort'>
+          <a className='fort ecell' href='https://esummit.ecelliitbhu.com/'>
             <h3 className='heading'>E-Cell Team Page</h3>
-          </div>
+          </a>
           <div className='fort'>
             <h3>Newsapp</h3>
           </div>
-          <div className='fort'>
+          <a className='fort' href='https://github.com/ChetankrVyas/mywebsite'><div>
             <h3>TextPlay</h3>
-          </div>
+          </div></a>
           <div className='fort'>
             <h3>Praukcy</h3>
           </div>

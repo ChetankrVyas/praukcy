@@ -1,39 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .heading {
-   margin: 0; 
-   padding: 0; 
-   font-family: 'Poppins';
-   font-weight: 1600;
-   }
-.para{
-    font-size: 24px;
-    color: rgb(167, 162, 162);
-    pointer-events: none;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  font-weight: 1600;
+}
+
+.para {
+  font-size: 24px;
+  color: rgb(167, 162, 162);
+  pointer-events: none;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
 .container {
-    width: 100%;
-    height: 100%;
-  }
-.image{
-    border-radius: 5%;
-  }
-.image:hover{
-    scale: (1.1);
-    transition: 2s ease-in-out;
-    border-radius: 5%;
-  }
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  border-radius: 5%;
+}
+
+.image:hover {
+  scale: (1.1);
+  transition: 2s ease-in-out;
+  border-radius: 5%;
+}
+
 @media (min-width: 770px) {
-    .header {
-     margin-bottom: 5%;
-    }
+  .header {
+    margin-bottom: 5%;
   }
+}
+
 .header {
   color: white;
   height: 100%;
   font-family: 'Poppins';
-  overflow: hidden;  
+  overflow: hidden;
+
   .heading {
     font-size: 3.504rem;
     font-family: Poppins;
@@ -73,22 +81,25 @@
     font-weight: 400;
     font-family: objektiv-mk1, sans-serif;
   }
+
   @media (max-width: 1200px) {
-    .content main p{
+    .content main p {
       margin-top: 25%;
     }
   }
-  .button1:hover{
+
+  .button1:hover {
     transition: 0.5s;
     cursor: pointer;
     scale: (1.1);
   }
+
   .button1 {
     border: none;
     color: white;
     width: 60%;
     background-color: transparent;
-    background-image: linear-gradient(to right,#2F39D3 0%,  #FF5B4A  100%);
+    background-image: linear-gradient(to right, #2F39D3 0%, #FF5B4A 100%);
     padding: 0.38rem 1.28rem;
     font-family: 'Poppins';
     text-align: center;
@@ -99,8 +110,9 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
   @media (max-width: 770px) {
-    .button1{
+    .button1 {
       font-size: 14px;
     }
   }
@@ -143,60 +155,69 @@
     transform: translateY((50px));
   }
 }
-.diffText{
-  background: linear-gradient(to right,#2F39D3 0%,  #FF5B4A  100%);
+
+.diffText {
+  background: linear-gradient(to right, #2F39D3 0%, #FF5B4A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+
 .maincontainer {
   background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 .submaincontainer {
   background-color: rgba(23, 22, 22, 0.8);
-  padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
+
 .row {
-  margin-top:0%;
+  margin-top: 0%;
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 0% 8%;
 }
+
 @media (max-width: 770px) {
   .row {
     flex-direction: column;
   }
 }
+
 @media (max-width: 770px) {
   .image {
     scale: (0.8);
   }
 }
+
 .column {
   flex-basis: 45%;
-overflow: hidden;
+  overflow: hidden;
   width: 50%;
-  padding: 2% 4%;
+  padding: 0% 4%;
   border-radius: 10px;
   // margin-bottom: 5%;
   // text-align: left;
   text-align: left;
 }
+
 @media (max-width: 770px) {
   .column {
     width: 100%;
   }
 }
+
 @media (max-width: 770px) {
   .row {
     margin-top: 15%;
   }
 }
-.container{
+
+.container {
   background: transparent;
 }

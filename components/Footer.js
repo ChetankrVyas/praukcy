@@ -14,8 +14,6 @@ const Footer = () => {
 
   return (
     <div>
-      <div style={{ marginBottom: '-25px', position: 'relative' }}><div className='ellipse4' style={{ height: '65.44px', width: '100%', backgroundColor: 'rgb(194, 191, 191)', marginBottom: '-25px', position: 'relative' }}></div>
-        <div className='ellipse3' style={{ height: '45px', width: '100%', }}></div></div>
       <footer
         className="text-center text-lg-start text-white myfooter"
       >

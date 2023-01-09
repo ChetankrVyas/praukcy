@@ -1,6 +1,7 @@
 import { title } from 'process'
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import Ribbon from '../assets/ribbon21.png'
 import Image from 'next/image'
 import WD from '../assets/wd.png'
 import SD from '../assets/sd.jpg'
@@ -12,9 +13,8 @@ import SEO from '../assets/seo.jpg'
 const Services = () => {
   return (
     <div className='s-service'>
-      <div style={{ marginTop: '-20px' }}>
-        <div className='ellipse3' style={{ height: '45px', width: '100%', backgroundColor: 'black' }}></div>
-        <div className='ellipse4' style={{ height: '65.44px', width: '100%', backgroundColor: 'rgb(194, 191, 191)', marginTop: '-25px', position: 'relative' }}></div>
+      <div >
+        <Image src={Ribbon} style={{margin:'auto',width:'100%'}} />
       </div>
       <section className='carads'>
         {/* <div id='star-five'></div> */}

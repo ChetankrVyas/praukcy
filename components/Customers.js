@@ -45,46 +45,35 @@ const Customers = () => {
   };
   return (
     <>
-      <div><h1 style={{ textAlign: 'center' }}>Our Clients</h1></div>
+      <div className='clients'><h1 style={{ textAlign: 'center' }}>Our Clients</h1></div>
       <div style={{ padding: '50px', }}>
         <Slider {...settings}>
-          <div className='slides'>
-            <Image src={I} alt='d' style={{ overflow: 'hidden', margin: 'auto' }} />
-          </div>
-          <div className='slides'>
-            <Card className='mycards'>
-              <Card.Body>
-                <Card.Title>Newsapp</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card&apos;s content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className='slides'>
-            <Card className='mycards'>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card&apos;s content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className='slides'>
-          </div>
-          <div className='slides'>
-          </div>
-          <div className='slides'>
-          </div>
+          <Crd />
+          <Crd />
+          <Crd />
+          <Crd />
+          <Crd />
         </Slider>
       </div>
     </>
   )
 }
 
+const Crd = () => {
+  return (
+    <div div className='slides' >
+      <Card className='mycards'>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card&apos;s content.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    </div >
+  )
+}
 export default Customers
