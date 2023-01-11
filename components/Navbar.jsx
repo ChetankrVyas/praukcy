@@ -14,7 +14,7 @@ function Nav_bar() {
                     <Nav className="me-auto nav-list">
                         <Nav.Link href="/home"><span className='nav-item ulstyle'>Home</span></Nav.Link>
                         <Dropdown>
-                            <Dropdown.Toggle className='notoggle' variant="dark" style={{backgroundColor:'transparent',border:'none'}} id="dropdown-basic">
+                            <Dropdown.Toggle className='notoggle' variant="dark" style={{backgroundColor:'transparent',border:'none', marginLeft:'-7px'}} id="dropdown-basic">
                                 <span className='nav-item ulstyle'>Services</span>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>

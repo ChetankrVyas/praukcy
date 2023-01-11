@@ -68,9 +68,9 @@ const Footer = () => {
               <Col className="footer-items">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
                 <p>
-                  Contact at: 8209181991<br />
-                  Mail On: info@praukcy.com<br />
-                  Head Office: Ward No- 33, Nahar Road,<br />Gangapur City, Rajasthan
+                  Contact at: 8209181991
+                  Mail On: info@praukcy.com
+                  Head Office: Room No.- 242, Dhanrajgiri Hostel, IIT Varanasi (BHU)<br />
                 </p>
               </Col>
             </Row>

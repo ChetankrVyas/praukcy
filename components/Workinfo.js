@@ -51,7 +51,7 @@ const Workinfo = () => {
           </div>
         </motion.div>
       </Tilt>
-      <Tilt>
+      {/* <Tilt>
         <motion.div
           whileHover={{
             width: "17rem",
@@ -67,7 +67,7 @@ const Workinfo = () => {
             <div className="secondsubchild">Layouts</div>
           </div>
         </motion.div>
-      </Tilt>
+      </Tilt> */}
       <Tilt>
         <motion.div
           whileHover={{

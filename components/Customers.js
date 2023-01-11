@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from 'next/image';
 import { Card, Button } from 'react-bootstrap';
-import I from '../assets/i.jpeg'
 
 const Customers = () => {
   var settings = {
@@ -44,7 +43,7 @@ const Customers = () => {
     ]
   };
   return (
-    <>
+    <div className='clnts'>
       <div className='clients'><h1 style={{ textAlign: 'center' }}>Our Clients</h1></div>
       <div style={{ padding: '50px', }}>
         <Slider {...settings}>
@@ -55,7 +54,7 @@ const Customers = () => {
           <Crd />
         </Slider>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -63,7 +62,7 @@ const Crd = () => {
   return (
     <div div className='slides' >
       <Card className='mycards'>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>

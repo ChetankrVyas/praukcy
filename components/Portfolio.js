@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Portfolio = () => {
   var settings = {
-    arrows:false,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
@@ -40,24 +40,34 @@ const Portfolio = () => {
   };
   return (
     <div className='portfolio'>
-        <h1 style={{textAlign:'center'}} >Portfolio</h1>
-        <Slider {...settings}>
-          <a className='fort ecell' href='https://esummit.ecelliitbhu.com/'>
-            <h3 className='heading'>E-Cell Team Page</h3>
-          </a>
-          <div className='fort'>
-            <h3>Newsapp</h3>
-          </div>
-          <a className='fort' href='https://github.com/ChetankrVyas/mywebsite'><div>
-            <h3>TextPlay</h3>
-          </div></a>
-          <div className='fort'>
-            <h3>Praukcy</h3>
-          </div>
-          <div className='fort'>
-            <h3>E-Summit 2023</h3>
-          </div>
-        </Slider>
+      <h1 style={{ textAlign: 'center' }} >Portfolio</h1>
+      <Slider {...settings}>
+        <div className='fort'>
+          <h3 className='heading'>E-Cell Team Page</h3>
+          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
+          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        </div>
+        <div className='fort'>
+          <h3>Newsapp</h3>
+          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
+          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        </div>
+        <div className='fort'>
+          <h3>TextPlay</h3>
+          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
+          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        </div>
+        <div className='fort'>
+          <h3>Praukcy</h3>
+          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
+          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        </div>
+        <div className='fort'>
+          <h3>E-Summit 2023</h3>
+          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
+          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        </div>
+      </Slider>
     </div>
   )
 }

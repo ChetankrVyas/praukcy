@@ -21,6 +21,20 @@ const Header = () => {
           <div className={styles.submaincontainer}>
             <header className={styles.header}>
               <div className={styles.row}>
+                
+                <div className={styles.column}>
+                  <div className="portcontainer">
+                    <div className="portwomen">
+                      <Tilt>
+                        <Image
+                          src={PC} alt='' style={{maxWidth:'100%', height:'auto'}}
+                          width={600}
+                          className="womanimg"
+                        />
+                      </Tilt>
+                    </div>
+                  </div>
+                </div>
                 <div className={styles.column}>
                   <div className={styles.content}>
                     <div className={styles.heading}>
@@ -31,9 +45,9 @@ const Header = () => {
                       {/* <span> digital &nbsp; </span> */}
                       {/* <br/> */}
                       <span>
-                        <b className={styles.diffText}>inspiration</b>
-                        <b className={styles.diffText}>unique</b>
-                        <b className={styles.diffText}>market</b>
+                        <b className={styles.diffText}>assurance</b>
+                        <b className={styles.diffText}>unique market</b>
+                        <b className={styles.diffText}>quality</b>
                         <b className={styles.diffText}>identity</b>
                       </span>
 
@@ -52,19 +66,6 @@ const Header = () => {
                       <div className={styles.footer}>
                         Contact Our Work Team Now
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.column}>
-                  <div className="portcontainer">
-                    <div className="portwomen">
-                      <Tilt>
-                        <Image
-                          src={PC} alt='' style={{maxWidth:'100%', height:'auto'}}
-                          width={600}
-                          className="womanimg"
-                        />
-                      </Tilt>
                     </div>
                   </div>
                 </div>
