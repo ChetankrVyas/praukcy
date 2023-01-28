@@ -2,7 +2,6 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Blo from '../assets/blo.jpg';
 import Image from 'next/image';
 import { Card, Button } from 'react-bootstrap';
 
@@ -48,24 +47,28 @@ const Customers = () => {
       <div className='clients'><h1 style={{ textAlign: 'center' }}>Our Clients</h1></div>
       <div style={{ padding: '50px', }}>
         <Slider {...settings}>
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
+          <Crd title='Abhay Shankar' text=''/>
+          <Crd title='Abhay Shankar' text=''/>
+          <Crd title='Abhay Shankar' text=''/>
+          <Crd title='Abhay Shankar' text=''/>
+          <Crd title='Abhay Shankar' text=''/>
         </Slider>
       </div>
     </div>
   )
 }
 
-const Crd = ({ title, text }) => {
+const Crd = ({title,text}) => {
   return (
-    <div className='slides' >
+    <div div className='slides' >
       <Card className='mycards'>
+        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
-          <Image src={Blo} className='ima' />
           <Card.Title>{title}</Card.Title>
+          <Card.Text>
+            {text}hello i am chetan vyas everything is fine
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
     </div >

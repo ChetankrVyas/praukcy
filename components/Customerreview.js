@@ -26,7 +26,7 @@ const Testimonial = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>CLIENT REVEIW</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" />
+          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" text='Nkjanlfkjn j al njndslk kjdlskj ;lj fslak j a;lskjf; a'/>
           <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
           <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
         </Slider>
@@ -35,7 +35,7 @@ const Testimonial = () => {
   );
 };
 
-const Card = ({ img }) => {
+const Card = ({ img,text }) => {
   return (
     <div
       style={{
@@ -58,10 +58,7 @@ const Card = ({ img }) => {
         }}
       />
       <p>
-        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
-        Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
-        tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
-        fringilla massa. Etiam hendrerit dolor eget rutrum
+       {text}
       </p>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
         <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,

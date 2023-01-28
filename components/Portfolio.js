@@ -10,6 +10,7 @@ const Portfolio = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
+    swipeToSlide:true,
     slidesToScroll: 1,
     responsive: [
       {

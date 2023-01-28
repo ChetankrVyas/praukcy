@@ -6,6 +6,7 @@ import Tilt from "react-parallax-tilt";
 import styles from "../styles/header.module.scss";
 import Navbar from '../components/Navbar';
 import { Row, Col } from 'react-bootstrap';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -58,7 +59,7 @@ const Header = () => {
                           they penetrate even the darkness that veils our eyes.
                         </p>
                         <button className={styles.button1}>
-                          <a href='/services'> Explore Services </a>
+                          <Link href='pages/services'> Explore Services </Link>
                         </button>
                         {/* </div> */}
                       </main>

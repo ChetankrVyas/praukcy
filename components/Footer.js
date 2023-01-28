@@ -67,11 +67,11 @@ const Footer = () => {
               <hr className="w-100 clearfix d-md-none" />
               <Col className="footer-items">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
-                <p>
-                  Contact at: 8209181991
-                  Mail On: info@praukcy.com
-                  Head Office: Room No.- 242, Dhanrajgiri Hostel, IIT Varanasi (BHU)<br />
-                </p>
+                <address style={{lineHeight:'2.2'}}>
+                  Contact at: 8209181991<br/>
+                  Mail On: <a href="mailto:info@praukcy.com">info@praukcy.com</a><br/>
+                  Head Office: Room No.- 242,<br />Dhanrajgiri Hostel, IIT Varanasi (BHU)
+                </address>
               </Col>
             </Row>
           </section>
@@ -89,7 +89,6 @@ const Footer = () => {
                   <FaInstagram className="social-icons"></FaInstagram>
                 </a>
                 <a>
-                  {" "}
                   <FaFacebook className="social-icons"></FaFacebook>
                 </a>
                 <a >
@@ -97,12 +96,6 @@ const Footer = () => {
                 </a>
                 <a>
                   <FaTwitter className="social-icons"></FaTwitter>
-                </a>
-                <a >
-                  <FaYoutube className="social-icons"></FaYoutube>
-                </a>
-                <a>
-                  <FaDiscord className="social-icons"></FaDiscord>
                 </a>
               </div>
             </div>
