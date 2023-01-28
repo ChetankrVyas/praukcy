@@ -10,6 +10,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
+import Link from "next/link";
 const Footer = () => {
 
   return (
@@ -37,7 +38,7 @@ const Footer = () => {
                       <a href="#" className="text-white ulstyle">Home</a>
                     </p>
                     <p>
-                      <a href="/services" className="text-white ulstyle">Services</a>
+                      <Link href="/services" className="text-white ulstyle">Services</Link>
                     </p>
                     <p>
                       <a href="/customerreview" className="text-white ulstyle">Customer Review</a>

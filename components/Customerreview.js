@@ -35,7 +35,7 @@ const Testimonial = () => {
   );
 };
 
-const Card = ({ img,text }) => {
+const Card = ({ img,text,name,post }) => {
   return (
     <div
       style={{
@@ -61,8 +61,8 @@ const Card = ({ img,text }) => {
        {text}
       </p>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,
-        Media Analyst
+        <span style={{ fontWeight: 500, color: "green" }}>{name}</span> ,
+        {post}
       </p>
     </div>
   );

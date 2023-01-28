@@ -98,8 +98,8 @@
     border: none;
     color: white;
     width: 60%;
-    background-color: transparent;
-    background-image: linear-gradient(to right, #2F39D3 0%, #FF5B4A 100%);
+    background-color: transparent; 
+    background: linear-gradient(to right ,rgb(18, 161, 104) 0%,rgb(46, 45, 45) 100%);
     padding: 0.38rem 1.28rem;
     font-family: 'Poppins';
     text-align: center;
@@ -157,7 +157,7 @@
 }
 
 .diffText {
-  background: linear-gradient(to right, #2F39D3 0%, #FF5B4A 100%);
+  background: linear-gradient(to right ,rgb(18, 161, 104) 0%,rgb(46, 45, 45) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

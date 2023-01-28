@@ -37,7 +37,7 @@ body {
 .ulstyle:after {
   content: "";
   position: absolute;
-  background-color: rgb(235, 12, 12);
+  background-color: rgb(18, 161, 104);
   height: 4px;
   width: 0;
   left: 0;
@@ -78,7 +78,7 @@ a:hover {
 .nav-list {
   width: 80%;
   margin-left: 30px;
-  border-left: 5px solid rgb(223, 11, 11);
+  border-left: 5px solid rgb(18, 161, 104);
 }
 
 .nav-item {
@@ -166,12 +166,12 @@ a:hover {
   background-repeat: no-repeat;
 }
 .fort{
-  background-image: linear-gradient(rgb(32, 32, 72), black);
+  background: rgb(47, 46, 46);
   height: 180px;
   text-align: center;
   position: relative;
   color: white;
-  box-shadow: 7px 5px 5px rgb(114, 101, 101);
+  box-shadow: 5px 3px 3px rgb(114, 101, 101);
   padding-top: 15px;
 }
 .portfolio .slick-slide :hover{
@@ -274,7 +274,7 @@ margin:auto;
 }
 
 .workCard:hover {
-  background-image: linear-gradient(120deg, #2f39d3 0%, #ff5b4a 100%);
+  background-image: linear-gradient(120deg, rgb(18, 161, 104), rgb(29, 28, 28) 100%);
 }
 @media screen and (max-width: 300px) {
   .workCard .firstchild {

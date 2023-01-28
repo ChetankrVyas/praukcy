@@ -64,7 +64,7 @@ const Crd = ({ title, text }) => {
     <div className='slides' >
       <Card className='mycards'>
         <Card.Body>
-          <Image src={Blo} className='ima' />
+          <Image src={Blo} className='ima' alt=''/>
           <Card.Title>{title}</Card.Title>
         </Card.Body>
       </Card>
