@@ -2,7 +2,7 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Blo from '../assets/blo.jpg';
+import Blv from '../assets/blvess.png';
 import Image from 'next/image';
 import { Card, Button } from 'react-bootstrap';
 
@@ -49,10 +49,9 @@ const Customers = () => {
       <div style={{ padding: '50px', }}>
         <Slider {...settings}>
           <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
-          <Crd title='Abhay Shankar' text='' />
+          <Crd title='Ayush Sahu' text='' />
+          <Crd title='Prakhar Yadav' text='' />
+          <Crd title='Saatwik Shrivastava' text='' />
         </Slider>
       </div>
     </div>
@@ -64,8 +63,8 @@ const Crd = ({ title, text }) => {
     <div className='slides' >
       <Card className='mycards'>
         <Card.Body>
-          <Image src={Blo} className='ima' alt=''/>
-          <Card.Title>{title}</Card.Title>
+          <Image src={Blv} className='ima' alt=''/>
+          <Card.Title >{title}</Card.Title>
         </Card.Body>
       </Card>
     </div >

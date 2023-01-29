@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: rgb(21, 20, 20);
   color: white;
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
   background-repeat:no-repeat ;
   background-size: cover;
   overflow-x: hidden;
@@ -89,7 +90,16 @@ a:hover {
   font-weight: 400;
   font-size: 18px;
 }
-
+.ribbon{
+  border-top:4px solid rgb(18, 161, 104) ;
+  margin-top:-10% ;
+  height: auto;
+  width: 100%;
+  border-start-end-radius: 50% 17%;
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
+  border-start-start-radius: 50% 17%;
+  overflow: hidden;
+}
 /* Footer */
 .social-icons {
   font-size: 33px;
@@ -104,6 +114,8 @@ a:hover {
 .myfooter {
   bottom: 0px;
   width: 100%;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, black 0%,rgb(22, 21, 21) 50%,black 100%);
   padding-top: 20px;
 }
 
@@ -132,7 +144,7 @@ a:hover {
 }
 .s-carads {
   margin-top: -19px;
-  padding: 4%;
+  padding:0% 4% 2% 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,6 +155,9 @@ a:hover {
   height: 20px;
   background-color: aqua;
   border-radius: 50%
+}
+.popup{
+  background: linear-gradient(rgb(18, 161, 104),rgb(29, 28, 28));
 }
 .our-services {
   display: flex;
@@ -234,6 +249,7 @@ margin:auto;
 .slick-dots li button:before{
   color: rgb(7, 120, 50) !important;
 }
+
 /* workinfo */
 .workinfo {
   /* background-color: #222222; */

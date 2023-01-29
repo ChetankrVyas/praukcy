@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, Card} from 'react-bootstrap';
+import { React, useState } from 'react';
+import { Button, Card, Modal } from 'react-bootstrap';
 import Ribbon from '../assets/ribbon21.png';
 import Image from 'next/image';
 import We from '../assets/web.jpg';
@@ -16,38 +16,65 @@ import Cha from '../assets/cha.jpg';
 import Blo from '../assets/blo.jpg';
 
 const Services = () => {
-  return(
-    <div className='s-service'>
-      <div>
-        <Image src={Ribbon} alt='' style={{ margin: 'auto', width: '100%' }} />
+  const [modalShow, setModalShow] = useState(false);
+  return (
+    <>
+      <div className='ribbon'>
+        <Image src={Ribbon} alt='' />
+        <section className='s-carads'>
+          {/* <div id='star-five'></div> */}
+          <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
+          <div className='s-cards'>
+            <Crds title='Web Development' imag={WD} ime={We} text="" />
+            <Crds title='  Software Development' imag={SD} ime={Sof} text='' />
+            <Crds title='Android Development' imag={AD} ime={An} text='' />
+            <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
+            <Crds title='SEO' imag={SEO} ime={Sea} text="" />
+            <Crds title='Blockchain' imag={BN} ime={Blo} text='' />
+          </div>
+        </section>
       </div>
-      <section className='s-carads'>
-        {/* <div id='star-five'></div> */}
-        <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
-        <div className='s-cards'>
-          <Crds title='Web Development' imag={WD} ime={We} text="" />
-          <Crds title='  Software Development' imag={SD} ime={Sof} text='' />
-          <Crds title='Android Development' imag={AD} ime={An} text='' />
-          <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
-          <Crds title='SEO' imag={SEO} ime={Sea} text="" />
-          <Crds title='Blockchain' imag={BN} ime={Blo} text='' />
-        </div>
-      </section>
-    </div>
+    </>
   )
 }
 const Crds = (props) => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <Card className='s-mycards'>
       <Card.Body>
         <Card.Title><div className='s-logo'><Image width={40} height={40} src={props.imag} alt='' />{props.title}</div></Card.Title>
-        <Image  className='ime' src={props.ime} alt=''/>
+        <Image className='ime' src={props.ime} alt='' />
         <Card.Text>
           {props.text}
         </Card.Text>
-        <Button variant='transparent' style={{color:"white",margin:'auto',display:'block',border:'2px solid white',width:'90%'}}>More...</Button>
+        <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1}/>
+        <Button variant='transparent' onClick={() => setModalShow(true)} style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '90%' }}>More...</Button>
       </Card.Body>
     </Card>
   )
 }
+const Popup = (props) => {
+  return (
+    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" id={props.id} centered>
+      <div className='popup'>
+        <Modal.Header closeButton style={{borderStyle:'none'}}>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {props.title}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{borderStyle:'none'}}>
+          
+          <p>
+            {props.text1}
+          </p>
+        </Modal.Body>
+        <Modal.Footer style={{borderStyle:'none'}}>
+          <Button variant='transparent' style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '40%' }} onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </div>
+    </Modal>
+  );
+}
+
 export default Services

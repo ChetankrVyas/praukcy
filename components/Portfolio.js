@@ -24,7 +24,7 @@ const Portfolio = () => {
       },
       {
         breakpoint: 600,
-        settings: {
+        settings:{
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2
@@ -64,7 +64,7 @@ const Portfolio = () => {
           <a href='' style={{ right: '0' }} className="butn">Page</a>
         </div>
         <div className='fort'>
-          <h3>E-Summit 2023</h3>
+          <h3>BLVESS</h3>
           <a href='' style={{ left: '0' }} className="butn">GitHub</a>
           <a href='' style={{ right: '0' }} className="butn">Page</a>
         </div>

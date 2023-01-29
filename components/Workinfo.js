@@ -7,6 +7,8 @@ const Workinfo = () => {
   const [ct, setct] = useState(false);
   const formatValue = (value) => value.toFixed(0);
   return (
+    <div style={{textAlign:'center',borderTop:'4px solid rgb(18, 161, 104)',paddingTop:'30px'}}>
+    <h1 >Work Profile</h1>
     <motion.div
       initial={() => {
         setct(false);
@@ -86,6 +88,7 @@ const Workinfo = () => {
         </motion.div>
       </Tilt>
     </motion.div>
+    </div>
   );
 };
 
