@@ -3,8 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/testimonial.module.scss";
 import { Avatar } from "@material-ui/core";
+import We from '../assets/web.jpg';
+import Me from '../assets/me.jpg'
+import Ayush from '../assets/ayush.jpg'
+import Abhay from '../assets/abhay.jpg'
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
-
+import Image from "next/image";
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -27,9 +31,9 @@ const Testimonial = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>CLIENT REVEIW</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" text='Nkjanlfkjn j al njndslk kjdlskj ;lj fslak j a;lskjf; a'/>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
+          <Card img={Ayush} text='Nkjanlfkjn j al njndslk kjdlskj ;lj fslak j a;lskjf; a' name='Ayush Sahu' post='Nodal Mentor' />
+          <Card img={Abhay} name='Abhay Shankar' post='BLVESS' />
+          <Card img={Me} name='Chetan Vyas' post='Startup Founder' />
         </Slider>
       </div>
     </div>
@@ -47,15 +51,14 @@ const Card = ({ img,text,name,post }) => {
         color: "gray",
       }}
     >
-      <Avatar
-        imgProps={{ style: { borderRadius: "50%" } }}
+      <Image
         src={img}
         style={{
           width: 120,
           height: 120,
           border: "1px solid lightgray",
           padding: 7,
-          marginBottom: 20,
+          marginBottom: 20,borderRadius: "50%"
         }}
       />
       <p>

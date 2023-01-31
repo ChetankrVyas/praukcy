@@ -7,7 +7,7 @@ const Workinfo = () => {
   const [ct, setct] = useState(false);
   const formatValue = (value) => value.toFixed(0);
   return (
-    <div style={{textAlign:'center',borderTop:'4px solid rgb(18, 161, 104)',paddingTop:'30px'}}>
+    <div style={{textAlign:'center',paddingTop:'30px'}}>
     <h1 >Work Profile</h1>
     <motion.div
       initial={() => {
@@ -31,7 +31,7 @@ const Workinfo = () => {
             <i class="bi bi-clock"></i>
           </div>
           <div className="secondchild">
-            {ct && <AnimatedNumber value="50" formatValue={formatValue} />}K
+            {ct && <AnimatedNumber value="50" formatValue={formatValue} />}+
             <div className="secondsubchild">Work Hours</div>
           </div>
         </motion.div>
@@ -48,7 +48,7 @@ const Workinfo = () => {
             <i class="bi bi-person"></i>
           </div>
           <div className="secondchild">
-            {ct && <AnimatedNumber value="740" formatValue={formatValue} />}
+            {ct && <AnimatedNumber value="5" formatValue={formatValue} />}
             <div className="secondsubchild">Customers</div>
           </div>
         </motion.div>
@@ -82,7 +82,7 @@ const Workinfo = () => {
             <i class="bi bi-hdd-stack"></i>
           </div>
           <div className="secondchild">
-            {ct && <AnimatedNumber value="375" formatValue={formatValue} />}
+            {ct && <AnimatedNumber value="5" formatValue={formatValue} />}
             <div className="secondsubchild">Projects</div>
           </div>
         </motion.div>

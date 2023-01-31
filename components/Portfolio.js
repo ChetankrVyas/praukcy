@@ -2,6 +2,9 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link';
+import We from '../assets/web.jpg';
+import Image from 'next/image';
 
 const Portfolio = () => {
   var settings = {
@@ -10,7 +13,7 @@ const Portfolio = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    swipeToSlide:true,
+    swipeToSlide: true,
     slidesToScroll: 1,
     responsive: [
       {
@@ -24,7 +27,7 @@ const Portfolio = () => {
       },
       {
         breakpoint: 600,
-        settings:{
+        settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2
@@ -43,30 +46,40 @@ const Portfolio = () => {
     <div className='portfolio'>
       <h1 style={{ textAlign: 'center' }} >Portfolio</h1>
       <Slider {...settings}>
-        <div className='fort'>
-          <h3 className='heading'>E-Cell Team Page</h3>
-          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
-          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        <div className='a2'>
+          <h3 style={{ height: '20%' }}>E-Cell Team Page</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
         </div>
-        <div className='fort'>
-          <h3>Newsapp</h3>
-          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
-          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        <div className='a2'>
+          <h3 style={{ height: '20%' }}>Newsapp</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
         </div>
-        <div className='fort'>
-          <h3>TextPlay</h3>
-          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
-          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        <div className='a2'>
+          <h3 style={{ height: '20%' }}>TextPlay</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
         </div>
-        <div className='fort'>
-          <h3>Praukcy</h3>
-          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
-          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        <div className='a2'>
+          <h3 style={{ height: '20%' }}>Praukcy</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
         </div>
-        <div className='fort'>
-          <h3>BLVESS</h3>
-          <a href='' style={{ left: '0' }} className="butn">GitHub</a>
-          <a href='' style={{ right: '0' }} className="butn">Page</a>
+        <div className='a2'>
+          <h3 style={{ height: '20%' }}>BLVESS</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
         </div>
       </Slider>
     </div>

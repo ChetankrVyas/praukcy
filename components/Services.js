@@ -16,7 +16,6 @@ import Cha from '../assets/cha.jpg';
 import Blo from '../assets/blo.jpg';
 
 const Services = () => {
-  const [modalShow, setModalShow] = useState(false);
   return (
     <>
       <div className='ribbon'>
@@ -26,7 +25,7 @@ const Services = () => {
           <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />
-            <Crds title='  Software Development' imag={SD} ime={Sof} text='' />
+            <Crds title=' &nbsp;Software Development' imag={SD} ime={Sof} text='' />
             <Crds title='Android Development' imag={AD} ime={An} text='' />
             <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
             <Crds title='SEO' imag={SEO} ime={Sea} text="" />
@@ -48,7 +47,7 @@ const Crds = (props) => {
         <Card.Text>
           {props.text}
         </Card.Text>
-        <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1}/>
+        <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1} />
         <Button variant='transparent' onClick={() => setModalShow(true)} style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '90%' }}>More...</Button>
       </Card.Body>
     </Card>
@@ -58,20 +57,7 @@ const Popup = (props) => {
   return (
     <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" id={props.id} centered>
       <div className='popup'>
-        <Modal.Header closeButton style={{borderStyle:'none'}}>
-          <Modal.Title id="contained-modal-title-vcenter">
-            {props.title}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{borderStyle:'none'}}>
-          
-          <p>
-            {props.text1}
-          </p>
-        </Modal.Body>
-        <Modal.Footer style={{borderStyle:'none'}}>
-          <Button variant='transparent' style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '40%' }} onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
+        <Button variant='transparent' style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '40%' }} onClick={props.onHide}>Close</Button>
       </div>
     </Modal>
   );

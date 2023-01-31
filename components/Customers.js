@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Blv from '../assets/blvess.png';
 import Image from 'next/image';
+import Ayush from '../assets/ayush.jpg'
+import Abhay from '../assets/abhay.jpg'
 import { Card, Button } from 'react-bootstrap';
 
 const Customers = () => {
@@ -48,7 +50,7 @@ const Customers = () => {
       <div className='clients'><h1 style={{ textAlign: 'center' }}>Our Clients</h1></div>
       <div style={{ padding: '50px', }}>
         <Slider {...settings}>
-          <Crd title='Abhay Shankar' text='' />
+          <Crd title='Abhay Shankar' img ={Abhay} text='' />
           <Crd title='Ayush Sahu' text='' />
           <Crd title='Prakhar Yadav' text='' />
           <Crd title='Saatwik Shrivastava' text='' />
@@ -58,13 +60,13 @@ const Customers = () => {
   )
 }
 
-const Crd = ({ title, text }) => {
+const Crd = ({ title, text, img }) => {
   return (
     <div className='slides' >
       <Card className='mycards'>
         <Card.Body>
-          <Image src={Blv} className='ima' alt=''/>
-          <Card.Title >{title}</Card.Title>
+          <Image src={img} className='ima' alt=''/>
+          <Card.Title>{title}</Card.Title>
         </Card.Body>
       </Card>
     </div >

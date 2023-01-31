@@ -48,7 +48,6 @@ const Header = () => {
                       <span>
                         <b className={styles.diffText}>assurance</b>
                         <b className={styles.diffText}>unique market</b>
-                        <b className={styles.diffText}>quality</b>
                         <b className={styles.diffText}>identity</b>
                       </span>
 
