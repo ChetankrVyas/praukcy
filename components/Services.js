@@ -19,9 +19,7 @@ const Services = () => {
   return (
     <>
       <div className='ribbon'>
-        <Image src={Ribbon} alt='' />
         <section className='s-carads'>
-          {/* <div id='star-five'></div> */}
           <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />

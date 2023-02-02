@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import logo from '../assets/logo.png'
 import {
   FaInstagram,
   FaFacebook,
@@ -22,10 +23,7 @@ const Footer = () => {
           <section className="">
             <Row>
               < Col >
-                <h1 className="text-uppercase mb-4 font-weight-bold">
-                  Praukcy
-                </h1>
-
+               <Image src={logo} height={100} />
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col>
@@ -69,14 +67,13 @@ const Footer = () => {
               <Col className="footer-items">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
                 <address style={{lineHeight:'2.2'}}>
-                  Contact at: 8209181991<br/>
-                  Mail On: <a href="mailto:info@praukcy.com">info@praukcy.com</a><br/>
+                  Contact at: <a href="tel:8209181991">+91-8209181991<br/></a>
+                  Mail On: <a href="mailto:info@praukcy.com">praukcy@gmail.com</a><br/>
                   Head Office: Room No.- 242,<br />Dhanrajgiri Hostel, IIT Varanasi (BHU)
                 </address>
               </Col>
             </Row>
           </section>
-
           <hr className="my-3" />
           <section className="p-3 pt-0">
             <div className="row d-flex align-items-center">

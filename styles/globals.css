@@ -81,6 +81,9 @@ a:hover {
 }
 
 /* Navbar */
+.navbar{
+  background-color: #080808;
+}
 .nav-list {
   width: 80%;
   margin-left: 30px;
@@ -157,13 +160,18 @@ a:hover {
 }
 
 .s-carads {
-  margin-top: -19px;
+  margin-top: 30px;
   padding: 0% 4% 2% 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.cbtn{
+  float: right;
+  background:rgb(18, 161, 104);
+  border-radius: 2px;
+  border:none;
+}
 .dot {
   margin-top: 6px;
   width: 20px;
@@ -185,14 +193,12 @@ a:hover {
 .portfolio {
   padding: 0 1%;
   height: 440px;
-  width: 100%;
   text-align: center;
   background-color: rgba(54, 53, 52, 0.503);
   align-items: center;
 }
 
 .portfolio .slick-slide {
-  padding: 1% 1.15%;
   overflow: hidden;
 }
 
@@ -205,8 +211,9 @@ a:hover {
 .a2{
   border: 2px solid white;
   position: relative;
-  width: 100%;
+  width: 250px;
   height: 250px;
+  margin: auto;
   overflow: hidden;
 }
 .im2{
@@ -220,11 +227,13 @@ a:hover {
 }
 .a2 h3{
   margin: 0;
+  height: 15%;
 }
 .a3{
   position: relative;
   overflow: hidden;
-  height: 80%;
+  display: block;
+  height: 85%;
 }
 .a3:hover .overlay{
   height: 25% ;

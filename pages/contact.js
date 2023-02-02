@@ -3,11 +3,11 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar';
 
-const services = () => {
+const contact = () => {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>About</title>  
       </Head>
       <Navbar />
       <Footer />
@@ -15,4 +15,4 @@ const services = () => {
   )
 }
 
-export default services
+export default contact

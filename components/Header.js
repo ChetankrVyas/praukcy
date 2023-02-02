@@ -13,10 +13,7 @@ const Header = () => {
     <div className='s-header'>
       <Navbar />
       <div
-        style={{
-          backgroundColor: "#ffffff",
-        }}
-      >
+        style={{ backgroundColor: "#ffffff"}}>
         <div className={styles.maincontainer}>
           <Contactus />
           <div className={styles.submaincontainer}>
@@ -58,7 +55,7 @@ const Header = () => {
                           they penetrate even the darkness that veils our eyes.
                         </p>
                         <button className={styles.button1}>
-                          <Link href='pages/services'> Explore Services </Link>
+                          <Link href='/services'> Explore Services </Link>
                         </button>
                         {/* </div> */}
                       </main>

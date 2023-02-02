@@ -11,9 +11,9 @@ const Portfolio = () => {
     arrows: false,
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    swipeToSlide: true,
+    // autoplay:true,
+    autoplaySpeed:2000,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {
@@ -46,36 +46,43 @@ const Portfolio = () => {
     <div className='portfolio'>
       <h1 style={{ textAlign: 'center' }} >Portfolio</h1>
       <Slider {...settings}>
-        <div className='a2'>
-          <h3 style={{ height: '20%' }}>E-Cell Team Page</h3>
+        <div className='a2' style={{width:'250px'}}>
+          <h3>E-Cell Team Page</h3>
           <div className='a3'>
             <div className='im2'></div>
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
-          <h3 style={{ height: '20%' }}>Newsapp</h3>
+          <h3>Newsapp</h3>
           <div className='a3'>
             <div className='im2'></div>
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
-          <h3 style={{ height: '20%' }}>TextPlay</h3>
+          <h3>TextPlay</h3>
           <div className='a3'>
             <div className='im2'></div>
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
-          <h3 style={{ height: '20%' }}>Praukcy</h3>
+          <h3>Praukcy</h3>
           <div className='a3'>
             <div className='im2'></div>
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
-          <h3 style={{ height: '20%' }}>BLVESS</h3>
+          <h3>BLVESS</h3>
+          <div className='a3'>
+            <div className='im2'></div>
+            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+          </div>
+        </div>
+        <div className='a2'>
+          <h3>I-Notebook</h3>
           <div className='a3'>
             <div className='im2'></div>
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
