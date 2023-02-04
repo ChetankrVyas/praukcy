@@ -4,9 +4,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: rgb(21, 20, 20);
-  color: white;
-  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -37,6 +34,7 @@ body {
 }
 
 .ulstyle {
+  color: #000;
   position: relative;
 }
 
@@ -58,11 +56,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: white;
 }
 
 * {
@@ -82,7 +75,16 @@ a:hover {
 
 /* Navbar */
 .navbar{
-  background-color: #080808;
+  background-color: #4d4949;
+}
+.navbar-brand{
+  width: 20%;
+}
+.navbar-brand img{
+  margin-left: 10px;
+  height: 40px;
+  width: auto;
+  transform: scale(1.8);
 }
 .nav-list {
   width: 80%;
@@ -108,7 +110,6 @@ a:hover {
   border-start-end-radius: 50% 17%; 
   border-end-end-radius: 10% 7%;
   border-end-start-radius: 10% 7%;
-  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
   border-start-start-radius: 50% 17%;
   overflow: hidden;
 }
@@ -126,13 +127,15 @@ a:hover {
 }
 
 .myfooter {
+  color: rgb(10, 10, 10);
   bottom: 0px;
   width: 100%;
   margin-top: 20px;
-  background-image: linear-gradient(to right, black 0%, rgb(22, 21, 21) 50%, black 100%);
   padding-top: 20px;
 }
-
+.myfooter a{
+  color: #000;
+}
 /* Services */
 .s-cards {
   display: flex;
@@ -192,13 +195,13 @@ a:hover {
 /* Portfolio */
 .portfolio {
   padding: 0 1%;
-  height: 440px;
+  height: 460px;
   text-align: center;
-  background-color: rgba(54, 53, 52, 0.503);
   align-items: center;
 }
 
 .portfolio .slick-slide {
+  padding: 1%;
   overflow: hidden;
 }
 
@@ -308,10 +311,83 @@ a:hover {
 .slick-dots li button:before {
   color: rgb(7, 120, 50) !important;
 }
-
+.about{
+  width: 80%;
+  margin: auto;
+}
+.about img{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.about hr{
+  border: 2px solid black;
+  margin: 10px auto;
+  width: 80%;
+}
+/* contact */
+.contact{
+  width: 80%;
+  margin: auto;
+}
+.c3{
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+/* customer review */
+.customer-row1 img{
+  height: 500px;
+  width: auto;
+}
+.customer h1{
+  text-align: center;
+}
+.customer-row1{
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+.customersdeck{
+  width: 90%;
+  margin: auto;
+}
+.customer-row2{
+  width: 60%;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+.customer-row2 img{
+  height: 300px;
+  width: auto;
+}
+/* portfolio2 */
+.portfolio2{
+  background-image: url('../assets/sd.png');
+  background-size: cover;
+  height: 400px;
+}
+.portfolio2-1 h1{
+margin: auto;
+text-align: center;
+}
+.linkImg{
+  height: 200px;
+  width: 200px;
+}
+.portfolio-box{
+  display: flex;
+  padding: 10px;
+}
+.portfolio-item{
+  margin: 10px;
+}
+.portfolio-item img{
+  height: 100px;
+  width: auto;
+}
 /* workinfo */
 .workinfo {
-  /* background-color: #222222; */
   padding: 3rem;
   display: flex;
   flex-shrink: none;
@@ -324,7 +400,7 @@ a:hover {
 .workCard {
   position: relative;
   margin: 1rem;
-  background-color: #282828;
+  background-color: #3c7d50;
   width: 15rem;
   height: 10rem;
   border-radius: 0.8rem;

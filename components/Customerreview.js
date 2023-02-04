@@ -52,7 +52,7 @@ const Card = ({ img,text,name,post }) => {
       }}
     >
       <Image
-        src={img}
+        src={img} alt=''
         style={{
           width: 120,
           height: 120,

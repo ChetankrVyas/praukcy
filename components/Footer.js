@@ -17,13 +17,13 @@ const Footer = () => {
   return (
     <div>
       <footer
-        className="text-center text-lg-start text-white myfooter"
+        className="text-center text-lg-start text-black myfooter"
       >
         <div className="container p-4 pb-0">
           <section className="">
             <Row>
               < Col >
-               <Image src={logo} height={100} />
+               <Image src={logo} height={100} alt=''/>
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col>
@@ -33,32 +33,32 @@ const Footer = () => {
                   </h6>
                   <Col>
                     <p>
-                      <a href="#" className="text-white ulstyle">Home</a>
+                      <Link href="#" className="ulstyle">Home</Link>
                     </p>
                     <p>
-                      <Link href="/services" className="text-white ulstyle">Services</Link>
+                      <Link href="/services" className="ulstyle">Services</Link>
                     </p>
                     <p>
-                      <a href="/customerreview" className="text-white ulstyle">Customer Review</a>
+                      <Link href="/customerreview" className="ulstyle">Customer Review</Link>
                     </p>
                     <p>
-                      <a href="/customer" className="text-white ulstyle">Customers</a>
+                      <Link href="/customer" className="ulstyle">Customers</Link>
                     </p>
                   </Col>
 
                   <hr className="w-100 clearfix d-md-none" />
                   <Col>
                     <p>
-                      <a href="/portfolio" className="text-white ulstyle">Portfolio</a>
+                      <Link href="/portfolio" className="ulstyle">Portfolio</Link>
                     </p>
                     <p>
-                      <a href="/team" className="text-white ulstyle">Team</a>
+                      <Link href="/team" className="ulstyle">Team</Link>
                     </p>
                     <p>
-                      <a href="/about" className="text-white ulstyle">About</a>
+                      <Link href="/about" className="ulstyle">About</Link>
                     </p>
                     <p>
-                      <a href="/help" className="text-white ulstyle">Help</a>
+                      <Link href="/help" className="ulstyle">Help</Link>
                     </p>
                   </Col>
                 </Row>

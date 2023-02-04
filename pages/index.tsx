@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Portfolio from "../components/Portfolio"
 import Services from "../components/Services"
-import Workinfo from "../components/Workinfo"
 import Customer from "../components/Customers"
 import CustomerReview from '../components/Customerreview'
 export default function Home() {
@@ -18,9 +17,7 @@ export default function Home() {
       </div>
       <Header />
       <Services />
-      <Workinfo/>
-      <Portfolio />
-      {/* <Customer /> */}
+      <Portfolio/>
       <CustomerReview />
       <Footer />
     </>

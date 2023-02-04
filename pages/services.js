@@ -10,6 +10,9 @@ const services = () => {
         <title>About</title>
       </Head>
       <Navbar />
+      <div>
+        
+      </div>
       <Footer />
     </>
   )
