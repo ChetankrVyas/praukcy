@@ -26,7 +26,7 @@ const Services = () => {
       </Head>
       <Navbar />
       <div className='services2'>
-        <Image src={We} />
+        <Image src={We} alt=''/>
         <div className='overser'>
           <button className='overser-btn' onClick={HandleServices}>Services</button>
           <button className='overser-btn' onClick={HandleOverview}>Overview</button>

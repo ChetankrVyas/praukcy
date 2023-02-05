@@ -32,7 +32,7 @@ const contact = () => {
           <h2>Send Message</h2>
           <Row>
             <Col>
-              <Image />
+              <Image alt='' />
             </Col>
             <Col>
               <Form.Control type="text" placeholder="name" />

@@ -18,7 +18,7 @@ const customer = () => {
       <Navbar />
       <div className='customer'>
         <Row className='customer-row1'>
-          <Col><Image src={Cha} /></Col>
+          <Col><Image src={Cha} alt=''/></Col>
           <Col></Col>
         </Row>
         <h1>Our Customers</h1>
@@ -30,7 +30,7 @@ const customer = () => {
         </div>
         <div>
           <Row className='customer-row2'>
-            <Col><Image src={Cha} /></Col>
+            <Col><Image src={Cha} alt=''/></Col>
             <Col></Col>
           </Row>
         </div>
