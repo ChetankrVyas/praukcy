@@ -34,7 +34,6 @@ const Portfolio = () => {
         <h3>Wxpress Js</h3>
         <h3>Firebase</h3>
       </div>
-      
       <div>
         <button onClick={() => filterItem('webdevelopment')}>Websites</button>
         <button onClick={() => filterItem('appdevelopment')}>Android Apps</button>
@@ -43,14 +42,14 @@ const Portfolio = () => {
         <button onClick={() => filterItem('chatbot')}>Chatbots</button>
         <button onClick={() => filterItem('blockchain')}>Blockchain</button>
       </div>
-      <div className='portfolio-box' id='#portfolio'>
+      <div className='portfolio-box'>
         {
           item.map((elem) => {
-            const { id, name, category, linkImg,key } = elem;
+            const { id, name, category, linkImg, key } = elem;
             return (
               <div className='portfolio-item' key={key}>
                 <h3>{name}</h3>
-                <Image src={linkImg} alt={name} className='linkImg img-fluid' />
+                <Image src={linkImg} alt={name} className='link-Img img-fluid' />
               </div>
             )
           })

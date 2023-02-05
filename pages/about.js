@@ -47,6 +47,7 @@ const about = () => {
           <div>Chetan Vyas</div>
           <div>Mithilesh Kukapalli</div>
           <div>Aashish Gupta</div>
+          <div>Tanmay Yadav</div>
         </div>
         <Row>
           <Col>Join Our Team</Col>

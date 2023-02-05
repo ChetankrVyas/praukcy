@@ -21,7 +21,7 @@ function Nav_bar() {
                             <Dropdown.Menu>
                                 <Dropdown.Item href="/action-1">Web Development</Dropdown.Item>
                                 <Dropdown.Item href="/action-1">Android Development</Dropdown.Item>
-                                <Dropdown.Item href="/portfolio/#portfolio">Software Development</Dropdown.Item>
+                                <Dropdown.Item href="/">Software Development</Dropdown.Item>
                                 <Dropdown.Item href="/action-1">Chat-Bots</Dropdown.Item>
                                 <Dropdown.Item href="/action-2">SEO</Dropdown.Item>
                                 <Dropdown.Item href="/action-3">Blockchain</Dropdown.Item>

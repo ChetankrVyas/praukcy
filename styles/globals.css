@@ -371,7 +371,7 @@ a {
 margin: auto;
 text-align: center;
 }
-.linkImg{
+.link-Img{
   height: 200px;
   width: 200px;
 }
@@ -382,9 +382,27 @@ text-align: center;
 .portfolio-item{
   margin: 10px;
 }
-.portfolio-item img{
-  height: 100px;
-  width: auto;
+/* services2 */
+.services2 img{
+width: auto;
+height: 250px;
+}
+.service-item{
+  padding: 2%;
+  border: 2px solid black;
+  height: 300px;
+  display: flex;
+  margin: 2%;
+}
+.service-item1{
+  width: 20%;  
+  border: 2px solid black;
+
+}
+.overser{
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 /* workinfo */
 .workinfo {
