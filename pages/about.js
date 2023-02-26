@@ -16,7 +16,7 @@ const about = () => {
       <Navbar />
       <div className='about'>
         <Row>
-          <Col>We Provide Technical Services to Startups</Col>
+          <Col><p>We Provide Technical Services to Startups</p></Col>
           <Col>ast Refresh had to perform a full reload. Read more:
             https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
             Error: Aborted because ./pages/about.js is not accepted
@@ -26,7 +26,7 @@ const about = () => {
         <Image src={img} alt='' />
         <hr />
         <Row>
-          <Col>How we do things and what technolody we use</Col>
+          <Col><p>How we do things and what technolody we use</p></Col>
           <Col>ast Refresh had to perform a full reload. Read more:
             https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
             Error: Aborted because ./pages/about.js is not accepted
@@ -34,7 +34,7 @@ const about = () => {
             absolutePagePath=D%3A%5Ccoding%5Creactjs%5Cpraukcy%5Cpages%5Cabout.js&page=%2Fabout!</Col>
         </Row>
         <Row>
-          <Col>How we do things and what technolody we use</Col>
+          <Col><p>How we do things and what technolody we use</p></Col>
           <Col>ast Refresh had to perform a full reload. Read more:
             https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
             Error: Aborted because ./pages/about.js is not accepted
@@ -42,12 +42,14 @@ const about = () => {
             absolutePagePath=D%3A%5Ccoding%5Creactjs%5Cpraukcy%5Cpages%5Cabout.js&page=%2Fabout!</Col>
         </Row>
         <Workinfo />
-        <div>
+        <div className='team'>
           <h1>Meet Our Amazing Team</h1>
-          <div>Chetan Vyas</div>
-          <div>Mithilesh Kukapalli</div>
-          <div>Aashish Gupta</div>
-          <div>Tanmay Yadav</div>
+          <div className='team-box'>
+            <div className='team-member'>Chetan Vyas</div>
+            <div className='team-member'>Mithilesh Kukapalli</div>
+            <div className='team-member'>Aashish Gupta</div>
+            {/* <div className='team-member'>Tanmay Yadav</div> */}
+          </div>
         </div>
         <Row>
           <Col>Join Our Team</Col>

@@ -311,6 +311,17 @@ a {
 .slick-dots li button:before {
   color: rgb(7, 120, 50) !important;
 }
+/* about */
+.about p{
+  font-size: 30px;
+}
+.team-box{
+  display: flex;
+  margin: auto;
+}
+.team-member{
+width: 30%;
+}
 .about{
   width: 80%;
   margin: auto;
