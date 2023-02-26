@@ -2,7 +2,7 @@ const dataDigitalBestSeller = [
    {
       id: 1,
       name: 'BLVESS',
-      linkImg: '',
+      linkImg: '/../assets/webs.jpg',
       category: 'webdevelopment',
       key: 'blvess'
    },

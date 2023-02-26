@@ -15,39 +15,62 @@ const about = () => {
       </Head>
       <Navbar />
       <div className='about'>
-        <Row>
-          <Col><p>We Provide Technical Services to Startups</p></Col>
-          <Col>ast Refresh had to perform a full reload. Read more:
-            https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
-            Error: Aborted because ./pages/about.js is not accepted
-            Update propagation: ./pages/about.js /node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?
-            absolutePagePath=D%3A%5Ccoding%5Creactjs%5Cpraukcy%5Cpages%5Cabout.js&page=%2Fabout!</Col>
+        <Row className='abouthead'>
+          <Col sm={5} className='abouthead1'><h1>Praukcy provides technical services to startups and existing businesses</h1></Col>
+          <Col sm={7}>
+          <span className='paragraph'>
+            ast Refresh had to perform a fu ll reload. Read more:
+            https:// nextjs.or g/docs/basic- featur es/fast-refre sh#ho w-it -works
+            Error: Aborted be cause ./ pages/about.js is no  accepted
+            Update  pr opagation: ./pages/about.js /node_modules/n ext/ dist/bu ild/ webpac /loader s/nex  t-clien -pages -loa  der.js?
+            absolu tePage Path=D% 3 A%5C coding 5Cre actjs%  p raukcy% 5Cp ges%5 a bo t.js& page=% 2Fabout!
+          </span> 
+          </Col>
         </Row>
-        <Image src={img} alt='' />
+      <div className='content'>
+
+      </div>
         <hr />
-        <Row>
-          <Col><p>How we do things and what technolody we use</p></Col>
-          <Col>ast Refresh had to perform a full reload. Read more:
-            https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
-            Error: Aborted because ./pages/about.js is not accepted
-            Update propagation: ./pages/about.js /node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?
-            absolutePagePath=D%3A%5Ccoding%5Creactjs%5Cpraukcy%5Cpages%5Cabout.js&page=%2Fabout!</Col>
+        <Row className='abouthead'>
+          <Col sm={5} className='abouthead1'><h1>How we do things and what technolody we use</h1></Col>
+          <Col sm = {7}>
+          <span className='paragraph'>
+            ast Refresh had to perform a fu ll reload. Read more:
+            https:// nextjs.or g/docs/basic- featur es/fast-refre sh#ho w-it -works
+            Error: Aborted be cause ./ pages/about.js is no  accepted
+            Update  pr opagation: ./pages/about.js /node_modules/n ext/ dist/bu ild/ webpac /loader s/nex  t-clien -pages -loa  der.js?
+            absolu tePage Path=D% 3 A%5C coding 5Cre actjs%  p raukcy% 5Cp ges%5 a bo t.js& page=% 2Fabout!
+          </span> 
+          </Col>
         </Row>
-        <Row>
-          <Col><p>How we do things and what technolody we use</p></Col>
-          <Col>ast Refresh had to perform a full reload. Read more:
-            https://nextjs.org/docs/basic-features/fast-refresh#how-it-works
-            Error: Aborted because ./pages/about.js is not accepted
-            Update propagation: ./pages/about.js /node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?
-            absolutePagePath=D%3A%5Ccoding%5Creactjs%5Cpraukcy%5Cpages%5Cabout.js&page=%2Fabout!</Col>
+        <Row className='abouthead'>
+          <Col sm={5} className='abouthead1'><h1>How we do things and what technolody we use</h1></Col>
+          <Col sm={7}>
+          <span className='paragraph'>
+            ast Refresh had to perform a fu ll reload. Read more:
+            https:// nextjs.or g/docs/basic- featur es/fast-refre sh#ho w-it -works
+            Error: Aborted be cause ./ pages/about.js is no  accepted
+            Update  pr opagation: ./pages/about.js /node_modules/n ext/ dist/bu ild/ webpac /loader s/nex  t-clien -pages -loa  der.js?
+            absolu tePage Path=D% 3 A%5C coding 5Cre actjs%  p raukcy% 5Cp ges%5 a bo t.js& page=% 2Fabout!
+          </span> 
+          </Col>
         </Row>
         <Workinfo />
         <div className='team'>
           <h1>Meet Our Amazing Team</h1>
           <div className='team-box'>
-            <div className='team-member'>Chetan Vyas</div>
-            <div className='team-member'>Mithilesh Kukapalli</div>
-            <div className='team-member'>Aashish Gupta</div>
+            <div className='team-member'>
+              <name>Chetan Vyas</name>
+              
+            </div>
+            <div className='team-member'>
+              <name>Mithilesh Kukapalli</name>
+              
+            </div>
+            <div className='team-member'>
+              <name>Aashish Gupta</name>
+              
+            </div>
             {/* <div className='team-member'>Tanmay Yadav</div> */}
           </div>
         </div>

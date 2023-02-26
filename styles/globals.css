@@ -74,18 +74,21 @@ a {
 }
 
 /* Navbar */
-.navbar{
+.navbar {
   background-color: #4d4949;
 }
-.navbar-brand{
+
+.navbar-brand {
   width: 20%;
 }
-.navbar-brand img{
+
+.navbar-brand img {
   margin-left: 10px;
   height: 40px;
   width: auto;
   transform: scale(1.8);
 }
+
 .nav-list {
   width: 80%;
   margin-left: 30px;
@@ -107,13 +110,24 @@ a {
   margin-top: -10%;
   height: auto;
   width: 100%;
-  border-start-end-radius: 50% 17%; 
+  border-start-end-radius: 50% 17%;
   border-end-end-radius: 10% 7%;
   border-end-start-radius: 10% 7%;
   border-start-start-radius: 50% 17%;
   overflow: hidden;
 }
 
+@media screen and (max-width: 900px) {
+  .ribbon {
+    border-start-end-radius: 50% 2%;
+    border-start-start-radius: 50% 2%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ribbon {
+   margin-top: 0;
+  }
+}
 /* Footer */
 .social-icons {
   font-size: 33px;
@@ -133,9 +147,11 @@ a {
   margin-top: 20px;
   padding-top: 20px;
 }
-.myfooter a{
+
+.myfooter a {
   color: #000;
 }
+
 /* Services */
 .s-cards {
   display: flex;
@@ -169,12 +185,14 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.cbtn{
+
+.cbtn {
   float: right;
-  background:rgb(18, 161, 104);
+  background: rgb(18, 161, 104);
   border-radius: 2px;
-  border:none;
+  border: none;
 }
+
 .dot {
   margin-top: 6px;
   width: 20px;
@@ -211,7 +229,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.a2{
+
+.a2 {
   border: 2px solid white;
   position: relative;
   width: 250px;
@@ -219,28 +238,33 @@ a {
   margin: auto;
   overflow: hidden;
 }
-.im2{
+
+.im2 {
   background-image: url('../assets//web.jpg');
-  background-size:cover ;
+  background-size: cover;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
   max-height: fit-content;
   height: 100%;
 }
-.a2 h3{
+
+.a2 h3 {
   margin: 0;
   height: 15%;
 }
-.a3{
+
+.a3 {
   position: relative;
   overflow: hidden;
   display: block;
   height: 85%;
 }
-.a3:hover .overlay{
-  height: 25% ;
+
+.a3:hover .overlay {
+  height: 25%;
 }
+
 .a3 .overlay {
   position: absolute;
   display: block;
@@ -250,7 +274,7 @@ a {
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, rgb(18, 161, 104), rgb(29, 28, 28));
-  transition: 0.5s  ease;
+  transition: 0.5s ease;
 }
 
 .pagelink {
@@ -311,110 +335,128 @@ a {
 .slick-dots li button:before {
   color: rgb(7, 120, 50) !important;
 }
+
 /* about */
-.about p{
-  font-size: 30px;
+.about h1 {
+  font-size: 40px;
+  word-spacing: 20px;
 }
-.team-box{
+.abouthead{
+  position: relative;
+  margin: 10% 5%;
+}
+.about .paragraph{
+  font-size: 17px;
+}
+.content{
+  height: 400px;
+  margin: auto;
+  width: 92%;
+  background-color: #128587;
+}
+.abouthead .paragraph{
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+}
+.team-box {
   display: flex;
   margin: auto;
 }
-.team-member{
-width: 30%;
+.team-box text{
+  text-align: center;
 }
-.about{
+.team-member {
+  width: 30%;
+}
+
+.about {
   width: 80%;
   margin: auto;
 }
-.about img{
+
+.about img {
   width: 100%;
   height: 300px;
   margin: auto;
 }
-.about hr{
+
+.about hr {
   border: 2px solid black;
   margin: 10px auto;
   width: 80%;
 }
+
 /* contact */
-.contact{
+.contact {
   width: 80%;
   margin: auto;
 }
-.c3{
+
+.c3 {
   height: 200px;
   border: 2px solid black;
   border-radius: 30px;
 }
+
 /* customer review */
-.customer-row1 img{
+.customer-row1 img {
   height: 500px;
   width: auto;
 }
-.customer h1{
+
+.customer h1 {
   text-align: center;
 }
-.customer-row1{
+
+.customer-row1 {
   width: 80%;
   margin: 10px auto;
   border: 2px solid black;
 }
-.customersdeck{
+
+.customersdeck {
   width: 90%;
   margin: auto;
 }
-.customer-row2{
+
+.customer-row2 {
   width: 60%;
   margin: 10px auto;
   border: 2px solid black;
 }
-.customer-row2 img{
+
+.customer-row2 img {
   height: 300px;
   width: auto;
 }
+
 /* portfolio2 */
-.portfolio2{
+.portfolio2 {
   background-image: url('../assets/sd.png');
   background-size: cover;
   height: 400px;
 }
-.portfolio2-1 h1{
-margin: auto;
-text-align: center;
+
+.portfolio2-1 h1 {
+  margin: auto;
+  text-align: center;
 }
-.link-Img{
+
+.link-Img {
   height: 200px;
   width: 200px;
 }
-.portfolio-box{
+
+.portfolio-box {
   display: flex;
   padding: 10px;
 }
-.portfolio-item{
+
+.portfolio-item {
   margin: 10px;
 }
-/* services2 */
-.services2 img{
-width: auto;
-height: 250px;
-}
-.service-item{
-  padding: 2%;
-  border: 2px solid black;
-  height: 300px;
-  display: flex;
-  margin: 2%;
-}
-.service-item1{
-  width: 20%;  
-  border: 2px solid black;
 
-}
-.overser{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 /* workinfo */
 .workinfo {
   padding: 3rem;

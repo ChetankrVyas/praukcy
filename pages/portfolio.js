@@ -14,10 +14,13 @@ const Portfolio = () => {
     })
     setItem(updateItems)
   }
+  const allItem = ()=>{
+    setItem(Menu)
+  }
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>Portfolio</title>
       </Head>
       <Navbar />
       <div className='portfolio2'>
@@ -35,13 +38,17 @@ const Portfolio = () => {
         <h3>Firebase</h3>
       </div>
       <div>
+        <button onClick={() =>allItem()}>All</button>
         <button onClick={() => filterItem('webdevelopment')}>Websites</button>
         <button onClick={() => filterItem('appdevelopment')}>Android Apps</button>
         <button onClick={() => filterItem('softwaredevelopment')}>Softwares</button>
         <button onClick={() => filterItem('seo')}>SEO Designs</button>
         <button onClick={() => filterItem('chatbot')}>Chatbots</button>
         <button onClick={() => filterItem('blockchain')}>Blockchain</button>
+        <button onClick={() => filterItem('Logo')}>Logo</button>
+        <button onClick={() => filterItem('videos-edited')}>Videos Edited</button>
       </div>
+
       <div className='portfolio-box'>
         {
           item.map((elem) => {
@@ -49,20 +56,16 @@ const Portfolio = () => {
             return (
               <div className='portfolio-item' key={key}>
                 <h3>{name}</h3>
-                <Image src={linkImg} alt={name} className='link-Img img-fluid' />
+                <Image src={linkImg} alt={name} height={300} width={300} className='link-Img img-fluid' />
               </div>
             )
           })
         }
       </div>
       <div>
-        <h3>Number Of projects done in a field</h3>
-        App development
-        Web development
-        Blockchain
-        Chatbots
-        Seo Designs
-        Software Development
+        <button onClick={() => filterItem('2022')}>2022</button>
+      </div>
+      <div>
       </div>
       <Footer />
     </>

@@ -7,7 +7,8 @@ router.post('/',[
     body('title', 'Enter a valid title').isLength({ min: 3 }),],
     async (req, res) =>{
        try {
-            const { name,title, description, tag } = req.body;
+            const { name,title, description, tag
+             } = req.body;
 
             // If there are errors, return Bad request and the errors
             const errors = validationResult(req);
