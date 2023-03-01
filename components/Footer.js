@@ -36,29 +36,29 @@ const Footer = () => {
                       <Link href="#" className="ulstyle">Home</Link>
                     </p>
                     <p>
-                      <Link href="/services" className="ulstyle">Services</Link>
+                      <Link href="/page/services" className="ulstyle">Services</Link>
                     </p>
                     <p>
-                      <Link href="/customerreview" className="ulstyle">Customer Review</Link>
+                      <Link href="/page/customerreview" className="ulstyle">Customer Review</Link>
                     </p>
                     <p>
-                      <Link href="/customer" className="ulstyle">Customers</Link>
+                      <Link href="/page/customer" className="ulstyle">Customers</Link>
                     </p>
                   </Col>
 
                   <hr className="w-100 clearfix d-md-none" />
                   <Col>
                     <p>
-                      <Link href="/portfolio" className="ulstyle">Portfolio</Link>
+                      <Link href="/page/portfolio" className="ulstyle">Portfolio</Link>
                     </p>
                     <p>
-                      <Link href="/team" className="ulstyle">Team</Link>
+                      <Link href="/page/team" className="ulstyle">Team</Link>
                     </p>
                     <p>
-                      <Link href="/about" className="ulstyle">About</Link>
+                      <Link href="/page/about" className="ulstyle">About</Link>
                     </p>
                     <p>
-                      <Link href="/help" className="ulstyle">Help</Link>
+                      <Link href="/page/help" className="ulstyle">Help</Link>
                     </p>
                   </Col>
                 </Row>

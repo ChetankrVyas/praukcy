@@ -456,6 +456,16 @@ a {
 .portfolio-item {
   margin: 10px;
 }
+.filter{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  justify-content: space-evenly;
+}
+.porbtn{
+  width: 10%;
+}
 
 /* workinfo */
 .workinfo {

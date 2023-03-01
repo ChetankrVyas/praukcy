@@ -1,29 +1,38 @@
-const express = require('express');
+const express = require('express')
 const router = express.Router();
-const Form = require('../models/Form');
+
+const Form = require('../models/Form')
+
 const { body, validationResult } = require('express-validator');
-// Form Fill
-router.post('/',[
-    body('title', 'Enter a valid title').isLength({ min: 3 }),],
-    async (req, res) =>{
-       try {
-            const { name,title, description, tag
-             } = req.body;
 
-            // If there are errors, return Bad request and the errors
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
-            const note = new Note({
-                title, description, tag, user: req.user.id
-            })
-            const savedNote = await note.save()
+// get all form 
+router.get('/fetchallforms', async (req, res) => {
+    try {
+        const forms = await Form.find();
+        res.json(forms)
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Internal Server Error");
+    }
+})
 
-            res.json(savedNote)
-
-        } catch (error) {
-            console.error(error.message);
-            res.status(500).send("Internal Server Error");
+// add form 
+router.post('/addform', async (req, res) => {
+    try {
+        const { name, email, subject, message } = req.body
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
         }
-    })
+        const form = new Form({
+            name, email, subject, message
+        })
+        const savedForm = await form.save();
+        res.json(savedForm);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Internal Server Error");
+    }
+})
+
+module.exports = router;

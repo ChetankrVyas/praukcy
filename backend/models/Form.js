@@ -4,24 +4,23 @@ const { Schema } = mongoose;
 const FormSchema = new Schema({
     name:{
         type: String,
-        required: true
+        required: true,
     },
-    title:{
+    email:{
         type: String,
         required: true,
     },
-    description:{
+    subject:{
         type: String,
         required: true,
-        unique: true
     },
-    tag: {
+    message: {
         type: String,
-        default: 'General'
+        required:true,
     },
     date: {
         type: Date,
         default: Date.now
     }
 })
-module.exports = mongoose.model('form', FormSchema)
+module.exports = mongoose.model('forms', FormSchema)

@@ -28,6 +28,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.76",
+    "react-router-dom": "^6.8.1",
     "react-slick": "^0.29.0",
     "sass": "^1.56.2",
     "scss": "^0.2.4",
