@@ -26,8 +26,8 @@ const Services = () => {
             <Crds title=' &nbsp;Software Development' imag={SD} ime={Sof} text='' />
             <Crds title='Android Development' imag={AD} ime={An} text='' />
             <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
-            <Crds title='SEO' imag={SEO} ime={Sea} text="" />
-            <Crds title='Blockchain' imag={BN} ime={Blo} text='' />
+            <Crds title='Logo Design' imag={SEO} ime={Sea} text="" />
+            <Crds title='Graphics Design' imag={BN} ime={Blo} text=''  />
           </div>
         </section>
       </div>

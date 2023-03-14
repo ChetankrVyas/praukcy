@@ -55,7 +55,7 @@ const Header = () => {
                           they penetrate even the darkness that veils our eyes.
                         </p>
                         <button className={styles.button1}>
-                          <Link href='/services'> Explore Services </Link>
+                          <Link href='/page/services'> Explore Services </Link>
                         </button>
                         {/* </div> */}
                       </main>

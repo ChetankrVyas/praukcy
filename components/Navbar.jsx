@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Button, Dropdown } from 'react-bootstrap';
 import logo from '../assets/logo.png'
 import Image from 'next/image';
 
@@ -20,7 +19,7 @@ function Nav_bar() {
                         <Nav.Link href="/page/contact"><span className='nav-item ulstyle'>Contact Us</span></Nav.Link>
                         <Nav.Link href="/page/about"><span className='nav-item ulstyle'>About</span></Nav.Link>
                     </Nav>
-                        <Button href='/page/form' target='_blank' className='cbtn'>Credential</Button>
+                       
                 </Navbar.Collapse>
             </Container>
         </Navbar>

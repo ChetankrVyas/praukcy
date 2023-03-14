@@ -25,17 +25,15 @@ const Services = () => {
 const Service = () => {
   return (
     <div id='servicesCm'>
-      <h1>
-        Services
-      </h1>
-      <Card1 title="Website Design and Development"cls={style.icls1}/>
-      <Card2 title2="Android" cls2={style.icls2}/>
-      <Card1 title="Search Engine Optimization" cls={style.icls3}/>
-      <Card2 title2="Video and Photo Editing" cls2={style.icls4}/>
-      <Card1 title="Chatbots" cls={style.icls5}/>  
-      <Card2 title2="3D Modelling" cls2={style.icls6}/>
-      <Card1 title="Graphics Designing" cls={style.icls7}/>  
-      <Card2 title2="Web and Content Scraping" cls2={style.icls8}/>
+
+      <Card1 title="Website Design and Development" cls={style.icls1} />
+      <Card2 title2="Android" cls2={style.icls2} />
+      <Card1 title="Logo Design" cls={style.icls3} />
+      <Card2 title2="Video and Photo Editing" cls2={style.icls4} />
+      <Card1 title="Chatbots" cls={style.icls5} />
+      <Card2 title2="3D Modelling and Graphics Design" cls2={style.icls6} />
+      <Card1 title="NEFT and Blockchain Services" cls={style.icls7} />
+      <Card2 title2="Web and Content Scraping" cls2={style.icls8} />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
-import Menu from '../../components/data'
+import Menu from '../../components/data';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -48,7 +48,6 @@ const Portfolio = () => {
         <button className='porbtn' onClick={() => filterItem('Logo')}>Logo</button>
         <button className='porbtn' onClick={() => filterItem('videos-edited')}>Videos Edited</button>
       </div>
-
       <div className='portfolio-box'>
         {
           item.map((elem) => {

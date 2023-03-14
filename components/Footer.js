@@ -1,5 +1,7 @@
-import { Row, Col } from "react-bootstrap";
+import { React, useState } from 'react';
+import { Row, Col, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
+import Form2 from '../components/AddForm2'
 import logo from '../assets/logo.png'
 import {
   FaInstagram,
@@ -12,7 +14,8 @@ import {
 } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
-const Footer = () => {
+const Footer = (props) => {
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <div>
@@ -23,29 +26,30 @@ const Footer = () => {
           <section className="">
             <Row>
               < Col >
-               <Image src={logo} height={100} alt=''/>
+                <Image src={logo} height={100} alt='' />
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col>
                 <Row>
-                  <h6 className="text-uppercase mb-4 font-weight-bold">
-                    Important Links
+                  <h6 className="text-uppercase mb-4 font-weight-bold ">
+                    <span className="underline">Important Links</span>
+                    <div className="hr"></div>
                   </h6>
                   <Col>
                     <p>
-                      <Link href="#" className="ulstyle">Home</Link>
+                      <Link href="/" className="ulstyle">Home</Link>
                     </p>
                     <p>
                       <Link href="/page/services" className="ulstyle">Services</Link>
                     </p>
                     <p>
-                      <Link href="/page/customerreview" className="ulstyle">Customer Review</Link>
+                      <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1} />
+                      <button onClick={() => setModalShow(true)} className="ulstyle">Message</button>
                     </p>
                     <p>
                       <Link href="/page/customer" className="ulstyle">Customers</Link>
                     </p>
                   </Col>
-
                   <hr className="w-100 clearfix d-md-none" />
                   <Col>
                     <p>
@@ -58,17 +62,17 @@ const Footer = () => {
                       <Link href="/page/about" className="ulstyle">About</Link>
                     </p>
                     <p>
-                      <Link href="/page/help" className="ulstyle">Help</Link>
+                      <Link href="/page/customer" className="ulstyle">Help</Link>
                     </p>
                   </Col>
                 </Row>
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col className="footer-items">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
-                <address style={{lineHeight:'2.2'}}>
-                  Contact at: <a href="tel:8209181991">+91-8209181991<br/></a>
-                  Mail On: <a href="mailto:info@praukcy.com">praukcy@gmail.com</a><br/>
+                <h6 className="text-uppercase mb-4 font-weight-bold"><span className="underline">Contact Us</span></h6>
+                <address style={{ lineHeight: '2.2' }}>
+                  Contact at: <a href="tel:8209181991">+91-8209181991<br /></a>
+                  Mail On: <a href="mailto:info@praukcy.com">praukcy@gmail.com</a><br />
                   Head Office: Room No.- 242,<br />Dhanrajgiri Hostel, IIT Varanasi (BHU)
                 </address>
               </Col>
@@ -103,5 +107,15 @@ const Footer = () => {
     </div>
   );
 };
+const Popup = (props) => {
+  return (
+    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+      <div className='popup'>
+        <Form2/>
+        <Button variant='transparent' onClick={props.onHide}>Close</Button>
+      </div>
+    </Modal>
+  );
+}
 
 export default Footer;

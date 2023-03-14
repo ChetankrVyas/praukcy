@@ -14,4 +14,5 @@ const dataDigitalBestSeller = [
       key: 'blvess'
    }
 ];
+
 export default dataDigitalBestSeller;
