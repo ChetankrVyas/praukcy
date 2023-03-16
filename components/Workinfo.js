@@ -28,7 +28,7 @@ const Workinfo = () => {
           }}
         >
           <div className="firstchild">
-            <i class="bi bi-clock"></i>
+            <i className="bi bi-clock"></i>
           </div>
           <div className="secondchild">
             {ct && <AnimatedNumber value="50" formatValue={formatValue} />}+
@@ -45,7 +45,7 @@ const Workinfo = () => {
           className="workCard"
         >
           <div className="firstchild">
-            <i class="bi bi-person"></i>
+            <i className="bi bi-person"></i>
           </div>
           <div className="secondchild">
             {ct && <AnimatedNumber value="5" formatValue={formatValue} />}
@@ -79,7 +79,7 @@ const Workinfo = () => {
           className="workCard"
         >
           <div className="firstchild">
-            <i class="bi bi-hdd-stack"></i>
+            <i className="bi bi-hdd-stack"></i>
           </div>
           <div className="secondchild">
             {ct && <AnimatedNumber value="5" formatValue={formatValue} />}

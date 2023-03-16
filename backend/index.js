@@ -1,6 +1,11 @@
-const connectToMongo = require('./db');
+// const connectToMongo = require('./db');
+const mongoose = require('mongoose');
+const mongoURI = "mongodb+srv://chetankrvyas:Chetan%402004@cluster0.4fri6ed.mongodb.net/praukcy"
+mongoose.connect(mongoURI,() => {
+  console.log("connected to mongo successfully");
+})
 const express = require('express')
-connectToMongo();
+// connectToMongo();
 var cors = require('cors')
 const bodyParser = require("body-parser");
 

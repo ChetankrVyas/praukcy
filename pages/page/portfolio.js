@@ -17,7 +17,7 @@ const Portfolio = () => {
   const allItem = () => {
     setItem(Menu)
   }
-  return (
+  return(
     <>
       <Head>
         <title>Portfolio</title>
@@ -28,7 +28,7 @@ const Portfolio = () => {
           <h1>Praukcy</h1>
         </div>
       </div>
-      <div>
+      <div> 
         < h1>Technologies What We Use</h1>
         <h3>HTML</h3>
         <h3>Javascript</h3>
@@ -62,7 +62,7 @@ const Portfolio = () => {
         }
       </div>
       <div>
-        <button onClick={() => filterItem('2022')}>2022</button>
+        <button onClick={() => filterItem('2023')}>2022</button>
       </div>
       <div>
       </div>

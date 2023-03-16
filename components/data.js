@@ -2,7 +2,7 @@ const dataDigitalBestSeller = [
    {
       id: 1,
       name: 'BLVESS',
-      linkImg: '/../assets/webs.jpg',
+      linkImg: '',
       category: 'webdevelopment',
       key: 'blvess'
    },
@@ -11,8 +11,8 @@ const dataDigitalBestSeller = [
       name: 'BLVESS',
       linkImg: '',
       category: 'webdevelopment',
-      key: 'blvess'
+      key: 'blvessw'
    }
-];
+]
 
 export default dataDigitalBestSeller;

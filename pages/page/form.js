@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react'
+import {React, useContext, useState } from 'react'
 import formContext from "../context/forms/FormContext";
 import style from '../../styles/form.module.scss'
 
-const form = () => {
+const Form = () => {
     const context = useContext(formContext);
 
     const [form, setForm] = useState({ name: '', email: '', pnumber: '', orgname: '', project: '', description: '', attachment: '' })
@@ -65,4 +65,4 @@ const form = () => {
     )
 }
 
-export default form
+export default Form
