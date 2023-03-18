@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
+import formContext from "./FormContext";
 import { Col, Row } from 'react-bootstrap';
-import formContext from "../pages/context/forms/FormContext";
 import { CiLocationOn } from "react-icons/ci";
 import { FaEnvelope } from 'react-icons/fa';
 import { IoCallOutline } from "react-icons/io5";

@@ -1,5 +1,5 @@
 import {React, useContext, useState } from 'react'
-import formContext from "../context/forms/FormContext";
+import formContext from "../../components/FormContext";
 import style from '../../styles/form.module.scss'
 
 const Form = () => {
