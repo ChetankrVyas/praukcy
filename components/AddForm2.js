@@ -1,9 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Col, Row } from 'react-bootstrap';
 import formContext from "./FormContext";
-import { CiLocationOn } from "react-icons/ci";
-import { FaEnvelope } from 'react-icons/fa';
-import { IoCallOutline } from "react-icons/io5";
 
 const AddForm = () => {
   const context = useContext(formContext);
@@ -23,7 +19,7 @@ const AddForm = () => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
   return (
-    <form className=''>
+    <form className='addform2'>
       <h2>Send Message</h2>
       <div className=''>
 

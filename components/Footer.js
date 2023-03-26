@@ -109,7 +109,7 @@ const Footer = (props) => {
 };
 const Popup = (props) => {
   return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" className='modal2'centered>
       <div className='popup'>
         <Form2/>
         <Button variant='transparent' onClick={props.onHide}>Close</Button>
