@@ -1,102 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 .services2 img {
     width: auto;
     height: 250px;
 }
+
 .serve {
 
     background-color: rgb(235, 117, 8);
 }
-
-.wevserig {
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.col1{
+    padding: 3% 6% 0% 6%;
+    margin: auto;
 }
-
-.icls1 {
-    background-image: url('../assets/services/web.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.imag {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
 }
-
-.icls2 {
-    background-image: url('../assets/services/android2.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.serviceItem img{
+    width: 100%;
+    height: auto;
 }
-
-.icls3 {
-    background-image: url('../assets/services/logo.png');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.icls4 {
-    background-image: url('../assets/services/edit.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.icls5 {
-    background-image: url('../assets/services/chat.png');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.icls6 {
-    background-image: url('../assets/services/3d.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.icls7 {
-    background-image: url('../assets/webs.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.icls8 {
-    background-image: url('../assets/services/gui.jpg');
-    overflow: hidden;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.wevserig2 {
-    overflow: hidden;
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
 .services2 h1 {
     text-align: center;
 }
-
+.services2 h2 {
+    text-align: center;
+    margin-bottom: -1%;
+}
 .serviceItem {
-    height: 380px;
     display: flex;
-    margin: 2% 9%;
+    margin: 1% 9%;
     border-radius: 20px;
 }
-.col{
+.col {
     text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 3% 5% 0% 5%;
+    margin: auto;
 }
-.servicefuture{
+
+.servicefuture {
     font-size: 20px;
     text-align: center;
     background-color: rgb(102 77 56);
@@ -104,4 +47,17 @@
     margin-bottom: -20px;
     color: wheat;
     margin: 2%;
+}
+
+.text1 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-decoration-style: solid;
+}
+.text2{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration-style: solid;
 }

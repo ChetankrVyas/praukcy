@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import style from '../../styles/service.module.scss';
 import React, { useState } from 'react'
+import web from '../../assets/services/web.jpg'
+import android from '../../assets/services/android2.jpg'
+import chat from '../../assets/services/chat.png'
+import edit from '../../assets/services/edit.jpg'
+import logo from '../../assets/services/logo.png'
+import gui from '../../assets/services/gui.jpg'
+import d3d from '../../assets/services/3d.jpg'
 import { Col, Row } from 'react-bootstrap';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
@@ -14,7 +21,9 @@ const Services = () => {
       </Head>
       <Navbar />
       <div className={style.services2}>
-        <div className={style.serve}></div>
+        <div className={style.serve}>
+          the
+        </div>
         <Service />
       </div>
       <Footer />
@@ -24,20 +33,18 @@ const Services = () => {
 const Service = () => {
   return (
     <div id='servicesCm'>
-      <Card1 title="Website Design and Development" cls={style.icls1} />
-      <Card1 title="Android" cls={style.icls2} />
-      <Card1 title="Logo Design and Graphics Design" cls={style.icls3} />
-      <Card1 title="Video and Photo Editing" cls={style.icls4} />
-      <Card1 title="Chatbots" cls={style.icls5} text='Welcome to PRAUKCY, a service-based startup that specializes in providing chatbot services to businesses of all sizes. Our innovative chatbot service is designed to help businesses automate their customer service, sales, and support processes, and improve overall customer engagement.
-
-Our team of experts has developed an advanced chatbot platform that is built with state-of-the-art technology and artificial intelligence. This platform is capable of providing businesses with customized chatbots that can be integrated seamlessly into their existing systems, allowing them to automate their customer interactions across multiple channels, including websites, social media, messaging apps, and more.
-
-Our chatbot service is designed to help businesses save time and resources by automating routine tasks such as answering frequently asked questions, providing customer support, and even processing sales transactions. This allows businesses to focus on more strategic tasks such as building relationships with their customers, improving their products and services, and growing their business.
-
-With our chatbot service, businesses can also improve their customer engagement by providing their customers with personalized and responsive interactions, 24/7. Our chatbots are trained to understand and respond to customer queries in a natural and human-like manner, ensuring that customers always receive accurate and relevant information.'/>
-      <Card1 title="3D Modelling" cls={style.icls6} />
-      {/* <Card1 title="NEFT and Blockchain Services" cls={style.icls7} /> */}
-      <Card1 title="GUI Design" cls={style.icls8} />
+      <Card1 title="Website Design and Development" imag={web} text1='Praukcy crafts engaging websites that drive business growth and success.' text2='Praukcy is the go-to destination for businesses looking to create stunning websites that are tailored to their brand and offer an exceptional user experience.'/>
+      <Card1 title="Android" imag={android} text1='Praukcy creates cutting-edge apps that meet their unique needs.' text2='We specializes in creating custom Android apps that are tailored to your unique business needs. From design to development and everything in between, Praukcy has the tools and knowledge to help your Android app succeed in todays competitive market.'/>
+      <Card1 title="Logo and Graphics Design" imag={logo} text1='Praukcy is the one-stop solution for all your logo and graphic design needs.' text2='Our team of skilled designers is dedicated to crafting unique and visually stunning designs that perfectly capture your brands essence. With Praukcy, you can be confident that your brand will stand out and make a lasting impression on your audience.'/>
+      <Card1 title="Video and Photo Editing" imag={edit} text1='Praukcy offers expert video and photo editing services.'
+      text2='With our splendid services, you can be assured of high-quality and professional editing that will take your content to the next level. Whether you are looking to enhance your social media presence, create captivating marketing materials, or simply preserve cherished memories, Praukcy has got you covered.'/>
+      <Card1 title="Chatbots" text1='Chatbots allows businesses to grow due to less time spend with consumers directly '
+      text2='Providing businesses with customized chatbots that can be integrated seamlessly into their existing systems, allowing them to automate their customer interactions across multiple channels, including websites, social media, messaging apps, and more.' imag={chat}/>
+      <Card1 title="3D Modelling" imag={d3d} text1='Quality 3D models are build by aur team'
+      text2='Our team of experienced designers and modelers are dedicated to delivering top-notch solutions that meet the needs of our clients. Whether you need a 3D model for product visualization, architectural rendering, or game development, our team has the skills and expertise to get the job done right.'/>
+      {/* <Card1 title="NEFT and Blockchain Services" imag={web} /> */}
+      <Card1 title="GUI Design" imag={gui} text1= 'Top-notch services for GUI development is provided.'
+      text2='We understand that creating a great graphical user interface is crucial to the success of any software application. Thats why we specialize in offering GUI development services that meet the highest industry standards.'/>
       <div className={style.servicefuture}>
         <Row>
           <Col sm={6}>
@@ -58,13 +65,16 @@ const Card1 = (props) => {
     <div>
       <Image />
       <h2>{props.title}</h2>
-      <Row className={style.serviceItem}>
-        <Col sm={5} className={props.cls}>
+      <Col className={style.serviceItem}>
+        <Col sm={6} className={style.col1}>
+          <Image src={props.imag}  className={style.imag}/>
         </Col>
-        <Col sm={7} className={style.col}>
-          {props.text}
+        <Col sm={6} className={style.col}>
+          <span className={style.text1}>{props.text1}</span>
+          <br/>
+          <div className={style.text2}>{props.text2}</div>
         </Col>
-      </Row>
+      </Col>
     </div>
   )
 }
