@@ -2,9 +2,8 @@
     width: auto;
     height: 250px;
 }
-
 .serve {
-    height: 500px;
+
     background-color: rgb(235, 117, 8);
 }
 
@@ -16,33 +15,65 @@
 }
 
 .icls1 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/web.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .icls2 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/android2.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .icls3 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/logo.png');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .icls4 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/edit.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .icls5 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/chat.png');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .icls6 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/3d.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .icls7 {
     background-image: url('../assets/webs.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .icls8 {
-    background-image: url('../assets/webs.jpg');
+    background-image: url('../assets/services/gui.jpg');
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .wevserig2 {
     overflow: hidden;
@@ -61,15 +92,16 @@
     margin: 2% 9%;
     border-radius: 20px;
 }
-
-.overview-item {
-    padding: 2%;
-    border: 2px solid black;
-    height: 300px;
-    display: flex;
-    margin: 2%;
+.col{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
 }
-.overview-item1 {
-    width: 20%;
-    border: 2px solid black;
+.servicefuture{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(102 77 56);
+    border-radius: 4px;
+    margin-bottom: -20px;
+    color: wheat;
+    margin: 2%;
 }

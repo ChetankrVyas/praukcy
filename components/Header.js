@@ -5,7 +5,6 @@ import Contactus from './Contactus';
 import Tilt from "react-parallax-tilt";
 import styles from "../styles/header.module.scss";
 import Navbar from '../components/Navbar';
-import { Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 
 const Header = () => {

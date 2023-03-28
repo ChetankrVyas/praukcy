@@ -1,6 +1,5 @@
 import { React, useState } from 'react';
 import { Button, Card, Modal } from 'react-bootstrap';
-import Ribbon from '../assets/ribbon21.png';
 import Image from 'next/image';
 import We from '../assets/web.jpg';
 import WD from '../assets/wd.png';
@@ -23,7 +22,7 @@ const Services = () => {
           <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />
-            <Crds title=' &nbsp;Software Development' imag={SD} ime={Sof} text='' />
+            <Crds title='Software Development' imag={SD} ime={Sof} text='' />
             <Crds title='Android Development' imag={AD} ime={An} text='' />
             <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
             <Crds title='Logo Design' imag={SEO} ime={Sea} text="" />
@@ -51,6 +50,7 @@ const Crds = (props) => {
     </Card>
   )
 }
+
 const Popup = (props) => {
   return (
     <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" id={props.id} centered>
@@ -61,4 +61,4 @@ const Popup = (props) => {
   );
 }
 
-export default Services
+export default Services;

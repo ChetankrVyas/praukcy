@@ -16,9 +16,9 @@ const Contactus = () => {
         </Col>
         <Col style={{ display: 'flex', justifyContent: 'right', marginRight: '40px' }}>
           <p style={{ margin: 'auto 5px', float: 'right' }}>Follow Us now </p>
-          <a style={{ margin: 'auto 5px' }}><FaInstagram></FaInstagram></a>
+          <a  style={{ margin: 'auto 5px' }}><FaInstagram></FaInstagram></a>
           <a style={{ margin: 'auto 5px' }}><FaTwitter></FaTwitter></a>
-          <a style={{ margin: 'auto 5px', float: 'right' }}><FaLinkedin></FaLinkedin></a>
+          <a href='https://www.linkedin.com/company/praukcy/' style={{ margin: 'auto 5px', float: 'right' }}><FaLinkedin></FaLinkedin></a>
         </Col>
       </Row>
     </div>

@@ -49,8 +49,8 @@ const AddForm = () => {
           <h5 htmlFor="message" className="form-label">Message</h5>
           <textarea placeholder='Write your message here' rows={15} type="text" className="finput" id="message" name="message" onChange={onChange} value={form.message} />
         </div>
-      <button type="submit" className="btn btn-primary" onClick={handleClick}>Submit</button>
-      <button type="submit" className="btn1 btn-primary" onClick={clearClick}>Clear</button>
+      <button type="submit" className="btn btn-dark" onClick={handleClick}>Submit</button>
+      <button type="submit" className="btn1 btn btn-dark" onClick={clearClick}>Clear</button>
       </div>
     </form>
   )

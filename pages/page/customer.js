@@ -25,8 +25,6 @@ const customer = () => {
         <div className='customersdeck'>
           <Crd title='Abhay Shankar' img={Abhay} text='' />
           <Crd title='Ayush Sahu' text='' img={Ayush}/>
-          <Crd title='Prakhar Yadav' text='' />
-          <Crd title='Saatwik Shrivastava' text='' />
         </div>
         <div>
           <Row className='customer-row2'>
