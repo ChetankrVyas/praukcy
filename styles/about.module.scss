@@ -1,0 +1,125 @@
+/* about */
+.head{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(217, 146, 146);
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.underline {
+  position: relative;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(119, 115, 115);
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+}
+.team h1{
+  text-align: center;
+}
+.about h1 {
+    font-size: 30px;
+  }
+  .abouthead{
+    position: relative;
+    margin:5% 3%;
+  }
+  .headtext{
+    font-size: 25px;
+    width: 78%;
+    margin: auto;
+  }
+  .content{
+    background-image: url('../assets/about/about.png');
+    background-size: cover;
+    padding: 4%;
+  }
+  .skillimage{
+    display: block;
+    margin:-12% auto -7% auto;
+  }
+  .teambox {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .teambox text{
+    text-align: center;
+  }
+  .teamimage{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    background-color: aliceblue;
+    border: 2px solid grey;
+  }
+  .teammember {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  .joinrow{
+    background-color: #ffceb6;
+    margin: 2%;
+    border-radius: 10px;
+  }
+  .joincol{
+    padding: 2%;
+    margin:2% auto;
+  }
+  .joincol h2{
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .joincol button{
+    display: block;
+    margin: 7% auto 0 auto;
+    background-color: rgb(148, 171, 171);
+    border: none;
+    font-size: 20px;
+    padding: 3px;
+    width: 40%;
+  }
+  .joincol h2{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 30px;
+  }
+  .about {
+    margin: auto;
+  }
+  .abouthead1{
+    font-size: 30px;
+    display: block;
+    width: 70%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  .abouthead2{
+    margin:1% auto 0 auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 900px){
+  .abouthead h1{
+    font-size: 20px;
+  }
+  .about{
+    width: 100%;
+  }
+  .headtext{
+    width: 100%;
+    font-size: 20px;
+  }
+  .abouthead1{
+    width: 100%;
+  }
+  }

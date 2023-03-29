@@ -132,7 +132,7 @@ a {
 /* Footer */
 .social-icons {
   font-size: 33px;
-  margin: auto 15px;
+  margin: auto 15px; 
 }
 .underline {
   color: #000;
@@ -348,84 +348,6 @@ a {
   color: rgb(7, 120, 50) !important;
 }
 
-/* about */
-.about h1 {
-  font-size: 40px;
-}
-.abouthead{
-  position: relative;
-  margin: 10% 6%;
-}
-.about .paragraph{
-  font-size: 17px;
-}
-.content{
-  height: 400px;
-  margin: auto;
-  width: 92%;
-  background-color: #128587;
-}
-.team-box {
-  display: flex; 
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-.team-box text{
-  text-align: center;
-}
-.team-image{
-  width: 70%;
-  margin: auto;
-  height: auto;
-  background-color: aliceblue;
-  border: 2px solid grey;
-}
-.team-member {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-.joinrow{
-  border: 2px solid grey;
-  background-color: #686666;
-}
-.joincol{
-  padding: 2%;
-}
-.joincol button{
-  display: block;
-  margin: auto;
-  background-color: rgb(148, 171, 171);
-  border: none;
-  font-size: 20px;
-  padding: 3px;
-  width: 45%;
-}
-.joincol h2{
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 30px;
-}
-.about {
-  width: 80%;
-  margin: auto;
-}
-
-.about hr {
-  border: 2px solid black;
-  margin: 10px auto;
-  width: 80%;
-}
-.abouthead1{
-  margin: auto;
-  text-align: center;
-}
-.abouthead2{
-  margin: auto;
-  text-align: center;
-}
-
 /* contact */
 .contact {
   display: flex;
@@ -433,8 +355,10 @@ a {
   margin: auto;
 }
 .contactimg{
-  margin: 4%;
-  margin-left:36% ;
+  margin: 4% auto;
+  display: block;
+  width: 70%;
+  height: auto;
 }
 .contact h1,h2,h3{
   text-align: center;
@@ -451,11 +375,19 @@ a {
   color: wheat;
 }
 .contactbottom{
-  margin: 0% 2% 0% 2%;
-  border-radius:10px ;
-  text-align: center;
-  background-color:rgb(33, 31, 36);
-  color: wheat;
+  border-radius:10px;
+  text-align: center;  
+  width: 90%;
+  padding:4%;
+  margin: auto;
+  background-color: antiquewhite;
+  color: black;
+}
+.contactbottomtext{
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  background-color: antiquewhite;
 }
 .c1 span{
   display: block;
@@ -491,7 +423,13 @@ a {
   border: none;
 }
 .contactheadcol{
-  padding: 4% 15%;
+  padding: 4% 12%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.contactheadcol h1{
+  margin-bottom: 9%;
 }
 .contactheadcol span{
   font-size: 25px;
@@ -528,6 +466,29 @@ a {
   width: 20%;
   float: right;
   margin: auto;
+}
+@media screen and (max-width: 900px) {
+  .cbtn{
+    width: 40%;
+  }
+  .c3 {
+    padding: 4% 10%;
+  }
+  .c2 .btn{
+    width: 30%;
+  }
+  .c2{
+    width: 85%;
+  }
+  .c1{
+    width: 98%;
+  }
+  .c4{
+    width: 85%;
+  }
+  .c2 textarea{
+    height: 200px;
+  }
 }
 /* customer review */
 .customer-row1 img {

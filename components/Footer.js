@@ -29,7 +29,6 @@ const Footer = (props) => {
                 <Row>
                   <h6 className="text-uppercase mb-4 font-weight-bold ">
                     <span className="underline">Important Links</span>
-                    <div className="hr"></div>
                   </h6>
                   <Col>
                     <p>

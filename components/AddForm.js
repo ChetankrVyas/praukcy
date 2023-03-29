@@ -27,7 +27,7 @@ const AddForm = () => {
       <div className='c1'>
         <h2>Contact Information</h2>
         <CiLocationOn></CiLocationOn><span>Sleeknote ApS Ankersgade 12C, 1, 8000 Aarhus</span>
-        <IoCallOutline></IoCallOutline><span style={{ margin: 'auto 10px' }}><a style={{ color: 'black' }} href='tel: 8209181991'>+91-8209181991</a></span>
+        <IoCallOutline></IoCallOutline><span style={{ margin: 'auto 10px' }}><a  href='tel: 8209181991'>+91-8209181991</a></span>
         <FaEnvelope></FaEnvelope><span style={{ margin: 'auto 5px' }}><a href='mailto: praukcy@gmail.com'>praukcy@gmail.com</a></span>
       </div>
       <h2>Send Message</h2>

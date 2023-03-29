@@ -17,12 +17,12 @@ const contact = () => {
       <Navbar />
       <div className='contact'>
         <Row className='contacthead'>
-          <Col >
-          <Tilt><Image className='contactimg' src={Support} height={450} width={550} alt=''/></Tilt>
+          <Col sm={6}>
+          <Tilt><Image className='contactimg' src={Support} alt=''/></Tilt>
           </Col>
-          <Col className='contactheadcol'>
-            <h1>Got a question?</h1>
-            <span>We are here to help and answer any qyestion you might have. We look Forward to hearing you</span>
+          <Col sm={6} className='contactheadcol'>
+            <h1>Need help? Questions?</h1>
+            <span> We're here for you! Our service team is ready to assist and address your queries. Looking forward to hearing from you soon! Let us know how we can help.</span>
           </Col>
         </Row>
         <div className='c3'>
@@ -32,7 +32,10 @@ const contact = () => {
         </div>
         <Form1 />
         <div className='contactbottom'>
-          You can ask all you want
+          <h1>Looking for reliable technical services?</h1>
+          <div className='contactbottomtext'>
+          Look no further than Praukcy! Our team of expert technicians is here to provide you with top-notch technical solutions that meet your needs. Contact us today to learn more about our services and how we can help you with your technical challenges. Whether you need IT support, software development, or other technical services, Praukcy has you covered. Reach out to us now to get started.
+          </div>
         </div>
       </div>
       <Footer />

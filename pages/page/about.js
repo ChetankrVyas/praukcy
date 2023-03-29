@@ -4,8 +4,11 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
-import Chetan from '../../assets/ch1.png'
-import Aashish from '../../assets/ak1.png'
+import styles from "../../styles/about.module.scss";
+import Chetan from '../../assets/about/ch1.png'
+import Aashish from '../../assets/about/ak1.png'
+import Skill from '../../assets/about/skill.png'
+import Mith from '../../assets/about/mith.png'
 import Workinfo from "../../components/Workinfo"
 import img from '../../assets/srvcs.jpg'
 
@@ -16,67 +19,68 @@ const about = () => {
         <title>About</title>
       </Head>
       <Navbar />
-      <div className='about'>
-        <Row className='abouthead'>
-          <Col sm={6} className='abouthead1'><h1>Praukcy provides technical services to startups and existing businesses</h1></Col>
+      <div className={styles.about}>
+        <Row className={styles.content}>
           <Col sm={6}>
-            <span className='paragraph'>
-            Praukcy is a company that specializes in providing technical services to businesses and startups. They offer a range of technical services to help businesses and startups develop and maintain their technical operations. Their services include software development, website development, mobile app development, data analytics, cloud computing, cybersecurity, and more.
-            </span>
-          </Col>
-        </Row>
-        <div className='content'>
+            <div className={styles.head}><span className={styles.underline}>{`About Us`}</span></div>
+            <div className={styles.headtext}><span>{`Praukcy is a professional services company that specializes in providing technical services to startups and existing businesses. The company has a team of experienced professionals who are dedicated to providing high-quality technical services to help businesses and startups achieve their goals. The Team at Praukcy is made up of skilled professionals with expertise in a range of technical areas,
 
-        </div>
-        <hr />
-        <Row className='abouthead'>
-          <Col sm={6} className='abouthead1'><h1>How do we assist startups and businesses</h1></Col>
-          <Col sm={6} className='abouthead2'>
-            <span className='paragraph'>
-            For startups, Praukcy provides technical services that can help them launch and grow their businesses. This can include developing a minimum viable product (MVP) to test the market, creating a website to establish an online presence, or developing a mobile app to reach more customers. <br/>
-            Praukcy&apos;s technical services are designed to be flexible and customizable, so businesses can choose the services that meet their specific needs and goals. They have a team of experienced professionals who are knowledgeable in the latest technologies and trends, and can provide guidance and support throughout the development process.
-            </span>
+`}</span></div>
+          </Col>
+          <Col sm={6}></Col>
+        </Row>
+        <Row className={styles.abouthead}>
+          <Col sm={6} className={styles.abouthead1}>{`What kind of services does Praukcy offer ?`}</Col>
+          <Col sm={6} className={styles.abouthead2}>
+            <div className={styles.paragraph}>
+              {`Praukcy provides technical services to startups and existing businesses. Praukcy is a company that specializes in providing technical services to businesses and startups. They offer a range of technical services to help businesses and startups develop and maintain their technical operations. `}
+            </div>
           </Col>
         </Row>
-        <Row className='abouthead'>
-          <Col sm={6} className='abouthead1'><h1>What technologies and software we use?</h1></Col>
-          <Col sm={6}>
-            <span className='paragraph'>
-              ast Refresh had to perform a fu ll reload. Read more:
-              https:// nextjs.or g/docs/basic- featur es/fast-refre sh#ho w-it -works
-              Error: Aborted be cause ./ pages/about.js is no  accepted
-              Update  pr opagation: ./pages/about.js /node_modules/n ext/ dist/bu ild/ webpac /loader s/nex  t-clien -pages -loa  der.js?
-              absolu tePage Path=D% 3 A%5C coding 5Cre actjs%  p raukcy% 5Cp ges%5 a bo t.js& page=% 2Fabout!
-            </span>
+
+        <Row className={styles.abouthead}>
+          <Col sm={6} className={styles.abouthead1}>{`How do we assist startups and businesses`}</Col>
+          <Col sm={6} className={styles.abouthead2}>
+            <div className={styles.paragraph}>
+              {` For startups, Praukcy provides technical services that can help them launch and grow their businesses. Their services include software development, website development, mobile app development, data analytics, cloud computing, cybersecurity, and more.
+              Praukcy's technical services are designed to be flexible and customizable.`}
+            </div>
+          </Col>
+        </Row>
+        <Row className={styles.abouthead}>
+          <Col sm={6} className={styles.abouthead1}>{`What technologies and software we use?`}</Col>
+          <Col sm={6} className={styles.abouthead2}>
+            <div className={styles.paragraph}>
+              {`At Praukcy, we leverage a range of advanced technologies including React.js, Express, Node.js, Nexe, Flutter, Tkinter, MongoDB, Firebase, AutoDesk Maya, modern AI APIs, Figma, Canva, video editors, and more. By utilizing the latest available resources, we are able to provide our customers with the best possible assistance and support.`}
+            </div>
           </Col>
         </Row>
         <Workinfo />
-        <div className='team'>
+        <div className={styles.team}>
           <h1>Meet Our Amazing Team</h1>
-          <div className='team-box'>
-            <div className='team-member'>
+          <div className={styles.teambox}>
+            <div className={styles.teammember}>
               <name>Chetan Vyas</name>
-              <Image src={Chetan} alt='' className='team-image' />
+              <Image src={Chetan} alt='' className={styles.teamimage} />
             </div>
-            <div className='team-member'>
+            <div className={styles.teammember}>
               <name>Mithilesh Kukapalli</name>
-              <Image src={Chetan} alt='' className='team-image' />
+              <Image src={Mith} alt='' className={styles.teamimage} />
             </div>
-            <div className='team-member'>
+            <div className={styles.teammember}>
               <name>Aashish Gupta</name>
-              <Image src={Aashish} alt='' className='team-image' />
+              <Image src={Aashish} alt='' className={styles.teamimage} />
 
             </div>
           </div>
         </div>
-        <Row className='joinrow'>
-          <Col className='joincol'>
-
+        <Row className={styles.joinrow}>
+          <Col sm={6} className={styles.joincol}>
+            <Image src={Skill} className={styles.skillimage}/>
           </Col>
-          <Col className='joincol'>
-            <h2
-            >We are looking for technical skilled people to join us.
-              If you are interested and have skills then kindly fill the form to join
+          <Col sm={6} className={styles.joincol}>
+            <h2>We are looking for technical skilled people to join us.
+              If you are interested and have skills then kindly fill the form to join.
             </h2>
             <button >Join Our Team</button>
           </Col>
