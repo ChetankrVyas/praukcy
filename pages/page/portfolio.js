@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react'
+import style from '../../styles/portfolio.module.scss';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
 import Menu from '../../components/data';
@@ -17,18 +18,18 @@ const Portfolio = () => {
   const allItem = () => {
     setItem(Menu)
   }
-  return(
+  return (
     <>
       <Head>
         <title>Portfolio</title>
       </Head>
       <Navbar />
-      <div className='portfolio2'>
-        <div className='portfolio2-1'>
+      <div className={style.portfolio2}>
+        <div className={style.portfolio2_1}>
           <h1>Praukcy</h1>
         </div>
       </div>
-      <div> 
+      <div>
         < h1>Technologies What We Use</h1>
         <h3>HTML</h3>
         <h3>Javascript</h3>
@@ -37,23 +38,23 @@ const Portfolio = () => {
         <h3>Wxpress Js</h3>
         <h3>Firebase</h3>
       </div>
-      <div className='filter'>
-        <button className='porbtn' onClick={() => allItem()}>All</button>
-        <button className='porbtn' onClick={() => filterItem('webdevelopment')}>Websites</button>
-        <button className='porbtn' onClick={() => filterItem('appdevelopment')}>Android Apps</button>
-        <button className='porbtn' onClick={() => filterItem('softwaredevelopment')}>Softwares</button>
-        <button className='porbtn' onClick={() => filterItem('seo')}>SEO Designs</button>
-        <button className='porbtn' onClick={() => filterItem('chatbot')}>Chatbots</button>
-        <button className='porbtn' onClick={() => filterItem('blockchain')}>Blockchain</button>
-        <button className='porbtn' onClick={() => filterItem('Logo')}>Logo</button>
-        <button className='porbtn' onClick={() => filterItem('videos-edited')}>Videos Edited</button>
+      <div className={style.filter}>
+        <button className={style.porbtn} onClick={() => allItem()}>All</button>
+        <button className={style.porbtn} onClick={() => filterItem('webdevelopment')}>Websites</button>
+        <button className={style.porbtn} onClick={() => filterItem('appdevelopment')}>Android Apps</button>
+        <button className={style.porbtn} onClick={() => filterItem('softwaredevelopment')}>Softwares</button>
+        <button className={style.porbtn} onClick={() => filterItem('seo')}>SEO Designs</button>
+        <button className={style.porbtn} onClick={() => filterItem('chatbot')}>Chatbots</button>
+        <button className={style.porbtn} onClick={() => filterItem('blockchain')}>Blockchain</button>
+        <button className={style.porbtn} onClick={() => filterItem('Logo')}>Logo</button>
+        <button className={style.porbtn} onClick={() => filterItem('videos-edited')}>Videos Edited</button>
       </div>
-      <div className='portfolio-box'>
+      <div className={style.portfolio_box}>
         {
           item.map((elem) => {
             const { id, name, category, linkImg, key } = elem;
             return (
-              <div className='portfolio-item' key={key}>
+              <div className={style.portfolio_item} key={key}>
                 <h3>{name}</h3>
                 <Image src={linkImg} alt={name} height={300} width={300} className='link-Img img-fluid' />
               </div>

@@ -1,0 +1,35 @@
+/* portfolio2 */
+.portfolio2 {
+  background-image: url('../assets/sd.png');
+  background-size: cover;
+  height: 400px;
+}
+
+.portfolio2_1 h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.link-Img {
+  height: 200px;
+  width: 200px;
+}
+
+.portfolio_box {
+  display: flex;
+  padding: 10px;
+}
+
+.portfolio_item {
+  margin: 10px;
+}
+.filter{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  justify-content: space-evenly;
+}
+.porbtn{
+  width: 10%;
+}

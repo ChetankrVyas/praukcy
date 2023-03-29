@@ -76,7 +76,7 @@ const about = () => {
         </div>
         <Row className={styles.joinrow}>
           <Col sm={6} className={styles.joincol}>
-            <Image src={Skill} className={styles.skillimage}/>
+            <Image src={Skill} alt='' className={styles.skillimage}/>
           </Col>
           <Col sm={6} className={styles.joincol}>
             <h2>We are looking for technical skilled people to join us.
