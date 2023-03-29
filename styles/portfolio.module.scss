@@ -1,27 +1,7 @@
 /* portfolio2 */
-.portfolio2 {
-  background-image: url('../assets/sd.png');
-  background-size: cover;
-  height: 400px;
-}
-
-.portfolio2_1 h1 {
-  margin: auto;
-  text-align: center;
-}
-
 .link-Img {
   height: 200px;
   width: 200px;
-}
-
-.portfolio_box {
-  display: flex;
-  padding: 10px;
-}
-
-.portfolio_item {
-  margin: 10px;
 }
 .filter{
   margin: auto;
@@ -32,4 +12,76 @@
 }
 .porbtn{
   width: 10%;
+}
+.portimg{
+  width: 100%;
+  height: auto;
+}
+.col2{
+  margin: auto;
+  text-align: center;
+}
+.row1{
+  background-color: antiquewhite;
+  color: brown;
+}
+.row1 h1{
+  font-size: 50px;
+  color: rgb(219, 159, 79);
+}
+.col1{
+  padding: 4%;
+  margin: auto;
+}
+.filterset{
+  font-size: 25px;
+  float: right;
+  margin: auto;
+}
+.texthead{
+  display: block;
+  width:80%;
+  margin: auto;
+}
+.row2{
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  color: brown;
+  background-color: antiquewhite;
+}
+.row2 h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom:2% ;
+  color: rgb(219, 159, 79);
+}
+.col3{
+  width: 80%;
+  margin: auto;
+  padding: 4%;
+}
+.filterhead{
+  margin: 2%;
+}
+.tbtn{
+  width: 20%;
+}
+.col2 text{
+  font-size: 22px;
+}
+.workmenu{
+margin: auto;
+padding: 2% 7%;
+}
+.workcard{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio_item {
+  width: 20%;
+  margin: 2% 4%;
 }

@@ -37,7 +37,6 @@ const about = () => {
             </div>
           </Col>
         </Row>
-
         <Row className={styles.abouthead}>
           <Col sm={6} className={styles.abouthead1}>{`How do we assist startups and businesses`}</Col>
           <Col sm={6} className={styles.abouthead2}>
@@ -64,7 +63,7 @@ const about = () => {
               <Image src={Chetan} alt='' className={styles.teamimage} />
             </div>
             <div className={styles.teammember}>
-              <name>Mithilesh Kukapalli</name>
+              <name>Mithilesh K</name>
               <Image src={Mith} alt='' className={styles.teamimage} />
             </div>
             <div className={styles.teammember}>
