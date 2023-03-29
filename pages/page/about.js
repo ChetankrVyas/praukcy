@@ -34,7 +34,7 @@ const about = () => {
           <Col sm={6} className='abouthead2'>
             <span className='paragraph'>
             For startups, Praukcy provides technical services that can help them launch and grow their businesses. This can include developing a minimum viable product (MVP) to test the market, creating a website to establish an online presence, or developing a mobile app to reach more customers. <br/>
-            Praukcy's technical services are designed to be flexible and customizable, so businesses can choose the services that meet their specific needs and goals. They have a team of experienced professionals who are knowledgeable in the latest technologies and trends, and can provide guidance and support throughout the development process.
+            Praukcy&apos;s technical services are designed to be flexible and customizable, so businesses can choose the services that meet their specific needs and goals. They have a team of experienced professionals who are knowledgeable in the latest technologies and trends, and can provide guidance and support throughout the development process.
             </span>
           </Col>
         </Row>

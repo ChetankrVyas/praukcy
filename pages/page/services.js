@@ -28,7 +28,7 @@ const Services = () => {
           <div className={style.text3}>Praukcy is a versatile and dynamic company that offers a wide range of technical services to help individuals and businesses establish and enhance their online presence. With a strong focus on delivering high-quality results, Praukcy provides expert services in areas such as web development, app development, logo design, and graphic design.</div>
         </Col>
         <Col sm={6} className={style.col5}>
-          <Image src={service} className={style.imag}/>
+          <Image src={service} className={style.imag} alt=''/>
         </Col>
         </Row>
         <Service />
@@ -70,11 +70,11 @@ const Service = () => {
 const Card1 = (props) => {
   return (
     <div>
-      <Image />
+      <Image alt=''/>
       <h2>{props.title}</h2>
       <Row className={style.serviceItem}>
         <Col sm={6} className={style.col1}>
-          <Image src={props.imag}  className={style.imag}/>
+          <Image src={props.imag}  className={style.imag} alt='' />
         </Col>
         <Col sm={6} className={style.col}>
           <span className={style.text1}>{props.text1}</span>

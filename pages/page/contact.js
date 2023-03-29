@@ -18,7 +18,7 @@ const contact = () => {
       <div className='contact'>
         <Row className='contacthead'>
           <Col >
-          <Tilt><Image className='contactimg' src={Support} height={450} width={550} /></Tilt>
+          <Tilt><Image className='contactimg' src={Support} height={450} width={550} alt=''/></Tilt>
           </Col>
           <Col className='contactheadcol'>
             <h1>Got a question?</h1>
