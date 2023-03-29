@@ -8,6 +8,7 @@ import edit from '../../assets/services/edit.jpg'
 import logo from '../../assets/services/logo.png'
 import gui from '../../assets/services/gui.jpg'
 import d3d from '../../assets/services/3d.jpg'
+import service from '../../assets/services/service3.png'
 import { Col, Row } from 'react-bootstrap';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
@@ -21,9 +22,15 @@ const Services = () => {
       </Head>
       <Navbar />
       <div className={style.services2}>
-        <div className={style.serve}>
-          the
-        </div>
+        <Row className={style.serve}>
+        <Col sm={6} className={style.col4}>
+          <h1>Praukcy</h1>
+          <div className={style.text3}>Praukcy is a versatile and dynamic company that offers a wide range of technical services to help individuals and businesses establish and enhance their online presence. With a strong focus on delivering high-quality results, Praukcy provides expert services in areas such as web development, app development, logo design, and graphic design.</div>
+        </Col>
+        <Col sm={6} className={style.col5}>
+          <Image src={service} className={style.imag}/>
+        </Col>
+        </Row>
         <Service />
       </div>
       <Footer />
@@ -33,7 +40,7 @@ const Services = () => {
 const Service = () => {
   return (
     <div id='servicesCm'>
-      <Card1 title="Website Design and Development" imag={web} text1='Praukcy crafts engaging websites that drive business growth and success.' text2='Praukcy is the go-to destination for businesses looking to create stunning websites that are tailored to their brand and offer an exceptional user experience.'/>
+      <Card1 title="Website Design" imag={web} text1='Praukcy crafts engaging websites that drive business growth and success.' text2='Praukcy is the go-to destination for businesses looking to create stunning websites that are tailored to their brand and offer an exceptional user experience.'/>
       <Card1 title="Android" imag={android} text1='Praukcy creates cutting-edge apps that meet their unique needs.' text2='We specializes in creating custom Android apps that are tailored to your unique business needs. From design to development and everything in between, Praukcy has the tools and knowledge to help your Android app succeed in todays competitive market.'/>
       <Card1 title="Logo and Graphics Design" imag={logo} text1='Praukcy is the one-stop solution for all your logo and graphic design needs.' text2='Our team of skilled designers is dedicated to crafting unique and visually stunning designs that perfectly capture your brands essence. With Praukcy, you can be confident that your brand will stand out and make a lasting impression on your audience.'/>
       <Card1 title="Video and Photo Editing" imag={edit} text1='Praukcy offers expert video and photo editing services.'
@@ -47,13 +54,13 @@ const Service = () => {
       text2='We understand that creating a great graphical user interface is crucial to the success of any software application. Thats why we specialize in offering GUI development services that meet the highest industry standards.'/>
       <div className={style.servicefuture}>
         <Row>
-          <Col sm={6}>
+          <Col sm={6} className={style.Col2}>
             <h1>Our Future Plans and Services</h1>
           </Col>
-          <Col sm={6} >
-            <span>
-              We are trying more experiments will come up wit more services in future
-            </span>
+          <Col sm={6} className={style.Col3} >
+            <div className={style.text4}>
+            We are fully committed to pushing the boundaries of innovation and exploring new possibilities through a series of extensive experiments. Our unwavering dedication to excellence and customer satisfaction drives us to continually expand our range of exceptional services. Furthermore, as we strive for continued growth and success, we are actively seeking out the most talented and skilled individuals to join our team and contribute to our collective vision of excellence.
+            </div>
           </Col>
         </Row>
       </div>
@@ -65,7 +72,7 @@ const Card1 = (props) => {
     <div>
       <Image />
       <h2>{props.title}</h2>
-      <Col className={style.serviceItem}>
+      <Row className={style.serviceItem}>
         <Col sm={6} className={style.col1}>
           <Image src={props.imag}  className={style.imag}/>
         </Col>
@@ -74,7 +81,7 @@ const Card1 = (props) => {
           <br/>
           <div className={style.text2}>{props.text2}</div>
         </Col>
-      </Col>
+      </Row>
     </div>
   )
 }

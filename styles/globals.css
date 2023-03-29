@@ -351,11 +351,10 @@ a {
 /* about */
 .about h1 {
   font-size: 40px;
-  word-spacing: 20px;
 }
 .abouthead{
   position: relative;
-  margin: 10% 5%;
+  margin: 10% 6%;
 }
 .about .paragraph{
   font-size: 17px;
@@ -365,11 +364,6 @@ a {
   margin: auto;
   width: 92%;
   background-color: #128587;
-}
-.abouthead .paragraph{
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
 }
 .team-box {
   display: flex; 
@@ -423,6 +417,14 @@ a {
   margin: 10px auto;
   width: 80%;
 }
+.abouthead1{
+  margin: auto;
+  text-align: center;
+}
+.abouthead2{
+  margin: auto;
+  text-align: center;
+}
 
 /* contact */
 .contact {
@@ -445,6 +447,13 @@ a {
   margin-bottom: 30px;
 }
 .contacthead{
+  background-color:rgb(33, 31, 36);
+  color: wheat;
+}
+.contactbottom{
+  margin: 0% 2% 0% 2%;
+  border-radius:10px ;
+  text-align: center;
   background-color:rgb(33, 31, 36);
   color: wheat;
 }

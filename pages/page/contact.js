@@ -31,6 +31,9 @@ const contact = () => {
           <Button href='/page/form' target='_blank' className='cbtn'>Credential</Button>
         </div>
         <Form1 />
+        <div className='contactbottom'>
+          You can ask all you want
+        </div>
       </div>
       <Footer />
     </>
