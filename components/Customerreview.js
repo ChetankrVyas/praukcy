@@ -31,9 +31,9 @@ const Testimonial = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>CLIENT REVEIW</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={Ayush} text='Nkjanlfkjn j al njndslk kjdlskj ;lj fslak j a;lskjf; a' name='Ayush Sahu' post='Nodal Mentor' />
+          <Card img={Ayush} text='' name='Ayush Sahu' post='Nodal Mentor' />
           <Card img={Abhay} name='Abhay Shankar' post='BLVESS' />
-          <Card img={Me} name='Chetan Vyas' post='Startup Founder' />
+          {/* <Card img={Me} name='Chetan Vyas' post='Startup Founder' /> */}
         </Slider>
       </div>
     </div>
