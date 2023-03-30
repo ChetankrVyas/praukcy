@@ -15,7 +15,7 @@ function Nav_bar() {
                         <Nav.Link href="/"><span className='nav-item ulstyle'>Home</span></Nav.Link>
                         <Nav.Link href="/page/services"><span className='nav-item ulstyle'>Services</span></Nav.Link>
                         <Nav.Link href="/page/portfolio"><span className='nav-item ulstyle'>Portfolio</span></Nav.Link>
-                        <Nav.Link href=""><span className='nav-item ulstyle'>Clients</span></Nav.Link>
+                        <Nav.Link href="/page/customer"><span className='nav-item ulstyle'>Clients</span></Nav.Link>
                         <Nav.Link href="/page/contact"><span className='nav-item ulstyle'>Contact Us</span></Nav.Link>
                         <Nav.Link href="/page/about"><span className='nav-item ulstyle'>About</span></Nav.Link>
                     </Nav>

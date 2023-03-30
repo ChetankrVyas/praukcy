@@ -1,8 +1,3 @@
-/* portfolio2 */
-.link-Img {
-  height: 200px;
-  width: 200px;
-}
 .filter{
   margin: auto;
   display: flex;
@@ -16,6 +11,7 @@
 .portimg{
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .col2{
   margin: auto;
@@ -30,7 +26,7 @@
   color: rgb(219, 159, 79);
 }
 .col1{
-  padding: 4%;
+  padding:6%;
   margin: auto;
 }
 .filterset{
@@ -65,7 +61,7 @@
   margin: 2%;
 }
 .tbtn{
-  width: 20%;
+  width: 200px;
 }
 .col2 text{
   font-size: 22px;
@@ -82,6 +78,9 @@ padding: 2% 7%;
   justify-content: space-between;
 }
 .portfolio_item {
-  width: 20%;
+  width: 300px;
   margin: 2% 4%;
+}
+.linkimg{
+  width: 300px;
 }

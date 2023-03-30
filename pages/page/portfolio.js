@@ -4,6 +4,7 @@ import style from '../../styles/portfolio.module.scss';
 import Footer from '../../components/Footer';
 import Dropdown from 'react-bootstrap/Dropdown';
 import port from '../../assets/portfolio/portfolio.jpg'
+import prt from '../../assets/portfolio/prt.jpg'
 import Navbar from '../../components/Navbar';
 import Menu from '../../components/data';
 import { VscSettings } from "react-icons/vsc";
@@ -62,9 +63,9 @@ const Portfolio = () => {
           {
             item.map((elem) => {
               const { id, name, category, linkImg, key } = elem;
-              return (
+              return(
                 <div className={style.portfolio_item} key={key}>
-                  <Image src={linkImg} alt={name}  className='link-Img img-fluid' />
+                  <Image src={prt} alt={name}  width={300} height={300} className={style.linkimage} />
                   <h3>{name}</h3>
                 </div>
               )
@@ -72,7 +73,7 @@ const Portfolio = () => {
           }
         </div>
       </div>
-      {/* <div>
+      {/* <div> 
         <button onClick={() => filterItem('2022')}>2022</button>
         <button onClick={() => filterItem('2023')}>2023</button>
       </div> */}
