@@ -2,14 +2,14 @@ import { useState } from "react";
 import FormContext from "./FormContext";
 
 const FormState = (props) => {
-    const host = "http://localhost:5000";
+    const host = "https://praukcy-backend.onrender.com";
     const formInitial = []
     const [forms, setForms] = useState(formInitial)
     const clientformInitial = []
     const [clientforms, setClientforms] = useState(clientformInitial)
     // get forms filled
     const getForms = async () => {
-        // API Call 
+        // API Call  
         const response = await fetch(`${host}/api/form/fetchallforms`, {
             method: 'GET',
             headers: {
