@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Row, Col, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
-import formContext from "./FormContext";
+import AddForm from './Message';
 import logo from '../assets/logo.png'
 import {
   FaInstagram,
@@ -22,7 +22,7 @@ const Footer = (props) => {
           <section className="">
             <Row>
               < Col >
-              <a><Image src={logo} height={100} alt='' /></a>
+                <Link href='/'><Image src={logo} height={100} alt=''/></Link>
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col>
@@ -92,7 +92,7 @@ const Footer = (props) => {
                   <FaLinkedin className="social-icons"></FaLinkedin>
                 </a>
                 <a>
-                <FaTwitter className="social-icons"></FaTwitter>
+                  <FaTwitter className="social-icons"></FaTwitter>
                 </a>
               </div>
             </div>
@@ -102,52 +102,12 @@ const Footer = (props) => {
     </div>
   );
 };
-const Popup = (props) => {
-  const context = useContext(formContext);
-
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const { addForm } = context;
-
-  const clearClick=()=>{
-    setForm({ name: '', email: '', subject: '', message: '' })
-  }
-  const handleClick = (e) => { 
-    e.preventDefault();
-    addForm(form.name, form.email, form.subject, form.message);
-    setForm({ name: '', email: '', subject: '', message: '' });
-  }
-  const onChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+const Popup = (props) => {  
   return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" className='modal2'centered>
-      <div className='popup2'>
-      <form className='addform2'>
-      <h2>Send Message</h2>
-      <div className='messcontainer'>
-        <div className="messdetail">
-          <h5 htmlFor="title" className="form-label">Name</h5>
-          <input type="text" className="" id="name" name="name" aria-describedby="emailHelp" onChange={onChange} value={form.name} />
-        </div>
-        <div className="mb-3 messdetail">
-          <h5 htmlFor="email" className="form-label">Email</h5>
-          <input type="text" className="" id="email" name="email" onChange={onChange} value={form.email} />
-        </div>
-        <div className="mb-3 messdetail">
-          <h5 htmlFor="subject" className="form-label">Subject</h5>
-          <input type="text" className="" id="subject" name="subject" onChange={onChange} value={form.subject} />
-        </div>
-        <div className="mb-3 messdetail">
-          <h5 htmlFor="message" className="form-label">Message</h5>
-          <textarea placeholder='Write your message here' rows={10} type="text" className="" id="message" name="message" onChange={onChange} value={form.message} />
-        </div>
-      <button type="submit" className="btn btn-primary" onClick={function(event){handleClick();props.onHide}}>Submit</button>
-      <button type="button" className="btn1 btn-primary" onClick={clearClick}>Clear</button>
-      </div>
-    </form>
-        <Button variant='transparent' onClick={props.onHide}>Close</Button>
-      </div>
+    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <AddForm/>
+    <Button variant='dark' onClick={props.onHide}>Close</Button>
     </Modal>
-  );
+  ); 
 }
 export default Footer;

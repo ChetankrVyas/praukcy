@@ -51,35 +51,35 @@ const Portfolio = () => {
         <div className='a2'>
           <h3>Newsapp</h3>
           <div className='a3'>
-            <Image className='im2' />
+            <Image className='im2' src={praukcy} alt='' />
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>TextPlay</h3>
           <div className='a3'>
-            <Image src={textutils} className='im2' />
+            <Image src={textutils} className='im2' alt='' />
             <div className='overlay'><Link href='https://mywebsite-eight-alpha.vercel.app/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>Praukcy</h3>
           <div className='a3'>
-            <Image src={praukcy} className='im2' />
+            <Image src={praukcy} className='im2' alt='' />
             <div className='overlay'><Link href='https://praukcy.vercel.app/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>BLVESS</h3>
           <div className='a3'>
-            <Image src={blvess} className='im2' />
+            <Image src={blvess} className='im2' alt='' />
             <div className='overlay'><Link href='https://blvess.org/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>I-Notebook</h3>
           <div className='a3'>
-            <Image className='im2' />
+            <Image className='im2' src={praukcy} alt='' />
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>

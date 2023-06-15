@@ -2,7 +2,7 @@ import { useState } from "react";
 import FormContext from "./FormContext";
 
 const FormState = (props) => {
-    const host = "https://praukcy-backend.onrender.com/";
+    const host = "http://localhost:5000";
     const formInitial = []
     const [forms, setForms] = useState(formInitial)
     const clientformInitial = []

@@ -377,23 +377,6 @@ h3 {
   text-align: center;
 }
 
-.contactbottom {
-  border-radius: 10px;
-  text-align: center;
-  width: 90%;
-  padding: 4%;
-  margin: auto;
-  background-color: antiquewhite;
-  color: black;
-}
-
-.contactbottomtext {
-  font-size: 20px;
-  display: block;
-  margin: auto;
-  background-color: antiquewhite;
-}
-
 .c1 span {
   display: block;
 }
@@ -463,7 +446,8 @@ textarea {
 }
 
 .c2 .btn {
-  width: 20%;
+  width: 23%;
+  padding: auto;
   margin: auto;
 }
 
@@ -561,10 +545,10 @@ textarea {
 }
 
 .modal-content {
-  background: linear-gradient(rgb(18, 161, 104), rgb(29, 28, 28));
+  background: linear-gradient(rgb(190, 216, 205), rgb(155, 183, 195));
   position: relative;
   display: flex;
-  padding: 4%;
+  padding: 2%;
   flex-direction: column;
   width: 80%;
   margin: auto;
@@ -577,8 +561,8 @@ textarea {
   outline: 0;
 }
 
-.modal2 {
-  margin: auto;
+.modal.show .modal-dialog {
+  transform: scale(0.9);
 }
 
 .addform2 {
