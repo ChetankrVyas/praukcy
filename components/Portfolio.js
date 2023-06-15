@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from 'next/link';
-import We from '../assets/web.jpg';
+import praukcy from '../assets/portfolio/praukcy.png';
+import blvess from '../assets/portfolio/blvess.png';
+import textutils from '../assets/portfolio/textutils.png';
 import Image from 'next/image';
 
 const Portfolio = () => {
@@ -11,8 +13,8 @@ const Portfolio = () => {
     arrows: false,
     dots: true,
     infinite: true,
-    autoplay:true,
-    autoplaySpeed:2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -46,45 +48,38 @@ const Portfolio = () => {
     <div className='portfolio'>
       <h1 style={{ textAlign: 'center' }} >Portfolio</h1>
       <Slider {...settings}>
-        <div className='a2' style={{width:'250px'}}>
-          <h3>E-Cell Team Page</h3>
-          <div className='a3'>
-            <div className='im2'></div>
-            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
-          </div>
-        </div>
         <div className='a2'>
           <h3>Newsapp</h3>
           <div className='a3'>
-            <div className='im2'></div>
+            <Image className='im2' />
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>TextPlay</h3>
           <div className='a3'>
-            <div className='im2'></div>
-            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+            <Image src={textutils} className='im2' />
+            <div className='overlay'><Link href='https://mywebsite-eight-alpha.vercel.app/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>Praukcy</h3>
           <div className='a3'>
-            <div className='im2'></div>
-            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+            <Image src={praukcy} className='im2' />
+            <div className='overlay'><Link href='https://praukcy.vercel.app/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>BLVESS</h3>
           <div className='a3'>
-            <div className='im2'></div>
-            <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
+            <Image src={blvess} className='im2' />
+            <div className='overlay'><Link href='https://blvess.org/' className='pagelink'>Page Link</Link></div>
           </div>
         </div>
         <div className='a2'>
           <h3>I-Notebook</h3>
           <div className='a3'>
-            <div className='im2'></div>
+            <Image className='im2' />
             <div className='overlay'><Link href='' className='pagelink'>Page Link</Link></div>
           </div>
         </div>

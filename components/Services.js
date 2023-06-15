@@ -19,7 +19,7 @@ const Services = () => {
     <>
       <div className='ribbon'>
         <section className='s-carads'>
-          <div className='our-services'><div className='dot'></div><h3 style={{ fontFamily: '2' }}>&nbsp; Our Main Services &nbsp;</h3><div className='dot'></div></div>
+          <h1 className='our-services'>Services</h1>
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />
             <Crds title='Software Development' imag={SD} ime={Sof} text='' />

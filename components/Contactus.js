@@ -4,13 +4,13 @@ import { FaPhone, FaEnvelope, FaInstagram, FaTwitter, FaLinkedin } from 'react-i
 import {IoCall} from 'react-icons/io5'
 
 const Contactus = () => {
-  return (
+  return ( 
     <div>
       <Row >
         <Col style={{ display: 'flex' }}>
           <a style={{ margin: 'auto 0px auto 20px' }}><IoCall></IoCall></a>
           <h6 style={{ margin: 'auto 10px' }}><a style={{ color: 'black' }} href='tel: 8209181991'>+91-8209181991</a></h6>
-          <div style={{ width: "1px", height: '32px', margin: '0', backgroundColor: 'white' }}></div>
+          <div style={{ width: "2px", height: '32px', marginTop: '4px', backgroundColor: 'black' }}></div>
           <a style={{ margin: 'auto 5px' }}><FaEnvelope></FaEnvelope></a>
           <h6 style={{ margin: 'auto 5px' }}><a href='mailto: praukcy@gmail.com'>praukcy@gmail.com</a></h6>
         </Col>

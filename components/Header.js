@@ -42,8 +42,8 @@ const Header = () => {
                       {/* <span> digital &nbsp; </span> */}
                       {/* <br/> */}
                       <span>
-                        <b className={styles.diffText}>assurance</b>
-                        <b className={styles.diffText}>unique market</b>
+                        <b className={styles.diffText}>credibility</b>
+                        <b className={styles.diffText}>quality</b>
                         <b className={styles.diffText}>identity</b>
                       </span>
 

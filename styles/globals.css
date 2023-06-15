@@ -5,7 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-repeat: no-repeat;
-  background-color: rgb(250, 230, 193);
+  background-color: rgb(236, 247, 246);
   background-size: cover;
   overflow-x: hidden;
 }
@@ -14,7 +14,7 @@ body {
   background-color: #080808;
   color: white;
   border-bottom: 3px solid orange;
-} 
+}
 
 .dropdown-item {
   color: white;
@@ -76,11 +76,14 @@ a {
 
 /* Navbar */
 .navbar {
-  background-color: #4d4949;
+  background-color: #2c2c2c;
+  padding: 0.1%;
 }
 
 .navbar-brand {
   width: 20%;
+  transform: scale(1.8);
+  margin: 0 0% 0 6%;
 }
 
 .navbar-brand img {
@@ -102,8 +105,8 @@ a {
   min-width: 15%;
   text-align: center;
   overflow: hidden;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 450;
+  font-size: 20px;
 }
 
 .ribbon {
@@ -125,20 +128,24 @@ a {
     border-start-start-radius: 50% 2%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .ribbon {
-   margin-top: 0;
+    margin-top: 0;
   }
 }
+
 /* Footer */
 .social-icons {
   font-size: 33px;
-  margin: auto 15px; 
+  margin: auto 15px;
 }
+
 .underline {
   color: #000;
   position: relative;
 }
+
 .underline:after {
   content: "";
   position: absolute;
@@ -154,11 +161,13 @@ a {
   transform: scale(1.3);
   color: rgb(110, 37, 161);
 }
-.myfooter button{
+
+.myfooter button {
   border: none;
   background-color: transparent;
   padding: 0;
 }
+
 .myfooter {
   color: rgb(10, 10, 10);
   bottom: 0px;
@@ -218,17 +227,13 @@ a {
   background: linear-gradient(rgb(18, 161, 104), rgb(29, 28, 28));
 }
 
-.our-services {
-  display: flex;
-  position: relative;
-}
-
 /* Portfolio */
 .portfolio {
   padding: 0 1%;
   height: 460px;
   text-align: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .portfolio .slick-slide {
@@ -244,7 +249,7 @@ a {
 }
 
 .a2 {
-  border: 2px solid white;
+  border: 2px solid rgb(85, 84, 84);
   position: relative;
   width: 250px;
   height: 250px;
@@ -253,8 +258,6 @@ a {
 }
 
 .im2 {
-  background-image: url('../assets//web.jpg');
-  background-size: cover;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
@@ -275,7 +278,7 @@ a {
 }
 
 .a3:hover .overlay {
-  height: 25%;
+  height: 19%;
 }
 
 .a3 .overlay {
@@ -285,9 +288,14 @@ a {
   height: 0%;
   left: 0;
   right: 0;
+  color: rgb(222, 249, 247);
   bottom: 0;
-  background: linear-gradient(to bottom, rgb(18, 161, 104), rgb(29, 28, 28));
+  background: linear-gradient(to bottom, rgb(23, 193, 162), rgb(4, 134, 125));
   transition: 0.5s ease;
+}
+
+.a3 .overlay :hover {
+  color: white;
 }
 
 .pagelink {
@@ -355,66 +363,53 @@ a {
   flex-direction: column;
   margin: auto;
 }
-.contactimg{
-  margin: 4% auto;
-  display: block;
-  width: 70%;
-  height: auto;
-}
-.contact h1,h2,h3{
+
+.contact h1,
+h2,
+h3 {
   text-align: center;
 }
-.c1{
+
+.c1 {
   width: 80%;
-  margin: auto ;
-  justify-content:center ;
+  margin: auto;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
 }
-.contacthead{
-  background-color:rgb(33, 31, 36);
-  color: wheat;
-}
-.contactbottom{
-  border-radius:10px;
-  text-align: center;  
+
+.contactbottom {
+  border-radius: 10px;
+  text-align: center;
   width: 90%;
-  padding:4%;
+  padding: 4%;
   margin: auto;
   background-color: antiquewhite;
   color: black;
 }
-.contactbottomtext{
+
+.contactbottomtext {
   font-size: 20px;
   display: block;
   margin: auto;
   background-color: antiquewhite;
 }
-.c1 span{
+
+.c1 span {
   display: block;
 }
-.c2{
+
+.c2 {
   color: wheat;
-  width: 70%;
+  width: 90%;
   margin: 2% auto 6% auto;
   border: 1px solid black;
-  background-color:  rgb(96, 106, 102);
+  background-color: rgb(96, 106, 102);
   border-radius: 10px;
   padding: 3% 0;
   display: flex;
   flex-direction: column;
 }
-.c2 input, textarea{
-  background-color: transparent;
-  border-color: transparent;
-  border-bottom: 1px solid black;
-  padding: 4px;
-  color: wheat;
-  font-size: 20px;
-}
-.c2 textarea{
-  border: 1px solid black;
-}
+
 .cbtn {
   display: block;
   width: 20%;
@@ -423,74 +418,91 @@ a {
   border-radius: 2px;
   border: none;
 }
-.contactheadcol{
-  padding: 4% 12%;
-  display: block;
+
+.contactheadcol {
   text-align: center;
-  margin: auto;
+  width: 70%;
+  margin: 60px auto;
 }
-.contactheadcol h1{
-  margin-bottom: 9%;
+
+.contactheadcol span {
+  font-size: 20px;
 }
-.contactheadcol span{
-  font-size: 25px;
-}
+
 .c3 {
   padding: 3% 15%;
   text-align: center;
   font-size: 26px;
 }
-.c2 .mb-3{
+
+.c2 .mb-3 {
   margin: auto;
 }
-.c2 input{
-  width: 100%;
-  font-size: 18px;
-}
-.c4{
+
+.c4 {
   border-radius: 10px;
-  width: 72%;
+  width: 60%;
   margin: auto;
-  padding: 2%;
 }
-.c2 textarea{
+
+.c2 input,
+textarea {
   width: 100%;
-  font-size: 18px;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  color: wheat;
+  font-size: 16px;
+}
+
+.c2 textarea {
+  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
 }
-.c2 .btn{
+
+.c2 .btn {
   width: 20%;
   margin: auto;
 }
-.c2 .btn1{
+
+.c2 .btn1 {
   width: 20%;
   float: right;
   margin: auto;
 }
+
 @media screen and (max-width: 900px) {
-  .cbtn{
+  .cbtn {
     width: 40%;
   }
+
   .c3 {
     padding: 4% 10%;
   }
-  .c2 .btn{
+
+  .c2 .btn {
     width: 30%;
   }
-  .c2{
+
+  .c2 {
     width: 85%;
   }
-  .c1{
+
+  .c1 {
     width: 98%;
   }
-  .c4{
+
+  .c4 {
     width: 85%;
   }
-  .c2 textarea{
+
+  .c2 textarea {
     height: 200px;
   }
 }
+
 /* customer review */
 .customer-row1 img {
   height: 500px;
@@ -522,25 +534,32 @@ a {
   height: 300px;
   width: auto;
 }
+
 /* addform2 */
-.addform2 h2{
+.addform2 h2 {
   text-align: center;
 }
-.messdetail{
+
+.messdetail {
   color: wheat;
   margin: auto;
   width: 100%;
 }
-.messcontainer{
-  padding-left:4%;
+
+.messcontainer {
+  padding-left: 4%;
   padding-right: 4%;
 }
-.popup2{
+
+.popup2 {
   background: linear-gradient(rgb(16, 148, 95), rgb(29, 28, 28));
 }
-.messdetail input, textarea{
+
+.messdetail input,
+textarea {
   width: 100%;
 }
+
 .modal-content {
   background: linear-gradient(rgb(18, 161, 104), rgb(29, 28, 28));
   position: relative;
@@ -557,13 +576,16 @@ a {
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
 }
-.modal2{
- margin: auto;
+
+.modal2 {
+  margin: auto;
 }
-.addform2{
+
+.addform2 {
   justify-content: center;
   margin: auto;
 }
+
 /* workinfo */
 .workinfo {
   padding: 3rem;

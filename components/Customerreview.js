@@ -3,9 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/testimonial.module.scss";
 import { Avatar } from "@material-ui/core";
-import We from '../assets/web.jpg';
-import Me from '../assets/me.jpg'
-import Ayush from '../assets/ayush.jpg'
 import Abhay from '../assets/abhay.jpg'
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import Image from "next/image";
@@ -31,9 +28,7 @@ const Testimonial = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>CLIENT REVEIW</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={Ayush} text='' name='Ayush Sahu' post='Nodal Mentor' />
           <Card img={Abhay} name='Abhay Shankar' post='BLVESS' />
-          {/* <Card img={Me} name='Chetan Vyas' post='Startup Founder' /> */}
         </Slider>
       </div>
     </div>
