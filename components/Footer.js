@@ -16,7 +16,7 @@ const Footer = (props) => {
   return (
     <div>
       <footer
-        className="text-center text-lg-start text-black myfooter"
+        className="text-center text-lg-start myfooter"
       >
         <div className="container p-4 pb-0">
           <section className="">

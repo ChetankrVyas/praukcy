@@ -6,8 +6,21 @@ import Tilt from "react-parallax-tilt";
 import styles from "../styles/header.module.scss";
 import Navbar from '../components/Navbar';
 import Link from 'next/link';
+import Typed from 'typed.js';
 
 const Header = () => {
+  const el = React.useRef(null);
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Credibility', 'Quality', 'Identity'],
+      typeSpeed: 30
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <div className='s-header'>
       <Navbar />
@@ -18,34 +31,21 @@ const Header = () => {
           <div className={styles.submaincontainer}>
             <header className={styles.header}>
               <div className={styles.row}>
-                
-                <div className={styles.column}>
-                  <div className="portcontainer">
-                    <div className="portwomen">
-                      <Tilt>
-                        <Image
-                          src={PC} alt='' style={{maxWidth:'100%', height:'auto'}}
-                          width={600}
-                          className="womanimg"
-                        />
-                      </Tilt>
-                    </div>
-                  </div>
-                </div>
                 <div className={styles.column}>
                   <div className={styles.content}>
                     <div className={styles.heading}>
                       {/* <div className={styles.row}>
-            <div className={styles.column}> */}
+                  <div className={styles.column}> */}
                       {`Praukcy for`}
                       <br />
                       {/* <span> digital &nbsp; </span> */}
                       {/* <br/> */}
-                      <span>
-                        <b className={styles.diffText}>credibility</b>
+                      <span ref={el} />
+                      {/* <span> */}
+                        {/* <b className={styles.diffText}>credibility</b>
                         <b className={styles.diffText}>quality</b>
-                        <b className={styles.diffText}>identity</b>
-                      </span>
+                        <b className={styles.diffText}>identity</b> */}
+                      {/* </span> */}
 
                       <main>
                         <p className={styles.para}>
@@ -62,6 +62,19 @@ const Header = () => {
                       <div className={styles.footer}>
                         Contact Our Work Team Now
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.column}>
+                  <div className="portcontainer">
+                    <div className="portwomen">
+                      <Tilt>
+                        <Image
+                          src={PC} alt='' style={{maxWidth:'100%', height:'auto'}}
+                          width={600}
+                          className={styles.womening}
+                        />
+                      </Tilt>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 html,
+
 body {
   padding: 0;
   margin: 0;
@@ -35,14 +36,13 @@ body {
 }
 
 .ulstyle {
-  color: #000;
   position: relative;
 }
 
 .ulstyle:after {
   content: "";
   position: absolute;
-  background-color: rgb(18, 161, 104);
+  background-color: rgb(1, 220, 220);
   height: 4px;
   width: 0;
   left: 0;
@@ -93,10 +93,10 @@ a {
 }
 
 .nav-list {
-  width: 80%;
-  margin-left: 30px;
+  width: 55%;
+  margin: auto;
+  margin-right: 0;
   text-align: center;
-  border-left: 5px solid rgb(18, 161, 104);
 }
 
 .nav-item {
@@ -108,11 +108,13 @@ a {
   font-weight: 450;
   font-size: 20px;
 }
-
+.nav-item:hover{
+  color: aqua;
+}
 .ribbon {
   border-top: 4px solid rgb(18, 161, 104);
   border-bottom: 4px solid rgb(18, 161, 104);
-  margin-top: -10%;
+  margin-top: -7%;
   height: auto;
   width: 100%;
   border-start-end-radius: 50% 17%;
@@ -142,14 +144,13 @@ a {
 }
 
 .underline {
-  color: #000;
   position: relative;
 }
 
 .underline:after {
   content: "";
   position: absolute;
-  background-color: rgb(18, 161, 104);
+  background-color: rgb(97, 201, 201);
   height: 4px;
   width: 100%;
   left: 0;
@@ -169,50 +170,57 @@ a {
 }
 
 .myfooter {
-  color: rgb(10, 10, 10);
+  color: white;
   bottom: 0px;
+  background-color: #161515;
   border-top: 1px solid black;
   width: 100%;
   margin-top: 20px;
   padding-top: 20px;
 }
-
-.myfooter a {
-  color: #000;
+.myfooter button{
+  color: white;
 }
-
+.myfooter button:hover{
+  color:rgb(63, 63, 238);
+}
 /* Services */
+.ser{
+  margin-top: -9%;
+  background-color: #161515;
+}
 .s-cards {
   display: flex;
-  max-width: 82%;
+  align-items: center;
   margin: auto;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .s-mycards {
-  box-shadow: 2px 2px 10px rgb(64, 62, 65);
-  background: linear-gradient(rgb(18, 161, 104), rgb(29, 28, 28));
-  margin: 20px auto;
-  padding: 1.3%;
-  width: 330px;
+  /* box-shadow: 2px 2px 10px rgb(64, 62, 65); */
+  background: linear-gradient(rgb(47, 48, 48), rgb(132, 130, 130));
+  width: 250px;
   align-items: center;
-  justify-content: space-evenly;
+  color: wheat;
+  margin: 4% 2%;
+  /* justify-content: space-evenly; */
 }
 
 .ime {
-  width: 90%;
-  height: auto;
+  width: 95%;
+  height: 22vh;
   display: block;
   margin: auto;
   margin-top: 4px;
 }
 
 .s-carads {
-  margin-top: 30px;
+  max-width: 80%;
+  margin: auto;
   padding: 0% 4% 2% 4%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .dot {
@@ -224,18 +232,37 @@ a {
 }
 
 .popup {
-  background: linear-gradient(rgb(18, 161, 104), rgb(29, 28, 28));
+  background: linear-gradient(rgb(174, 183, 178), rgb(29, 28, 28));
 }
 
+.s-carads h1{
+  margin-top: 3%;
+  font-size:94px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 900px) {
+  .s-carads h1{
+  font-size: 60px;
+  text-align: center;
+  }
+}
 /* Portfolio */
 .portfolio {
   padding: 0 1%;
-  height: 460px;
-  text-align: center;
-  align-items: center;
-  margin-top: 30px;
+  height: 70vh;
 }
-
+.portfolio h1{
+  text-align: center;
+  font-size: 94px;
+}
+@media screen and (max-width: 900px) {
+  .portfolio h1{
+  font-size: 60px;
+  text-align: center;
+  }
+}
 .portfolio .slick-slide {
   padding: 1%;
   overflow: hidden;
@@ -249,11 +276,14 @@ a {
 }
 
 .a2 {
-  border: 2px solid rgb(85, 84, 84);
+  background-color: rgb(169, 194, 241);
   position: relative;
+  z-index: 1;
   width: 250px;
   height: 250px;
   margin: auto;
+  border-radius: 2%;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -268,6 +298,7 @@ a {
 .a2 h3 {
   margin: 0;
   height: 15%;
+  font-size: 30px;
 }
 
 .a3 {
@@ -290,8 +321,8 @@ a {
   right: 0;
   color: rgb(222, 249, 247);
   bottom: 0;
-  background: linear-gradient(to bottom, rgb(23, 193, 162), rgb(4, 134, 125));
-  transition: 0.5s ease;
+  background: linear-gradient(to bottom, rgb(2, 55, 45), rgb(5, 98, 92));
+  transition: all ease 0.5s;
 }
 
 .a3 .overlay :hover {
@@ -382,11 +413,8 @@ h3 {
 }
 
 .c2 {
-  color: wheat;
   width: 90%;
   margin: 2% auto 6% auto;
-  border: 1px solid black;
-  background-color: rgb(96, 106, 102);
   border-radius: 10px;
   padding: 3% 0;
   display: flex;
@@ -401,7 +429,11 @@ h3 {
   border-radius: 2px;
   border: none;
 }
-
+.cbtn:hover{
+  background-color: rgb(45, 202, 202);
+  color: black;
+  transition: all 0.3s;
+}
 .contactheadcol {
   text-align: center;
   width: 70%;
@@ -663,10 +695,16 @@ textarea {
   padding: 1rem;
 }
 
-.womanimg {
-  size: 100%;
-}
-
 .portwomen {
   height: 100%;
+}
+/* Customer review */
+.testimonial{
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+}
+.testimonial h1{
+  margin-top: 50px;
+  color: white;
 }

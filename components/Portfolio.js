@@ -46,7 +46,7 @@ const Portfolio = () => {
   };
   return (
     <div className='portfolio'>
-      <h1 style={{ textAlign: 'center' }} >Portfolio</h1>
+      <h1 >PORTFOLIO</h1>
       <Slider {...settings}>
         <div className='a2'>
           <h3>Newsapp</h3>

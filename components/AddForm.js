@@ -25,17 +25,17 @@ const AddForm = () => {
   return (
     <form className='c2'>
       <Row>
-        <Col className='c1'>
+        <Col sm className='c1'>
           <h2>Contact Information</h2>
           <CiLocationOn></CiLocationOn><span>Sleeknote ApS Ankersgade 12C, 1, 8000 Aarhus</span>
           <IoCallOutline></IoCallOutline><span style={{ margin: 'auto 10px' }}><a href='tel: 8209181991'>+91-8209181991</a></span>
           <FaEnvelope></FaEnvelope><span style={{ margin: 'auto 5px' }}><a href='mailto: praukcy@gmail.com'>praukcy@gmail.com</a></span>
           <Col className='contactheadcol'>
-          <h3>Need help? Questions?</h3>
-          <span> {`We're here for you! Our service team is ready to assist and address your queries. Looking forward to hearing from you soon! Let us know how we can help.`}</span>
+            <h3>Need help? Questions?</h3>
+            <span> {`We're here for you! Our service team is ready to assist and address your queries. Looking forward to hearing from you soon! Let us know how we can help.`}</span>
+          </Col>
         </Col>
-        </Col>
-        <Col>
+        <Col sm>
           <h3>Send Message</h3>
           <div className='c4'>
             <div className="mb-3">

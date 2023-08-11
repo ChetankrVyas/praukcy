@@ -17,9 +17,10 @@ import Blo from '../assets/blo.jpg';
 const Services = () => {
   return (
     <>
-      <div className='ribbon'>
+      {/* <div className='ribbon'> */}
+      <div className='ser'>
         <section className='s-carads'>
-          <h1 className='our-services'>Services</h1>
+          <h1>SERVICES</h1>
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />
             <Crds title='Software Development' imag={SD} ime={Sof} text='' />
@@ -39,7 +40,7 @@ const Crds = (props) => {
   return (
     <Card className='s-mycards'>
       <Card.Body>
-        <Card.Title><div className='s-logo'><Image width={40} height={40} src={props.imag} alt='' />{props.title}</div></Card.Title>
+        <div className='s-logo'><Image width={40} height={40} src={props.imag} alt='' />{props.title}</div>
         <Image className='ime' src={props.ime} alt='' />
         <Card.Text>
           {props.text}
