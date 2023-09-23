@@ -11,13 +11,12 @@ const Contactandmess = () => {
   return (
     <div className='contact'>
       <Form1 />
+      <h1>How Can We Help?</h1>
       <div className='c3'>
-        <h1>How Can We Help?</h1>
         <span>{`You can either talk to us either through email or contact number or you can respond with the client side form and then we contact you in reply.`}</span>
         <Button href='/page/form' target='_blank' className='cbtn'>Credential</Button>
       </div>
     </div>
   )
 }
-
 export default Contactandmess

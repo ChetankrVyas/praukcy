@@ -6,7 +6,7 @@ import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
 import styles from "../../styles/about.module.scss";
 import Chetan from '../../assets/about/ch1.png'
-import Aashish from '../../assets/about/ak1.png'
+import Aashish from '../../assets/ayush.jpg'
 import Skill from '../../assets/about/skill.png'
 import Mith from '../../assets/about/mith.png'
 import Workinfo from "../../components/Workinfo"
@@ -23,9 +23,9 @@ const about = () => {
         <Row className={styles.content}>
           <Col sm={6}>
             <div className={styles.head}><span className={styles.underline}>{`About Us`}</span></div>
-            <div className={styles.headtext}><span>{`Praukcy is a professional services company that specializes in providing technical services to startups and existing businesses. The company has a team of experienced professionals who are dedicated to providing high-quality technical services to help businesses and startups achieve their goals. The Team at Praukcy is made up of skilled professionals with expertise in a range of technical areas,
-
-`}</span></div>
+            <div className={styles.headtext}>
+              <span>{`Praukcy is a professional services company that specializes in providing technical services to startups and existing businesses. The company has a team of experienced professionals who are dedicated to providing high-quality technical services to help businesses and startups achieve their goals. The Team at Praukcy is made up of skilled professionals with expertise in a range of technical areas,`}</span>
+            </div>
           </Col>
           <Col sm={6}></Col>
         </Row>
@@ -67,7 +67,7 @@ const about = () => {
               <Image src={Mith} alt='' className={styles.teamimage} />
             </div>
             <div className={styles.teammember}>
-              <name>Aashish Gupta</name>
+              <name>Ayush Sahu</name>
               <Image src={Aashish} alt='' className={styles.teamimage} />
 
             </div>
@@ -75,7 +75,7 @@ const about = () => {
         </div>
         <Row className={styles.joinrow}>
           <Col sm={6} className={styles.joincol}>
-            <Image src={Skill} alt='' className={styles.skillimage}/>
+            <Image src={Skill} alt='' className={styles.skillimage} />
           </Col>
           <Col sm={6} className={styles.joincol}>
             <h2>We are looking for technical skilled people to join us.

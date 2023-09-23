@@ -1,0 +1,97 @@
+
+/* workinfo */
+.workinfo {
+    padding: 3rem;
+    display: flex;
+    flex-shrink: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    min-height: 20rem;
+  }
+  
+  .workCard {
+    position: relative;
+    margin: 1rem;
+    background-color: #3c7d50;
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .workCard .firstchild {
+    font-size: 4rem;
+    justify-content: center;
+    color: #686666;
+    font-weight: 800;
+  }
+  
+  .workCard .secondchild {
+    color: white;
+    font-size: 3rem;
+    justify-content: center;
+  }
+  
+  .workCard .secondsubchild {
+    font-size: 1rem;
+    color: #ffffff87;
+  }
+  
+  .workCard:hover {
+    background-image: linear-gradient(120deg, rgb(18, 161, 104), rgb(29, 28, 28) 100%);
+  }
+  
+  @media screen and (max-width: 300px) {
+    .workCard .firstchild {
+      font-size: 2rem;
+  
+      font-weight: 800;
+    }
+  
+    .workCard .secondchild {
+      font-size: 1rem;
+    }
+  
+    .workCard .secondsubchild {
+      font-size: 0.8rem;
+    }
+  
+    .workCard {
+      padding: 1rem;
+    }
+  
+    .workinfo {
+      height: auto;
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .half {
+      width: 100%;
+      float: none;
+      margin-bottom: 0;
+    }
+  
+    .contact-form {
+      width: 95%;
+    }
+  
+    .right {
+      margin-top: 0px;
+    }
+  }
+  
+  .portcontainer {
+    background-color: transparent;
+    width: fit-content;
+    padding: 1rem;
+  }
+  
+  .portwomen {
+    height: 100%;
+  }

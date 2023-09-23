@@ -12,12 +12,9 @@ import {
 import Link from "next/link";
 const Footer = (props) => {
   const [modalShow, setModalShow] = useState(false);
-
   return (
     <div>
-      <footer
-        className="text-center text-lg-start myfooter"
-      >
+      <footer className="text-center text-lg-start myfooter">
         <div className="container p-4 pb-0">
           <section className="">
             <Row>

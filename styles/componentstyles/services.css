@@ -1,0 +1,101 @@
+/* Services */
+.ser{
+    margin-top: -9%;
+    /* background-color: #161515; */
+  }
+  /* === HEADING STYLE #1 === */
+  .one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .s-carads h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    /* font-family: "Raleway", sans-serif; */
+    font-weight: 300;
+    font-size: 45px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.4s ease 0s;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 7px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #a95f5f;
+  }
+  .one h1:after {
+    width: 150px;
+    height: 3px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    left: 50%;
+    margin-left: -75px;
+    background-color: #c05353;
+  }
+  
+  .s-cards {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .s-mycards {
+    /* box-shadow: 2px 2px 10px rgb(64, 62, 65); */
+    background: linear-gradient(rgb(47, 48, 48), rgb(132, 130, 130));
+    width: 250px;
+    align-items: center;
+    color: wheat;
+    margin: 4% 2%;
+    /* justify-content: space-evenly; */
+  }
+  
+  .ime {
+    width: 95%;
+    height: 22vh;
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+  }
+  
+  .s-carads {
+    max-width: 80%;
+    margin: auto;
+    padding: 0% 4% 2% 4%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dot {
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%
+  }
+  
+  .popup {
+    background: linear-gradient(rgb(174, 183, 178), rgb(29, 28, 28));
+  }
+  
+  @media screen and (max-width: 900px) {
+    .s-carads h1{
+    font-size: 60px;
+    text-align: center;
+    }
+  }
+  

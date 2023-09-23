@@ -46,7 +46,9 @@ const Portfolio = () => {
   };
   return (
     <div className='portfolio'>
-      <h1 >PORTFOLIO</h1>
+      <div className='one'>
+        <h1 >PORTFOLIO</h1>
+      </div>
       <Slider {...settings}>
         <div className='a2'>
           <h3>Newsapp</h3>

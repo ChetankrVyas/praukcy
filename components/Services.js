@@ -20,7 +20,7 @@ const Services = () => {
       {/* <div className='ribbon'> */}
       <div className='ser'>
         <section className='s-carads'>
-          <h1>SERVICES</h1>
+          <div className='one'><h1>SERVICES</h1></div> 
           <div className='s-cards'>
             <Crds title='Web Development' imag={WD} ime={We} text="" />
             <Crds title='Software Development' imag={SD} ime={Sof} text='' />
