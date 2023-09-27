@@ -161,27 +161,20 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-
-.maincontainer {
-  // background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: rgb(236, 247, 246);
+.portwomen{
+  width: 90%;
+  margin: auto;
 }
-
-.submaincontainer {
+.maincontainer {
   color: black;
-  display: flex;
-  padding-top: 20px;
-  flex-wrap: wrap;
+  height: 86vh;
 }
 
 .row {
   margin-top: 0%;
   display: flex;
+  height: 100%;
   width: 100%;
-  justify-content: space-around;
-  padding: 0% 8% 7% 8%;
 }
 
 @media (max-width: 770px) {
@@ -197,18 +190,30 @@
 }
 
 .column {
-  flex-basis: 45%;
+  // flex-basis: 45%;
   overflow: hidden;
   width: 50%;
-  padding: 5% 4% 0% 4%;
+  padding: 4% 4% 0% 7%;
   border-radius: 10px;
   // margin-bottom: 5%;
   // text-align: left;
   text-align: left;
 }
 
+.column2 {
+  // flex-basis: 45%;
+  background-color: rgb(140, 255, 203);
+  overflow: hidden;
+  width: 50%;
+  padding: 2% 7% 0% 4%;
+  // border-radius: 10px;
+  text-align: left;
+}
 @media (max-width: 770px) {
   .column {
+    width: 100%;
+  }
+  .column2 {
     width: 100%;
   }
 }

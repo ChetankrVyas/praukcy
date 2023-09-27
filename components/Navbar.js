@@ -7,8 +7,6 @@ import { useRouter } from 'next/router';
 function Nav_bar() {
     let router = useRouter();
     let location = router.pathname;
-    // const { pathname } = location;
-    // const splitLocation = pathname.split("/");
     return(      
         <Navbar variant='light' expand="lg">
             <Container>
@@ -20,8 +18,7 @@ function Nav_bar() {
                         <Nav.Link href="/page/services"><span className={location === "/page/services" ? "nav-item ulstyle active" : "nav-item ulstyle"}>Services</span></Nav.Link>
                         <Nav.Link href="/page/portfolio"><span className={location === "/page/portfolio" ? "nav-item ulstyle active" : "nav-item ulstyle"}>Portfolio</span></Nav.Link>
                         <Nav.Link href="/page/about"><span className={location === "/page/about" ? "nav-item ulstyle active" : "nav-item ulstyle"}>About</span></Nav.Link>
-                    </Nav>
-                       
+                    </Nav>    
                 </Navbar.Collapse>
             </Container>
         </Navbar>

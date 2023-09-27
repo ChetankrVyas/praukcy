@@ -33,30 +33,6 @@ const dataDigitalBestSeller = [
    },
    {
       id: 5,
-      name: 'Gun Model',
-      linkImg: '',
-      year:'2023',
-      category: '3D',
-      key: 'gm1'
-   },
-   {
-      id: 6,
-      name: 'Gun Model',
-      linkImg: '',
-      year:'2023',
-      category: '3D',
-      key: 'gm2'
-   },
-   {
-      id: 7,
-      name: 'House Model',
-      linkImg: '',
-      year:'2023',
-      category: '3D',
-      key: 'hm1'
-   },
-   {
-      id: 8,
       name: 'Axelerate Track',
       linkImg: '',
       year:'2023',
@@ -64,7 +40,7 @@ const dataDigitalBestSeller = [
       key: 'graphic'
    },
    {
-      id: 9,
+      id: 6,
       name: 'BLVESS Logo',
       linkImg: '',
       year:'2023',
@@ -72,28 +48,12 @@ const dataDigitalBestSeller = [
       key: 'logo'
    },
    {
-      id: 10,
-      name: '30 Logos',
+      id: 7,
+      name: 'ChatAI',
       linkImg: '',
       year:'2023',
-      category: 'logo',
-      key: 'logo'
-   },
-   {
-      id: 11,
-      name: 'Poster',
-      linkImg: '',
-      year:'2023',
-      category: 'graphicdesign',
-      key: 'graphic'
-   },
-   {
-      id: 12,
-      name: 'Poster',
-      linkImg: '',
-      year:'2023',
-      category: 'graphicdesign',
-      key: 'graphic'
+      category: 'chatbot',
+      key: 'chatgpt'
    },
 ]
 

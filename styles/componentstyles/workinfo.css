@@ -13,7 +13,7 @@
   .workCard {
     position: relative;
     margin: 1rem;
-    background-color: #3c7d50;
+    background-color: #03a2a4;
     width: 15rem;
     height: 10rem;
     border-radius: 0.8rem;
@@ -42,7 +42,7 @@
   }
   
   .workCard:hover {
-    background-image: linear-gradient(120deg, rgb(18, 161, 104), rgb(29, 28, 28) 100%);
+    background-image: linear-gradient(120deg, rgb(28, 236, 255), rgb(29, 28, 28) 100%);
   }
   
   @media screen and (max-width: 300px) {

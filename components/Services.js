@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { Button, Card, Modal } from 'react-bootstrap';
 import Image from 'next/image';
 import We from '../assets/web.jpg';
 import WD from '../assets/wd.png';
@@ -20,46 +19,34 @@ const Services = () => {
       {/* <div className='ribbon'> */}
       <div className='ser'>
         <section className='s-carads'>
-          <div className='one'><h1>SERVICES</h1></div> 
-          <div className='s-cards'>
-            <Crds title='Web Development' imag={WD} ime={We} text="" />
-            <Crds title='Software Development' imag={SD} ime={Sof} text='' />
-            <Crds title='Android Development' imag={AD} ime={An} text='' />
-            <Crds title='Chat Bots' imag={CB} ime={Cha} text='' />
-            <Crds title='Logo Design' imag={SEO} ime={Sea} text="" />
-            <Crds title='Graphics Design' imag={BN} ime={Blo} text=''  />
-          </div>
+          <div className='one'><h1>SERVICES</h1></div>
+          <section className="service-grid pb-5 pt-5">
+            <div className='container'>
+              <div className='row'>
+                <Crds />
+                <Crds />
+                <Crds />
+              </div>
+            </  div>
+          </section>
         </section>
       </div>
     </>
   )
 }
 const Crds = (props) => {
-  const [modalShow, setModalShow] = useState(false);
-
   return (
-    <Card className='s-mycards'>
-      <Card.Body>
-        <div className='s-logo'><Image width={40} height={40} src={props.imag} alt='' />{props.title}</div>
-        <Image className='ime' src={props.ime} alt='' />
-        <Card.Text>
-          {props.text}
-        </Card.Text>
-        <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1} />
-        <Button variant='transparent' onClick={() => setModalShow(true)} style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '90%' }}>More...</Button>
-      </Card.Body>
-    </Card>
-  )
-}
-
-const Popup = (props) => {
-  return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" id={props.id} centered>
-      <div className='popup'>
-        <Button variant='transparent' style={{ color: "white", margin: 'auto', display: 'block', border: '2px solid white', width: '40%' }} onClick={props.onHide}>Close</Button>
+    <div className="col-lg-4 col-md-6 text-center mb-3">
+      <div className="service-wrap">
+        <div className="service-icon">
+          <i className="fas fa-layer-group"></i>
+        </div>
+        <h4>Web Application</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+        <a href="#">Read More</a>
       </div>
-    </Modal>
-  );
+    </div>
+  )
 }
 
 export default Services;

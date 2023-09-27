@@ -55,24 +55,14 @@ const about = () => {
           </Col>
         </Row>
         <Workinfo />
-        <div className={styles.team}>
-          <h1>Meet Our Amazing Team</h1>
-          <div className={styles.teambox}>
-            <div className={styles.teammember}>
-              <name>Chetan Vyas</name>
-              <Image src={Chetan} alt='' className={styles.teamimage} />
-            </div>
-            <div className={styles.teammember}>
-              <name>Mithilesh K</name>
-              <Image src={Mith} alt='' className={styles.teamimage} />
-            </div>
-            <div className={styles.teammember}>
-              <name>Ayush Sahu</name>
-              <Image src={Aashish} alt='' className={styles.teamimage} />
-
-            </div>
+        <div className="responsive-container-block container">
+            <p className="text-blk team-head-text">
+              Our Team
+            </p>
+            <Card />
+            <Card />
+            <Card />
           </div>
-        </div>
         <Row className={styles.joinrow}>
           <Col sm={6} className={styles.joincol}>
             <Image src={Skill} alt='' className={styles.skillimage} />
@@ -85,9 +75,38 @@ const about = () => {
           </Col>
         </Row>
       </div>
+
       <Footer />
     </>
   )
 }
 
+const Card = () => {
+  return (
+    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+      <div className="aboutcard">
+        <div className="team-image-wrapper">
+          <Image className="team-member-image" src={Chetan} />
+        </div>
+        <p className="text-blk name">
+          Davis George
+        </p>
+        <p className="text-blk position">
+          CEO
+        </p>
+        <p className="text-blk feature-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div className="social-icons1">
+          <a href="https://www.twitter.com" target="_blank">
+            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
 export default about
