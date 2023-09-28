@@ -64,7 +64,7 @@ const Portfolio = () => {
                   <div className="img-card iCard-style3" key={key}>
                     <div className="card-content">
                       <div className="card-image">
-                        <img src="https://www.dropbox.com/s/tclqbz7o4u8e705/ipad-632394_640.jpg?raw=1" />
+                        <img alt='' src="https://www.dropbox.com/s/tclqbz7o4u8e705/ipad-632394_640.jpg?raw=1" />
                       </div>
                         <span className="card-title">{name}</span>
                       <div className="card-text">

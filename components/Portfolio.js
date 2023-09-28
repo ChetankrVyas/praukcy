@@ -65,7 +65,7 @@ const Card =()=>{
           <div className="card-content">
             <div className="card-image">
               <span className="card-caption">Image Caption</span>
-              <img src="https://www.dropbox.com/s/63v40eqeq9lgz3k/bald-eagle-2715461_640.jpg?raw=1" />
+              <img alt='' src="https://www.dropbox.com/s/63v40eqeq9lgz3k/bald-eagle-2715461_640.jpg?raw=1" />
             </div>
 
             <span className="card-title">Card Title</span>

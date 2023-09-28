@@ -86,7 +86,7 @@ const Card = () => {
     <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
       <div className="aboutcard">
         <div className="team-image-wrapper">
-          <Image className="team-member-image" src={Chetan} />
+          <img className="team-member-image" src={Chetan} alt=''/>
         </div>
         <p className="text-blk name">
           Davis George
@@ -98,11 +98,11 @@ const Card = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="social-icons1">
-          <a href="https://www.twitter.com" target="_blank">
-            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
+          <a href="https://www.twitter.com" target="_blank" rel='noreferrer'>
+            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" alt=''/>
           </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
+          <a href="https://www.facebook.com" target="_blank" rel='noreferrer'>
+            <img alt='' className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
           </a>
         </div>
       </div>
