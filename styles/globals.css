@@ -1,7 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 html,
-*{scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #3c393c #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #3c393c;
+    border-radius: 12px;
+    /* border: 3px solid #ffffff; */
+  }
 body {
   padding: 0;
   /* padding-top:60px; */
@@ -12,30 +35,7 @@ body {
   /* background-color: rgb(236, 247, 246); */
   background-size: cover;
   overflow-x: hidden;
-}
-
-.dropdown-menu {
-  background-color: #080808;
-  color: white;
-  border-bottom: 3px solid orange;
-}
-
-.dropdown-item {
-  color: white;
-}
-
-.dropdown-item:hover {
-  color: rgb(1, 132, 232);
-  background-color: transparent;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-.dropdown-toggle::after {
-  display: none !important;
+  background: white;
 }
 
 .ulstyle {
@@ -63,6 +63,7 @@ body {
   bottom: -6px;
   transition: 0.3s;
 }
+
 .ulstyle:hover::after {
   width: 100%;
 }
@@ -121,12 +122,15 @@ a {
   font-weight: 450;
   font-size: 20px;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   color: aqua;
 }
-.active{
+
+.active {
   color: aqua;
 }
+
 .ribbon {
   border-top: 4px solid rgb(18, 161, 104);
   border-bottom: 4px solid rgb(18, 161, 104);
@@ -194,11 +198,13 @@ a {
   margin-top: 20px;
   padding-top: 20px;
 }
-.myfooter button{
+
+.myfooter button {
   color: white;
 }
-.myfooter button:hover{
-  color:rgb(63, 63, 238);
+
+.myfooter button:hover {
+  color: rgb(63, 63, 238);
 }
 
 
@@ -335,14 +341,16 @@ textarea {
 }
 
 /* testimonial */
-.testimonial{
+.testimonial {
   /* background-color: #232323; */
   display: flex;
   color: black;
   justify-content: center;
 }
-.testimonial .one h1{
-  margin-top: 50px;position: relative;
+
+.testimonial .one h1 {
+  margin-top: 50px;
+  position: relative;
   padding: 0;
   margin: 0;
   /* font-family: "Raleway", sans-serif; */
@@ -352,6 +360,6 @@ textarea {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 45x;
 }

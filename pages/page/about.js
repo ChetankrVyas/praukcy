@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react'
-import { Col, Row } from 'react-bootstrap';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar';
 import styles from "../../styles/about.module.scss";
@@ -10,7 +8,6 @@ import Aashish from '../../assets/ayush.jpg'
 import Skill from '../../assets/about/skill.png'
 import Mith from '../../assets/about/mith.png'
 import Workinfo from "../../components/Workinfo"
-import img from '../../assets/srvcs.jpg'
 
 const about = () => {
   return (
@@ -19,17 +16,71 @@ const about = () => {
         <title>About</title>
       </Head>
       <Navbar />
-      <div className={styles.about}>
-        <Row className={styles.content}>
-          <Col sm={6}>
-            <div className={styles.head}><span className={styles.underline}>{`About Us`}</span></div>
-            <div className={styles.headtext}>
-              <span>{`Praukcy is a professional services company that specializes in providing technical services to startups and existing businesses. The company has a team of experienced professionals who are dedicated to providing high-quality technical services to help businesses and startups achieve their goals. The Team at Praukcy is made up of skilled professionals with expertise in a range of technical areas,`}</span>
+      <div>
+        <section className="about-section">
+          <div className="container">
+            <div className="row">
+              <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                <div className="inner-column">
+                  <div className="sec-title">
+                    <span className="title">About Css3transition</span>
+                    <h2>We are Creative Tech Enthusiast working since 2015</h2>
+                  </div>
+                  <div className="text">I am Rahul Yaduvanshi works at Css3 Transition since last 3 years. We are here to provide touch notch solution for your website or web application that helps you to make your website look attractive & efficient in handling by creating usefull plugins thats you need.</div>
+                  <div className="text">
+                    We are here to serve you next level tutorial that currently in trend to match you with your expertise. Css3 transition is a learning website. where you can find many good quality content related to web development and tutorials about plugins. here we are using html, html5, css, css3, jquery & javascript along with inspirational UI design layout by professionals by using Photoshop and adobe allustrator.
+                  </div>
+                  <div className="btn-box">
+                    <a href="#" className="theme-btn btn-style-one">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                <div className="inner-column wow fadeInLeft">
+                  <div className="author-desc">
+                    <h2>Rahul Kumar Yadav</h2>
+                    <span>Web Developer</span>
+                  </div>
+                  <figure className="image-1"><a href="#" className="lightbox-image" data-fancybox="images"><img title="Rahul Kumar Yadav" src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg" alt="" /></a></figure>
+
+                </div>
+              </div>
             </div>
-          </Col>
-          <Col sm={6}></Col>
-        </Row>
-        <Row className={styles.abouthead}>
+          </div>
+        </section>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Our Humble Beginnings</h4>
+              </div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">An Agency is Born</h4>
+              </div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>December 2015</h4>
+                <h4 class="subheading">Transition to Full Service</h4>
+              </div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+            </div>
+          </li>
+        </ul>
+        {/* <Row className={styles.abouthead}>
           <Col sm={6} className={styles.abouthead1}>{`What kind of services does Praukcy offer ?`}</Col>
           <Col sm={6} className={styles.abouthead2}>
             <div className={styles.paragraph}>
@@ -53,29 +104,31 @@ const about = () => {
               {`At Praukcy, we leverage a range of advanced technologies including React.js, Express, Node.js, Nexe, Flutter, Tkinter, MongoDB, Firebase, AutoDesk Maya, modern AI APIs, Figma, Canva, video editors, and more. By utilizing the latest available resources, we are able to provide our customers with the best possible assistance and support.`}
             </div>
           </Col>
-        </Row>
+        </Row> */}
         <Workinfo />
         <div className="responsive-container-block container">
-            <p className="text-blk team-head-text">
-              Our Team
-            </p>
-            <Card />
-            <Card />
-            <Card />
-          </div>
-        <Row className={styles.joinrow}>
-          <Col sm={6} className={styles.joincol}>
-            <Image src={Skill} alt='' className={styles.skillimage} />
-          </Col>
-          <Col sm={6} className={styles.joincol}>
-            <h2>We are looking for technical skilled people to join us.
-              If you are interested and have skills then kindly fill the form to join.
-            </h2>
-            <button >Join Our Team</button>
-          </Col>
-        </Row>
+          <p className="text-blk team-head-text">
+            Our Team
+          </p>
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
-
+      <div className="container my-5">
+        <div className="row">
+          <div className="col-lg-6">
+            <img className="w-100 shadow" src="https://via.placeholder.com/824x552" />
+          </div>
+          <div className="col-lg-6">
+            <div className="p-5 mt-4">
+              <h1 className="display-4">H1 Heading</h1>
+              <p className="lead">Crow&apos;s nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+              <button className='button'>Join Our Team</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   )
@@ -86,7 +139,7 @@ const Card = () => {
     <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
       <div className="aboutcard">
         <div className="team-image-wrapper">
-          <img className="team-member-image" src={Chetan} alt=''/>
+          <img className="team-member-image" src={Chetan} alt='' />
         </div>
         <p className="text-blk name">
           Davis George
@@ -99,7 +152,7 @@ const Card = () => {
         </p>
         <div className="social-icons1">
           <a href="https://www.twitter.com" target="_blank" rel='noreferrer'>
-            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" alt=''/>
+            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" alt='' />
           </a>
           <a href="https://www.facebook.com" target="_blank" rel='noreferrer'>
             <img alt='' className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />

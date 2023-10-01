@@ -1,13 +1,6 @@
 import Head from 'next/head';
 import style from '../../styles/service.module.scss';
 import React, { useState } from 'react'
-import web from '../../assets/services/web.jpg'
-import android from '../../assets/services/android2.jpg'
-import chat from '../../assets/services/chat.png'
-import edit from '../../assets/services/edit.jpg'
-import logo from '../../assets/services/logo.png'
-import gui from '../../assets/services/gui.jpg'
-import d3d from '../../assets/services/3d.jpg'
 import service from '../../assets/services/service3.png'
 import { Col, Row } from 'react-bootstrap';
 import Footer from '../../components/Footer'
@@ -20,9 +13,9 @@ const Services = () => {
       <Head>
         <title>Services</title>
       </Head>
-      <Navbar /> 
+      <Navbar />
       <div className={style.services2}>
-        <Row className={style.serve}>
+        {/* <Row className={style.serve}>
           <Col sm={6} className={style.col4}>
             <h1>Praukcy</h1>
             <div className={style.text3}>Praukcy is a versatile and dynamic company that offers a wide range of technical services to help individuals and businesses establish and enhance their online presence. With a strong focus on delivering high-quality results, Praukcy provides expert services in areas such as web development, app development, logo design, and graphic design.</div>
@@ -30,53 +23,54 @@ const Services = () => {
           <Col sm={6} className={style.col5}>
             <Image src={service} className={style.imag} alt='' />
           </Col>
-        </Row>
-        <Service />
+        </Row> */}
+        <div className="we-are-block">
+          <div id="about-us-section">
+            <div className="about-us-image">
+              <img src="https://digitalupgrade.com/images/lobbyimage_1.jpg" alt="Lobby Image" />
+            </div>
+            <div className="about-us-info">
+              <h2>We are Digital Upgrade</h2>
+              <p>Digital Upgrade, located in Evansville, IN, makes it easy for businesses to create and manage their digital presence and logistics, meaning we can make your business more efficient and profitable! We believe in our community and want to help our local business economy grow and expand. We believe in our clients, and want to assist in their digital success. The D-UP team grades ourselves on outcomes, not on sales.</p>
+              <a href="#" title="About Us Button">ABOUT US</a>
+            </div>
+          </div>
+        </div>
+        <main className="main">
+          <div className="cards-grid">
+            <Card1 />
+            <Card1 />
+            <Card1 />
+          </div>
+        </main>
+        <h1>Our Future Plans and Services</h1>
+        <div className="inner">
+          <div className="inner__headings">
+            <h5 className="inner__sub">Our Capabilities</h5>
+            <h2 className="inner__head">Having attractive
+              services has never
+              been <span className="inner__clr">easier.</span></h2>
+          </div>
+          <div className="inner__content">
+            <p className="inner__text">We&apos;re brand strategy and digital design agency, building brands that
+              matter in culture with more than ten years of knowledge e and in to do expertise and digital design agency or brands.</p>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
   )
 }
-const Service = () => {
-  return (
-    <div id='servicesCm'>
-      <Card1 title="Website Design" imag={web} text1='Praukcy crafts engaging websites that drive business growth and success.' text2='Praukcy is the go-to destination for businesses looking to create stunning websites that are tailored to their brand and offer an exceptional user experience.' />
-      <Card1 title="Android" imag={android} text1='Praukcy creates cutting-edge apps that meet their unique needs.' text2='We specializes in creating custom Android apps that are tailored to your unique business needs. From design to development and everything in between, Praukcy has the tools and knowledge to help your Android app succeed in todays competitive market.' />
-      <Card1 title="Logo and Graphics Design" imag={logo} text1='Praukcy is the one-stop solution for all your logo and graphic design needs.' text2='Our team of skilled designers is dedicated to crafting unique and visually stunning designs that perfectly capture your brands essence. With Praukcy, you can be confident that your brand will stand out and make a lasting impression on your audience.' />
-      <Card1 title="Video and Photo Editing" imag={edit} text1='Praukcy offers expert video and photo editing services.'
-        text2='With our splendid services, you can be assured of high-quality and professional editing that will take your content to the next level. Whether you are looking to enhance your social media presence, create captivating marketing materials, or simply preserve cherished memories, Praukcy has got you covered.' />
-      <Card1 title="Chatbots" text1='Chatbots allows businesses to grow due to less time spend with consumers directly '
-      text2='Providing businesses with customized chatbots that can be integrated seamlessly into their existing systems, allowing them to automate their customer interactions across multiple channels, including websites, social media, messaging apps, and more.' imag={chat}/>
-      <div className={style.servicefuture}>
-        <Row>
-          <Col sm={6} className={style.Col2}>
-            <h1>Our Future Plans and Services</h1>
-          </Col>
-          <Col sm={6} className={style.Col3} >
-            <div className={style.text4}>
-              We are fully committed to pushing the boundaries of innovation and exploring new possibilities through a series of extensive experiments. Our unwavering dedication to excellence and customer satisfaction drives us to continually expand our range of exceptional services. Furthermore, as we strive for continued growth and success, we are actively seeking out the most talented and skilled individuals to join our team and contribute to our collective vision of excellence.
-            </div>
-          </Col>
-        </Row>
-      </div>
-    </div>
-  )
-}
+
 const Card1 = (props) => {
   return (
-    <div>
-      <Image alt='' />
-      <h2>{props.title}</h2>
-      <Row className={style.serviceItem}>
-        <Col sm={6} className={style.col1}>
-          <Image src={props.imag} className={style.imag} alt='' />
-        </Col>
-        <Col sm={6} className={style.col}>
-          <span className={style.text1}>{props.text1}</span>
-          <br />
-          <div className={style.text2}>{props.text2}</div>
-        </Col>
-      </Row>
+
+    <div className="card">
+      <img className="card__icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2709552/icon-brand.svg" alt="brand" />
+      <div className="card__body">
+        <h4 className="card__head">UI/UX Design</h4>
+        <p className="card__content">Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
+      </div>
     </div>
   )
 }
