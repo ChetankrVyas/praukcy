@@ -23,7 +23,6 @@ const Testimonial = () => {
     <div className="testimonial">
       <div style={{ width: "50%", textAlign: "center" }}>
         <div className="one">
-
         <h1 >Testimonials</h1>
         </div>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
@@ -58,7 +57,7 @@ const Card = ({ img,text,name,post }) => {
       <p style={{color:"black"}}>
        {text}
       </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 ,color:"bla"}}>
+      <p style={{ fontStyle: "italic", marginTop: 25 ,color:"blue", fontWeight:'bold'}}>
         <span style={{ fontWeight: 500, color: "green" }}>{name}</span> ,
         {post}
       </p>

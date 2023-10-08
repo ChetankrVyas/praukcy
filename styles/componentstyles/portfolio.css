@@ -1,10 +1,13 @@
 /* Portfolio */
 .portfolio {
   padding: 0 1%;
-  height: 93vh;
-  /* background-color: #232323; */
+  background-color: white;
+  color: black;
 }
-
+.portfolio-page{
+  background-color: white;
+  color: black;
+}
 .eight h1 {
   text-align: center;
 

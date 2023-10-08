@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    background-color: white;
+    color: black;
   }
   
   .contact h1,
@@ -11,7 +13,9 @@
   h3 {
     text-align: center;
   }
-  
+  .contact{
+    padding-top: 4rem;
+  }
   .c1 {
     width: 80%;
     /* margin: auto; */
@@ -78,7 +82,6 @@
     border-color: transparent;
     border-bottom: 1px solid black;
     padding: 4px;
-    color: wheat;
     font-size: 16px;
   }
   
@@ -129,4 +132,18 @@
       height: 200px;
     }
   }
-  
+  .contact .one h1 {
+    margin-top: 50px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    /* font-family: "Raleway", sans-serif; */
+    font-weight: 300;
+    /* font-size: 40px; */
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45x;
+  }  

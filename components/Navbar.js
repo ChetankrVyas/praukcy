@@ -1,27 +1,22 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/logo.png'
+import Logo from '../assets/logo.png'
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 function Nav_bar() {
     let router = useRouter();
     let location = router.pathname;
-    return(      
-        <Navbar variant='light' expand="lg">
-            <Container>
-                <Navbar.Brand href="/"><Image src={logo} alt=''/></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className=" nav-list">
-                        <Nav.Link href="/"><span className={location === "/" ? "nav-item ulstyle active" : "nav-item ulstyle"}>Home</span></Nav.Link>
-                        <Nav.Link href="/page/services"><span className={location === "/page/services" ? "nav-item ulstyle active" : "nav-item ulstyle"}>Services</span></Nav.Link>
-                        <Nav.Link href="/page/portfolio"><span className={location === "/page/portfolio" ? "nav-item ulstyle active" : "nav-item ulstyle"}>Portfolio</span></Nav.Link>
-                        <Nav.Link href="/page/about"><span className={location === "/page/about" ? "nav-item ulstyle active" : "nav-item ulstyle"}>About</span></Nav.Link>
-                    </Nav>    
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+    return (
+        <nav>
+            <div className="leftnav"><Image src={Logo} alt="logo" className='logoimg' /></div>
+            <div className="rightnav">
+                <ul>
+                    <li className={location === "/" ? "nav-item ulstyle active" : "nav-item ulstyle"}><Link href='/'>Home</Link></li>
+                    <li className={location === "/page/services" ? "nav-item ulstyle active" : "nav-item ulstyle"}><Link href='/page/services'>Services</Link></li>
+                    <li className={location === "/page/portfolio" ? "nav-item ulstyle active" : "nav-item ulstyle"}><Link href='/page/portfolio'>Portfolio</Link></li>
+                    <li className={location === "/page/about" ? "nav-item ulstyle active" : "nav-item ulstyle"}><Link href='/page/about'>About</Link></li>
+                </ul>
+            </div>
+        </nav>
     );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import PC from '../assets/pc.png';
+import Logo from '../assets/logo.png'
+import PC from '../assets/pc1.png';
 import Contactus from './Contactus';
 import Tilt from "react-parallax-tilt";
 import styles from "../styles/header.module.scss";
@@ -22,65 +23,33 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className='s-header'>
+    <>
       <Navbar />
-      <div>
-        <Contactus />
-        <div className={styles.maincontainer}>
-          <header className={styles.header}>
-            <div className={styles.row}>
-              <div className={styles.column}>
-                <div className={styles.content}>
-                  <div className={styles.heading}>
-                    {/* <div className={styles.row}>
-                  <div className={styles.column}> */}
-                    {`Praukcy for`}
-                    <br />
-                    {/* <span> digital &nbsp; </span> */}
-                    {/* <br/> */}
-                    <span ref={el} />
-                    {/* <span> */}
-                    {/* <b className={styles.diffText}>credibility</b>
-                        <b className={styles.diffText}>quality</b>
-                        <b className={styles.diffText}>identity</b> */}
-                    {/* </span> */}
-
-                    <main>
-                      <p className={styles.para}>
-                        {/* <hr/> */}
-                        Praukcy will present rays of hope so dazzling that
-                        they penetrate even the darkness that veils our eyes.
-                      </p>
-                      <button className={styles.button1}>
-                        <Link href='/page/services'> Explore Services </Link>
-                      </button>
-                      {/* </div> */}
-                    </main>
-
-                    <div className={styles.footer}>
-                      Contact Our Work Team Now
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.column2}>
-                <div className="portcontainer">
-                  <div className={styles.portwomen}>
-                    <Tilt>
-                      <Image
-                        src={PC} alt='' style={{ maxWidth: '100%', height: 'auto' }}
-                        width={600}
-                        className={styles.womening}
-                      />
-                    </Tilt>
-                  </div>
-                </div>
-              </div>
+      <Contactus/>
+      <div className='newhead'>
+        <div className="main">
+          <div className="left">
+            <h2>Praukcy for <br /><span id="element"><span ref={el} /></span></h2>
+            <h6><i className="fa-solid fa-circle-radiation fa-spin"></i>Dynamic Services</h6>
+            <h6><i className="fa-solid fa-circle-radiation fa-spin"></i>Easy to use UI</h6>
+            <div className="info">
+              <i className="fa-solid fa-circle-info"></i>
+              <span>Want an awesome web app ready? A logo design? No worries. We&apos;re here for you</span>
             </div>
-          </header>
+
+          </div>
+          <div className="right">
+            <Tilt>
+              <Image
+                src={PC} alt='' style={{ maxWidth: '100%', height: 'auto' }}
+                width={600}
+                className={styles.womening}
+              />
+            </Tilt>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

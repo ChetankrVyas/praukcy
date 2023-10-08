@@ -10,6 +10,9 @@ import Image from 'next/image';
 const Contactandmess = () => {
   return (
     <div className='contact'>
+      <div className="one">
+        <h1 >Contact Us</h1>
+      </div>
       <Form1 />
       <h1>How Can We Help?</h1>
       <div className='c3'>
