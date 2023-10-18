@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from '../assets/logo.png'
 import PC from '../assets/pc1.png';
 import Contactus from './Contactus';
 import Tilt from "react-parallax-tilt";
 import styles from "../styles/header.module.scss";
 import Navbar from '../components/Navbar';
-import Link from 'next/link';
 import Typed from 'typed.js';
 
 const Header = () => {
@@ -26,8 +24,12 @@ const Header = () => {
     <>
       <Navbar />
       <Contactus/>
+      
       <div className='newhead'>
         <div className="main">
+        <video autoPlay="autoplay" loop="loop" muted className='video' >
+          <source src="https://www.pexels.com/video/digital-presentation-of-information-on-a-screen-monitor-3130182/" type='video/mp4'/>
+        </video>
           <div className="left">
             <h2>Praukcy for <br /><span id="element"><span ref={el} /></span></h2>
             <h6><i className="fa-solid fa-circle-radiation fa-spin"></i>Dynamic Services</h6>

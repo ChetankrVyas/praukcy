@@ -34,6 +34,9 @@ const Services = () => {
               <p>Digital Upgrade, located in Evansville, IN, makes it easy for businesses to create and manage their digital presence and logistics, meaning we can make your business more efficient and profitable! We believe in our community and want to help our local business economy grow and expand. We believe in our clients, and want to assist in their digital success. The D-UP team grades ourselves on outcomes, not on sales.</p>
               <a href="#" title="About Us Button">ABOUT US</a>
             </div>
+            <div className="about-us-image2">
+              <img src="https://digitalupgrade.com/images/lobbyimage_1.jpg" alt="Lobby Image" />
+            </div>
           </div>
         </div>
         <main className="main">
@@ -74,4 +77,5 @@ const Card1 = (props) => {
     </div>
   )
 }
+
 export default Services

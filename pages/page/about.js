@@ -16,7 +16,7 @@ const about = () => {
         <title>About</title>
       </Head>
       <Navbar />
-      <div className='about-page'>
+      <div>
         <section className="about-section">
           <div className="container">
             <div className="row">
@@ -38,44 +38,45 @@ const about = () => {
               <div className="image-column col-lg-6 col-md-12 col-sm-12">
                 <div className="inner-column wow fadeInLeft">
                   <div className="author-desc">
-                    <h2>About Us</h2>
+                    <h2>Rahul Kumar Yadav</h2>
                     <span>Web Developer</span>
                   </div>
                   <figure className="image-1"><a href="#" className="lightbox-image" data-fancybox="images"><img title="Rahul Kumar Yadav" src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg" alt="" /></a></figure>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <ul className="timeline">
+        <ul class="timeline">
           <li>
-            <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
                 <h4>2009-2011</h4>
-                <h4 className="subheading">Our Humble Beginnings</h4>
+                <h4 class="subheading">Our Humble Beginnings</h4>
               </div>
-              <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
             </div>
           </li>
-          <li className="timeline-inverted">
-            <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
+          <li class="timeline-inverted">
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
                 <h4>March 2011</h4>
-                <h4 className="subheading">An Agency is Born</h4>
+                <h4 class="subheading">An Agency is Born</h4>
               </div>
-              <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
             </div>
           </li>
           <li>
-            <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
                 <h4>December 2015</h4>
-                <h4 className="subheading">Transition to Full Service</h4>
+                <h4 class="subheading">Transition to Full Service</h4>
               </div>
-              <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+              <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
             </div>
           </li>
         </ul>
@@ -113,17 +114,17 @@ const about = () => {
           <Card />
           <Card />
         </div>
-        <div className="container" style={{ background: 'white', color: 'black', paddingBottom: '5rem' }}>
-          <div className="row">
-            <div className="col-lg-6">
-              <img className="w-100 shadow" src="https://via.placeholder.com/824x552" />
-            </div>
-            <div className="col-lg-6">
-              <div className="p-5 mt-4">
-                <h1 className="display-4">H1 Heading</h1>
-                <p className="lead">Crow&apos;s nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
-                <button className='button'>Join Our Team</button>
-              </div>
+      </div>
+      <div className="container my-5">
+        <div className="row">
+          <div className="col-lg-6">
+            <img className="w-100 shadow" src="https://via.placeholder.com/824x552" />
+          </div>
+          <div className="col-lg-6">
+            <div className="p-5 mt-4">
+              <h1 className="display-4">H1 Heading</h1>
+              <p className="lead">Crow&apos;s nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+              <button className='button'>Join Our Team</button>
             </div>
           </div>
         </div>

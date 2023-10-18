@@ -65,7 +65,7 @@ const Footer = (props) => {
                 <address style={{ lineHeight: '2.2' }}>
                   Contact at: <a href="tel:8209181991">+91-8209181991<br /></a>
                   Mail On: <a href="mailto:info@praukcy.com">praukcy@gmail.com</a><br />
-                  Head Office: Room No.- 242,<br />Dhanrajgiri Hostel, IIT Varanasi (BHU)
+                  Head Office: Room No.- 257,<br />Morvi Hostel, IIT Varanasi (BHU)
                 </address>
               </Col>
             </Row>

@@ -73,14 +73,14 @@ padding: 2% 7%;
 .workcard{
   margin: auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .portfolio_item {
   width: 300px;
   margin: 2% 4%;
 }
+
 .linkimg{
   width: 300px;
 }

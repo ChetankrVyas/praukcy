@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      body {
+        width: 100%;
+      }
+
+      nav {
+        background-color: black;
+        height: 9vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8vw;
+        transition: all ease 0.7s;
+        overflow: hidden;
+      }
+
+      nav:hover {
+        background-color: rgb(2, 2, 18);
+        color: white;
+      }
+
+      .leftnav {
+        display: flex;
+      }
+
+      .leftnav img {
+        height: 11vh;
+      }
+
+      .rightnav ul {
+        display: flex;
+        align-items: center;
+      }
+
+      .rightnav ul li {
+        list-style: none;
+        margin: 0 2vw;
+        font-size: 1.15vw;
+        font-weight: 600;
+        transition: all ease 0.5s;
+      }
+
+      .rightnav ul li:hover {
+        font-size: 1.35vw;
+      }
+
+      .main {
+        height: 91vh;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        position: relative;
+      }
+
+      video {
+        width: 100%;
+        height: 91vh;
+        object-fit: contain;
+        position: absolute;
+        z-index: 0;
+      }
+
+      .left {
+        height: 70vh;
+        width: 40%;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        z-index: 1;
+        border-radius: 15px;
+        left: 5vw;
+        top: 8vh;
+        padding: 8vh 5vw 0;
+        color: #02B3DF;
+      }
+
+      .left h2 {
+        font-size: 4vw;
+        letter-spacing: 0.4vw;
+        color: #02B3DF;
+        margin-bottom: 10vh;
+      }
+
+      .left h2 span {
+        color: rgb(165, 161, 90);
+      }
+
+      .left h6 {
+        font-size: 1.4vw;
+        margin: 20px 0;
+      }
+
+      .left h6 i {
+        margin: 0 2vw;
+      }
+      
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10vh;
+        color: rgb(165, 161, 90);
+      }
+
+      .info i {
+        margin-right: 20px;
+        font-size: 1.5vw;
+      }
+
+      .info span {
+        font-size: 1vw;
+      }
+
+      .right {
+        height: 70vh;
+        width: 40%;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        z-index: 1;
+        border-radius: 15px;
+        right: 5vw;
+        top: 8vh;
+        padding: 8vh 4vw;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="leftnav"><img src="logo.png" alt="logo" /></div>
+      <div class="rightnav">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>About</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <video muted autoplay loop src="video.mp4"></video>
+      <div class="left">
+        <h2>Praukcy for <br><span id="element">Credibility</span></h2>
+
+        <h6><i class="fa-solid fa-circle-radiation fa-spin"></i>Dynamic Services</h6>
+        <h6><i class="fa-solid fa-circle-radiation fa-spin"></i>Easy to use UI</h6>
+
+        <div class="info">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Want an awesome web app ready? A logo design? No worries. We're here for you</span>
+        </div>
+
+      </div>
+      <div class="right"></div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Credibility", "Quality", "Identity"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
