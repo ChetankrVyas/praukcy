@@ -162,7 +162,14 @@
 .service-wrap p{
     position: relative;
 }
-
+.service-wrap p i{
+  /* margin: 5px; */
+  display: none;
+  color: #e8bc00;
+}
+.service-wrap span{
+  text-align: justify;
+}
 .service-wrap:hover {
   background-image: url(https://i.ibb.co/mykzQks/services1.jpg);
   background-size: cover;

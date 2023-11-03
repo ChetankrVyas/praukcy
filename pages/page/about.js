@@ -16,7 +16,7 @@ const about = () => {
         <title>About</title>
       </Head>
       <Navbar />
-      <div>
+      <div className='about-page'>
         <section className="about-section">
           <div className="container">
             <div className="row">
@@ -114,21 +114,22 @@ const about = () => {
           <Card />
           <Card />
         </div>
-      </div>
-      <div className="container my-5">
-        <div className="row">
-          <div className="col-lg-6">
-            <img className="w-100 shadow" src="https://via.placeholder.com/824x552" />
-          </div>
-          <div className="col-lg-6">
-            <div className="p-5 mt-4">
-              <h1 className="display-4">H1 Heading</h1>
-              <p className="lead">Crow&apos;s nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
-              <button className='button'>Join Our Team</button>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-6">
+              <img className="w-100 shadow" src="https://via.placeholder.com/824x552" />
+            </div>
+            <div className="col-lg-6">
+              <div className="p-5 mt-4">
+                <h1 className="display-4">H1 Heading</h1>
+                <p className="lead">Crow&apos;s nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+                <button className='button'>Join Our Team</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   )

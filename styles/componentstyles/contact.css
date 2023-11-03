@@ -40,13 +40,13 @@
     display: block;
     width: 20%;
     margin: 30px auto 0 auto;
-    background: rgb(110, 118, 114);
-    border-radius: 2px;
+    background: rgb(40, 94, 187);
+    border-radius: 10px;
     border: none;
   }
   .cbtn:hover{
-    background-color: rgb(45, 202, 202);
-    color: black;
+    background-color: rgb(96, 0, 138);
+    /* color: rgb(75, 59, 59); */
     transition: all 0.3s;
   }
   .contactheadcol {

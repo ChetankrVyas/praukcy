@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { FaPhone, FaEnvelope, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import {FaEnvelope, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import {IoCall} from 'react-icons/io5'
 
 const Contactus = () => {

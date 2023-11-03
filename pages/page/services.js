@@ -72,7 +72,7 @@ const Card1 = (props) => {
       <img className="card__icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2709552/icon-brand.svg" alt="brand" />
       <div className="card__body">
         <h4 className="card__head">UI/UX Design</h4>
-        <p className="card__content">Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
+        <p className="card__content">Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App We deliver end-to-end website management and design solutions, encompassing meticulous UI design, seamless server and database integration, and a full spectrum of professional services.</p>
       </div>
     </div>
   )

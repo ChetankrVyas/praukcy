@@ -16,16 +16,56 @@ import Blo from '../assets/blo.jpg';
 const Services = () => {
   return (
     <>
-      {/* <div className='ribbon'> */}
       <div className='ser'>
         <section className='s-carads'>
           <div className='one'><h1>SERVICES</h1></div>
           <section className="service-grid pb-5 pt-5">
             <div className='container'>
               <div className='row'>
-                <Crds />
-                <Crds />
-                <Crds />
+                <div className="col-lg-4 col-md-6 text-center mb-3">
+                  <div className="service-wrap">
+                    <div className="service-icon">
+                      <i className="fas fa-layer-group"></i>
+                    </div>
+                    <h4>Web Application</h4>
+                    <ul className="fa-ul">
+                      <li><span className="fa-li"><i className="fas fa-atom"></i></span>Encompassing UI design</li>
+                      <li><span className="fa-li"><i className="fas fa-atom"></i></span>Server and Database Integration</li>
+                      <li><span className="fa-li"><i className="fas fa-atom"></i></span>Comprehensive website management</li>
+                    </ul>
+                  </div>
+                </div>
+                <Crds title="Android Application" />
+                <div className="col-lg-4 col-md-6 text-center mb-3">
+                  <div className="service-wrap">
+                    <div className="service-icon">
+                      <i className="fas fa-layer-group"></i>
+                    </div>
+                    <h4>Graphic Design</h4>
+                    
+                      <i className="fas fa-atom"></i><span>Print Design</span><br />
+                      <i className="fas fa-atom"></i><span>UI/UX Design</span><br />
+                      <i className="fas fa-atom"></i><span>Web Graphics</span><br />
+                      <i className="fas fa-atom"></i><span>Social Media Graphics</span><br />
+                      <i className="fas fa-atom"></i><span>Branding and Logo Design</span><br />
+                    
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 text-center mb-3">
+                  <div className="service-wrap">
+                    <div className="service-icon">
+                      <i className="fas fa-layer-group"></i>
+                    </div>
+                    <h4>Chatbot Integration</h4>
+                    <ul>
+                      <li>Customized Chatbot Solutions</li>
+                      <li>Seamless Integration</li>
+                      <li>Continuous Monitoring and Optimization</li>
+                      <li>Integration with Existing System</li>
+                    </ul>
+                  </div>
+                </div>
+                <Crds title="IOS Application" />
               </div>
             </  div>
           </section>
@@ -41,9 +81,8 @@ const Crds = (props) => {
         <div className="service-icon">
           <i className="fas fa-layer-group"></i>
         </div>
-        <h4>Web Application</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
-        <a href="#">Read More</a>
+        <h4>{props.title}</h4>
+        <p>{props.text}</p>
       </div>
     </div>
   )
