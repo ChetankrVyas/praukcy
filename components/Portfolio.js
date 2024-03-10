@@ -3,9 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from 'next/link';
-import praukcy from '../assets/portfolio/praukcy.png';
-import blvess from '../assets/portfolio/blvess.png';
-import textutils from '../assets/portfolio/textutils.png';
+import angel from '../assets/portfolio/angel.png';
+import blvess from '../assets/portfolio/blvess2.jpeg';
+import newsapp from '../assets/portfolio/newsapp.png';
+import notebook from '../assets/portfolio/notebook.png';
+import chatgpt from '../assets/portfolio/chatgpt.jpeg';
 import Image from 'next/image';
 
 const Portfolio = () => {
@@ -50,11 +52,11 @@ const Portfolio = () => {
         <h1 >PORTFOLIO</h1>
       </div>
       <Slider {...settings}>
-        <Card title="BLVESS" />
-        <Card title="Newsapp"/>
-        <Card title="INotebook" />
-        <Card title="Chatgpt Chatbot"/>
-        <Card />
+        <Card title="BLVESS" imge = {blvess} link = "https://blvess.vercel.app/" />
+        <Card title="Newsapp" imge = {newsapp} link = "https://github.com/ChetankrVyas/newsapp" />
+        <Card title="INotebook" imge = {notebook} link ="https://github.com/ChetankrVyas/inotebook" />
+        <Card title="Chatgpt Chatbot"imge = {chatgpt} />
+        <Card title="IAAN" imge={angel} link = "https://iaan.ecelliitbhu.com/#team" />
       </Slider>
     </div>
   )
@@ -65,7 +67,8 @@ const Card = (props) => {
       <div className="card-content">
         <div className="card-image">
           {/* <span className="card-caption">Image Caption</span> */}
-          <img alt='' src="https://www.dropbox.com/s/63v40eqeq9lgz3k/bald-eagle-2715461_640.jpg?raw=1" />
+          {/* <img alt='' src="https://www.dropbox.com/s/63v40eqeq9lgz3k/bald-eagle-2715461_640.jpg?raw=1" /> */}
+          <Image src = {props.imge} height={190}/>
         </div>
 
         <span className="card-title">{props.title}</span>
@@ -79,7 +82,7 @@ const Card = (props) => {
       </div>
 
       <div className="card-link">
-        <a href="#" title="Read Full"><span>Read Full</span></a>
+        <a href={props.link} target='_blank' title="Read Full"><span>View</span></a>
       </div>
     </div>
   )

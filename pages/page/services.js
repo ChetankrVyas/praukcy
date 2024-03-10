@@ -41,12 +41,13 @@ const Services = () => {
         </div>
         <main className="main">
           <div className="cards-grid">
-            <Card1 />
-            <Card1 />
-            <Card1 />
+            <Card1 title = "Graphics Design"/>
+            <Card1 title="Hosting and Deployment"/>
+            <Card1 title="Server and Database Integration"/>
+            <Card1 title = "Chatbot Integration"/>
+            <Card1 title = "Monitoring and Optimization"/>
           </div>
         </main>
-        <h1>Our Future Plans and Services</h1>
         <div className="inner">
           <div className="inner__headings">
             <h5 className="inner__sub">Our Capabilities</h5>
@@ -56,7 +57,7 @@ const Services = () => {
           </div>
           <div className="inner__content">
             <p className="inner__text">We&apos;re brand strategy and digital design agency, building brands that
-              matter in culture with more than ten years of knowledge e and in to do expertise and digital design agency or brands.</p>
+              matter in culture with variety of knowledge and in to do expertise and digital design agency or brands.</p>
           </div>
         </div>
       </div>
@@ -71,7 +72,7 @@ const Card1 = (props) => {
     <div className="card">
       <img className="card__icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2709552/icon-brand.svg" alt="brand" />
       <div className="card__body">
-        <h4 className="card__head">UI/UX Design</h4>
+        <h4 className="card__head">{props.title}</h4>
         <p className="card__content">Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App We deliver end-to-end website management and design solutions, encompassing meticulous UI design, seamless server and database integration, and a full spectrum of professional services.</p>
       </div>
     </div>

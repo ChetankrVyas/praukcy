@@ -156,11 +156,11 @@ ul {
 .newhead .main {
   height: 85.5vh;
   width: 100%;
-  background-color: black;
+  background-color: rgb(80, 79, 79);
   display: flex;
   overflow: hidden;
   position: relative;
-  /* background-image: url(../assets/video.gif); */
+  background-image: url(../assets/head.jpg);
   background-size: cover;
   background-attachment: cover;
   background-repeat: no-repeat;
@@ -237,22 +237,33 @@ ul {
   padding: 8vh 4vw;
   z-index: 1;
 }
-
+.newhead .dis{
+  display: none;
+}
+.newhead .dis1{
+  display: block;
+}
 @media screen and (max-width:600px) {
   nav {
     flex-direction: column;
     height: 16vh;
   }
-
+  .newhead .dis{
+    display: block;
+  }
+  .newhead .dis1{
+    display: none;
+  }
   .newhead .main {
     flex-direction: column;
     margin: auto;
     background-size: cover;
     background-position: center;
-    height: 75.5vh;
+    height: 85.5vh;
   }
 
   .newhead .left {
+    height: 40vh;
     margin: auto;
     width: 80%;
     padding: 2%;
@@ -260,14 +271,24 @@ ul {
   }
 
   .newhead .left h2 {
-    font-size: 45px;
-    margin-bottom: 3vh;
+    font-size: 33px;
+    text-align: justify;
+    margin-bottom: 2vh;
+  }
+  .newhead .left h6 {
+    font-size: 17x;
   }
 
   .newhead .info {
-    margin-top: 3vh;
+    margin-top: 1vh;
   }
-
+  .newhead .info i {
+    font-size: 15px;
+  }
+  
+  .newhead .info span {
+    font-size: 12px;
+  }
   .newhead .right {
     width: 80%;
     padding: 4%;
@@ -288,10 +309,10 @@ ul {
 
 /* contactus */
 .contact-row {
-  height: 5.5vh;
+  height: 5.7vh;
   margin: auto;
-  background-color: #07002c;
-  color: white;
+  background-color: #e6e1ff;
+  color:black;
 }
 
 .contact-phone {
@@ -306,12 +327,13 @@ ul {
 
 @media screen and (max-width: 600px) {
   .contact-row {
-    height: 8.5vh;
+    height: 9.2vh;
   }
 
   .contact-social {
     justify-content: left;
     margin-left: 15px;
+    margin-bottom: 10px;
   }
 }
 

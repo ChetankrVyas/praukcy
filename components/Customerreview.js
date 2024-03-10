@@ -26,7 +26,7 @@ const Testimonial = () => {
         <h1 >Testimonials</h1>
         </div>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={Abhay} name='Abhay Shankar' post='BLVESS' text ='Praukcy is best place to get technical assistance'/>
+          <Card img={Abhay} name='Abhay Shankar' post='BLVESS' text ='Praukcy gave recognition to our organization in digital world.'/>
         </Slider>
       </div>
     </div>

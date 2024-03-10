@@ -8,8 +8,8 @@ const Contactus = () => {
     <div>
       <Row className='contact-row'>
         <Col className='contact-phone' style={{ display: 'flex', margin:'auto' }}>
-          <a style={{ margin: 'auto 0px auto 20px' }}><IoCall></IoCall></a>
-          <h6 style={{ margin: 'auto 10px' }}><a style={{ color: 'white' }} href='tel: 8209181991'>+91-8209181991</a></h6>
+          <a style={{ margin: 'auto 0px auto 1%' }}><IoCall></IoCall></a>
+          <h6 style={{ margin: 'auto 10px' }}><a  href='tel: 8209181991'>+91-8209181991</a></h6>
           <div style={{ width: "2px", height: '32px', marginTop: '4px', backgroundColor: 'black' }}></div>
           <a style={{ margin: 'auto 5px' }}><FaEnvelope></FaEnvelope></a>
           <h6 style={{ margin: 'auto 5px' }}><a href='mailto: praukcy@gmail.com'>praukcy@gmail.com</a></h6>
