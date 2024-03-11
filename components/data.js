@@ -2,7 +2,7 @@ const dataDigitalBestSeller = [
    {
       id: 1,
       name: 'BLVESS',
-      linkImg: '',
+      linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblvess2.d0bc7fd6.jpeg&w=384&q=75',
       year:'2023',
       category: 'webdevelopment',
       key: 'blvess'
@@ -10,7 +10,7 @@ const dataDigitalBestSeller = [
    {
       id: 2,
       name: 'MyNotebook',
-      linkImg: '',
+      linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnotebook.a1cb47c2.png&w=384&q=75',
       year:'2023',
       category: 'webdevelopment',
       key: 'mynotebook'
@@ -18,7 +18,7 @@ const dataDigitalBestSeller = [
    {
       id: 3,
       name: 'Newsapp',
-      linkImg: '',
+      linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnewsapp.672c7a8d.png&w=384&q=75',
       year:'2023',
       category: 'webdevelopment',
       key: 'newsapp'
@@ -34,19 +34,19 @@ const dataDigitalBestSeller = [
    {
       id: 5,
       name: 'Axelerate Track',
-      linkImg: '',
+      linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faxelerate.ad95f097.png&w=384&q=75',
       year:'2023',
       category: 'graphicdesign',
       key: 'graphic'
    },
-   {
-      id: 6,
-      name: 'BLVESS Logo',
-      linkImg: '',
-      year:'2023',
-      category: 'logo',
-      key: 'logo'
-   },
+   // {
+   //    id: 6,
+   //    name: 'BLVESS Logo',
+   //    linkImg: '',
+   //    year:'2023',
+   //    category: 'logo',
+   //    key: 'logo'
+   // },
    {
       id: 7,
       name: 'ChatAI',

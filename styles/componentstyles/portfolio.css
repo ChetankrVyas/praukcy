@@ -169,12 +169,12 @@
 }
 
 .img-card .card-text {
-  padding: 0 15px 15px;
+  padding: 0 15px 2px;
   line-height: 1.5;
 }
 
 .img-card .card-link {
-  padding: 20px 15px 30px;
+  padding: 0px 15px 20px;
   width: -webkit-fill-available;
 }
 
@@ -227,7 +227,7 @@
 
 .img-card.iCard-style2 .card-link a {
   border: 1px solid;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 3px;
   color: black;
   font-size: 13px;

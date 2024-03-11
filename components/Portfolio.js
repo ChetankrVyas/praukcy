@@ -52,9 +52,9 @@ const Portfolio = () => {
         <h1 >PORTFOLIO</h1>
       </div>
       <Slider {...settings}>
-        <Card title="BLVESS" imge = {blvess} link = "https://blvess.vercel.app/" content=""/>
-        <Card title="Newsapp" imge = {newsapp} link = "https://github.com/ChetankrVyas/newsapp" />
-        <Card title="INotebook" imge = {notebook} link ="https://github.com/ChetankrVyas/inotebook" />
+        <Card title="BLVESS" imge = {blvess} link = "https://blvess.vercel.app/" content="Bharatiya Lok Vikas Evam Shodh Sansthan website eloquently showcases the organization's agricultural initiatives, methodologies, and profound impact, fostering robust community engagement."/>
+        <Card title="Newsapp" imge = {newsapp} link = "https://github.com/ChetankrVyas/newsapp" content="Discover our premier news aggregation website, fueled by the prestigious NewsAPI service. Delve into concise news pieces with captivating visuals, informative titles, and direct source links." />
+        <Card title="INotebook" imge = {notebook} link ="https://github.com/ChetankrVyas/inotebook" content="Elevate organization with a web notebook offering secure user authentication. Each student enjoys personalized accounts for note storage, editing, and seamless access." />
         <Card title="Chatgpt Chatbot"imge = {chatgpt} content="Innovative mobile application leveraging the powerful capabilities of the OpenAI API to deliver personalized prompt suggestions directly within the intuitive app interface."/>
         <Card title="IAAN" imge={angel} link = "https://iaan.ecelliitbhu.com/#team" content="IIT BHU Alumni Angel Network is a joint initiative of institute E-Cell & Alumni for the students and alumni entrepreneurs of IIT BHU to network & access funding opportunities for their startups."/>
       </Slider>
@@ -81,7 +81,6 @@ const Card = (props) => {
         </div>
 
       </div>
-
       <div className="card-link">
         <a href={props.link} rel="noreferrer" target='_blank' title="Read Full"><span>View</span></a>
       </div>

@@ -30,8 +30,8 @@ const Services = () => {
               <img src="https://digitalupgrade.com/images/lobbyimage_1.jpg" alt="Lobby Image" />
             </div>
             <div className="about-us-info">
-              <h2>We are Digital Upgrade</h2>
-              <p>Digital Upgrade, located in Evansville, IN, makes it easy for businesses to create and manage their digital presence and logistics, meaning we can make your business more efficient and profitable! We believe in our community and want to help our local business economy grow and expand. We believe in our clients, and want to assist in their digital success. The D-UP team grades ourselves on outcomes, not on sales.</p>
+              <h2>Need Digital Upgrade?</h2>
+              <p>Praukcy simplifies the process for businesses to establish and oversee their digital footprint and operations, fostering enhanced efficiency and profitability. Our dedication to community empowerment drives us to catalyze local economic expansion. Committed to client-centricity, we prioritize facilitating their digital triumphs.</p>
               <a href="#" title="About Us Button">ABOUT US</a>
             </div>
             <div className="about-us-image2">

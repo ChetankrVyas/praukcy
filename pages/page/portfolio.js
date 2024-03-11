@@ -28,7 +28,6 @@ const Portfolio = () => {
       </Head>
       <Navbar />
       <div className='portpage'>
-
         <section className="section-hero">
           <div className="hero">
             <div className="hero-text-box">
@@ -68,7 +67,7 @@ const Portfolio = () => {
                   <div className="img-card iCard-style3" key={key}>
                     <div className="card-content">
                       <div className="card-image">
-                        <img alt='' src="https://www.dropbox.com/s/tclqbz7o4u8e705/ipad-632394_640.jpg?raw=1" />
+                        <img alt='' src={linkImg} />
                       </div>
                       <span className="card-title">{name}</span>
                       <div className="card-text">
