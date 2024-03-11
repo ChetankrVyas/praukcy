@@ -26,7 +26,7 @@ const dataDigitalBestSeller = [
    {
       id: 4,
       name: 'Praukcy',
-      linkImg: '',
+      linkImg: '../assets/portfolio/praukcy.png',
       year:'2023',
       category: 'webdevelopment',
       key: 'blvessw'
@@ -50,7 +50,7 @@ const dataDigitalBestSeller = [
    {
       id: 7,
       name: 'ChatAI',
-      linkImg: '',
+      linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchatgpt.6fa32a99.jpeg&w=384&q=75',
       year:'2023',
       category: 'chatbot',
       key: 'chatgpt'
