@@ -52,11 +52,11 @@ const Portfolio = () => {
         <h1 >PORTFOLIO</h1>
       </div>
       <Slider {...settings}>
-        <Card title="BLVESS" imge = {blvess} link = "https://blvess.vercel.app/" />
+        <Card title="BLVESS" imge = {blvess} link = "https://blvess.vercel.app/" content=""/>
         <Card title="Newsapp" imge = {newsapp} link = "https://github.com/ChetankrVyas/newsapp" />
         <Card title="INotebook" imge = {notebook} link ="https://github.com/ChetankrVyas/inotebook" />
-        <Card title="Chatgpt Chatbot"imge = {chatgpt} />
-        <Card title="IAAN" imge={angel} link = "https://iaan.ecelliitbhu.com/#team" />
+        <Card title="Chatgpt Chatbot"imge = {chatgpt} content="Innovative mobile application leveraging the powerful capabilities of the OpenAI API to deliver personalized prompt suggestions directly within the intuitive app interface."/>
+        <Card title="IAAN" imge={angel} link = "https://iaan.ecelliitbhu.com/#team" content="IIT BHU Alumni Angel Network is a joint initiative of institute E-Cell & Alumni for the students and alumni entrepreneurs of IIT BHU to network & access funding opportunities for their startups."/>
       </Slider>
     </div>
   )
@@ -75,14 +75,15 @@ const Card = (props) => {
 
         <div className="card-text">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Image by <a href="https://pixabay.com/users/moonzigg-6341937/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2715461" style={{ textDecoration: 'none' }}>moonzigg</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2715461" style={{ textDecoration: 'none' }}>Pixabay</a>
+            {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Image by <a href="https://pixabay.com/users/moonzigg-6341937/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2715461" style={{ textDecoration: 'none' }}>moonzigg</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2715461" style={{ textDecoration: 'none' }}>Pixabay</a> */}
+            {props.content}
           </p>
         </div>
 
       </div>
 
       <div className="card-link">
-        <a href={props.link} target='_blank' title="Read Full"><span>View</span></a>
+        <a href={props.link} rel="noreferrer" target='_blank' title="Read Full"><span>View</span></a>
       </div>
     </div>
   )

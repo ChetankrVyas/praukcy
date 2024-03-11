@@ -112,7 +112,6 @@ const about = () => {
           </p>
           <Card />
           <Card />
-          <Card />
         </div>
         <div className="container py-5">
           <div className="row">
