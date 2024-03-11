@@ -23,14 +23,14 @@ const dataDigitalBestSeller = [
       category: 'webdevelopment',
       key: 'newsapp'
    },
-   {
-      id: 4,
-      name: 'Praukcy',
-      linkImg: '../assets/portfolio/praukcy.png',
-      year:'2023',
-      category: 'webdevelopment',
-      key: 'blvessw'
-   },
+   // {
+   //    id: 4,
+   //    name: 'Praukcy',
+   //    linkImg: 'https://praukcy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpraukcy1.43c0b446.png&w=384&q=75',
+   //    year:'2023',
+   //    category: 'webdevelopment',
+   //    key: 'blvessw'
+   // },
    {
       id: 5,
       name: 'Axelerate Track',
