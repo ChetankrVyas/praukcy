@@ -23,13 +23,28 @@ const Footer = (props) => {
               </Col>
               <hr className="w-100 clearfix d-md-none" />
               <Col>
-                <Row>
-                  <h6 className="text-uppercase mb-4 font-weight-bold ">
                     <span className="underline">Important Links</span>
+                <Row >
+                  <h6 className="text-uppercase mb-4 font-weight-bold ">
                   </h6>
-                  <Col>
+                  <Col className='foot-imp1'>
                     <p>
                       <Link href="/" className="ulstyle">Home</Link>
+                    </p>
+                    <p>
+                      <Link href="/page/about" className="ulstyle">About</Link>
+                    </p>                   
+                    <p>
+                      <Link href="/page/team" className="ulstyle">Team</Link>
+                    </p>
+                    <p>
+                      <Link href="/page/customer" className="ulstyle">Help</Link>
+                    </p>
+                  </Col>
+                  <hr className="w-100 clearfix d-md-none dis-none" />
+                  <Col className='foot-imp2'>
+                    <p>
+                      <Link href="/page/portfolio" className="ulstyle">Portfolio</Link>
                     </p>
                     <p>
                       <Link href="/page/services" className="ulstyle">Services</Link>
@@ -37,24 +52,9 @@ const Footer = (props) => {
                     <p>
                       <Popup show={modalShow} onHide={() => setModalShow(false)} title={props.title} text1={props.text1} />
                       <button onClick={() => setModalShow(true)} className="ulstyle">Message</button>
-                    </p>
+                    </p >
                     <p>
                       <Link href="/page/customer" className="ulstyle">Customers</Link>
-                    </p>
-                  </Col>
-                  <hr className="w-100 clearfix d-md-none" />
-                  <Col>
-                    <p>
-                      <Link href="/page/portfolio" className="ulstyle">Portfolio</Link>
-                    </p>
-                    <p>
-                      <Link href="/page/team" className="ulstyle">Team</Link>
-                    </p>
-                    <p>
-                      <Link href="/page/about" className="ulstyle">About</Link>
-                    </p>
-                    <p>
-                      <Link href="/page/customer" className="ulstyle">Help</Link>
                     </p>
                   </Col>
                 </Row>

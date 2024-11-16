@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <Contactus/>
+      {/* <Contactus/> */}
       <div className='newhead'>
         <div className="main">
         {/* <video autoPlay="autoplay" loop="loop" muted className='video' >
@@ -37,7 +37,6 @@ const Header = () => {
               <i className="fa-solid fa-circle-info"></i>
               <span>Want an awesome web app ready? A logo design? No worries. We&apos;re here for you</span>
             </div>
-
           </div>
           <div className="right">
             <Tilt>
